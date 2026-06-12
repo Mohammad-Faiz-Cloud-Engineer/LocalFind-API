@@ -15,6 +15,8 @@ app_port: 7860
 
 A production-ready REST API that powers the LocalFind business discovery platform. Serves 40+ local businesses with full-text search, real-time open/closed status, geographic queries, reviews, analytics, and more.
 
+> **Live API:** [`https://localfind-localfind.hf.space`](https://localfind-localfind.hf.space) — deployed on HuggingFace Spaces. All examples below use this URL.
+
 ## Table of Contents
 
 - [Quick Start](#quick-start)
@@ -75,6 +77,8 @@ The API will start at **http://localhost:7860**.
 
 Open your browser and go to **http://localhost:7860/docs** — FastAPI's interactive Swagger UI lets you test every endpoint.
 
+> 💡 **Live production instance** at [`https://localfind-localfind.hf.space`](https://localfind-localfind.hf.space/docs) — no setup required.
+
 ---
 
 ## API Endpoints
@@ -86,7 +90,7 @@ Open your browser and go to **http://localhost:7860/docs** — FastAPI's interac
 Returns API metadata and a list of all available endpoints.
 
 ```bash
-curl http://localhost:7860/
+curl https://localfind-localfind.hf.space/
 ```
 
 **Response:**
@@ -117,7 +121,7 @@ curl http://localhost:7860/
 Health check endpoint.
 
 ```bash
-curl http://localhost:7860/health
+curl https://localfind-localfind.hf.space/health
 ```
 
 **Response:**
@@ -157,22 +161,22 @@ List all businesses with optional filters.
 
 ```bash
 # Get all listings (paginated)
-curl http://localhost:7860/api/v1/listings
+curl https://localfind-localfind.hf.space/api/v1/listings
 
 # Filter by category
-curl http://localhost:7860/api/v1/listings?category=healthcare
+curl https://localfind-localfind.hf.space/api/v1/listings?category=healthcare
 
 # Featured businesses only
-curl http://localhost:7860/api/v1/listings?featured=true
+curl https://localfind-localfind.hf.space/api/v1/listings?featured=true
 
 # Search for a business
-curl http://localhost:7860/api/v1/listings?search=aman%20garments
+curl https://localfind-localfind.hf.space/api/v1/listings?search=aman%20garments
 
 # Sort by rating (highest first)
-curl http://localhost:7860/api/v1/listings?sort_by=rating&sort_order=desc
+curl https://localfind-localfind.hf.space/api/v1/listings?sort_by=rating&sort_order=desc
 
 # Paginated
-curl http://localhost:7860/api/v1/listings?page=2&per_page=10
+curl https://localfind-localfind.hf.space/api/v1/listings?page=2&per_page=10
 ```
 
 **Response:**
@@ -212,7 +216,7 @@ curl http://localhost:7860/api/v1/listings?page=2&per_page=10
 Get full details for a single business.
 
 ```bash
-curl http://localhost:7860/api/v1/listings/aman-garments
+curl https://localfind-localfind.hf.space/api/v1/listings/aman-garments
 ```
 
 Returns the complete business object including hours, reviews, contact info, UPI details, social links, service links, and more.
@@ -226,7 +230,7 @@ Get related businesses in the same category.
 | `limit`   | integer | 4       | Max related businesses (max 20) |
 
 ```bash
-curl http://localhost:7860/api/v1/listings/aman-garments/related
+curl https://localfind-localfind.hf.space/api/v1/listings/aman-garments/related
 ```
 
 #### `GET /api/v1/listings/{business_id}/reviews`
@@ -234,7 +238,7 @@ curl http://localhost:7860/api/v1/listings/aman-garments/related
 Get reviews for a specific business.
 
 ```bash
-curl http://localhost:7860/api/v1/listings/aman-garments/reviews
+curl https://localfind-localfind.hf.space/api/v1/listings/aman-garments/reviews
 ```
 
 #### `GET /api/v1/listings/{business_id}/status`
@@ -242,7 +246,7 @@ curl http://localhost:7860/api/v1/listings/aman-garments/reviews
 Get real-time open/closed status for a business.
 
 ```bash
-curl http://localhost:7860/api/v1/listings/aman-garments/status
+curl https://localfind-localfind.hf.space/api/v1/listings/aman-garments/status
 ```
 
 ---
@@ -254,7 +258,7 @@ curl http://localhost:7860/api/v1/listings/aman-garments/status
 List all categories with business counts.
 
 ```bash
-curl http://localhost:7860/api/v1/categories
+curl https://localfind-localfind.hf.space/api/v1/categories
 ```
 
 **Response:**
@@ -273,7 +277,7 @@ curl http://localhost:7860/api/v1/categories
 Get all businesses in a category.
 
 ```bash
-curl http://localhost:7860/api/v1/categories/healthcare
+curl https://localfind-localfind.hf.space/api/v1/categories/healthcare
 ```
 
 ---
@@ -301,16 +305,16 @@ Full-text search with smart alias expansion.
 
 ```bash
 # Basic search
-curl "http://localhost:7860/api/v1/search?q=clothing"
+curl "https://localfind-localfind.hf.space/api/v1/search?q=clothing"
 
 # Search with alias expansion (finds CSC centers)
-curl "http://localhost:7860/api/v1/search?q=csc"
+curl "https://localfind-localfind.hf.space/api/v1/search?q=csc"
 
 # Search for hospitals (also matches clinic, medical center, etc.)
-curl "http://localhost:7860/api/v1/search?q=hospital"
+curl "https://localfind-localfind.hf.space/api/v1/search?q=hospital"
 
 # Paginated search
-curl "http://localhost:7860/api/v1/search?q=garments&page=1&per_page=5"
+curl "https://localfind-localfind.hf.space/api/v1/search?q=garments&page=1&per_page=5"
 ```
 
 **Response:**
@@ -331,7 +335,7 @@ curl "http://localhost:7860/api/v1/search?q=garments&page=1&per_page=5"
 Get the complete alias dictionary (mapping shorthand → search terms).
 
 ```bash
-curl http://localhost:7860/api/v1/search/aliases
+curl https://localfind-localfind.hf.space/api/v1/search/aliases
 ```
 
 ---
@@ -387,7 +391,7 @@ List all reviews across all businesses (paginated).
 Get all reviews for a specific business.
 
 ```bash
-curl http://localhost:7860/api/v1/reviews/business/aman-garments
+curl https://localfind-localfind.hf.space/api/v1/reviews/business/aman-garments
 ```
 
 ---
@@ -406,7 +410,7 @@ Get businesses within a geographic bounding box. Useful for map viewports.
 | `west`    | float  | West longitude bound |
 
 ```bash
-curl "http://localhost:7860/api/v1/map/bounds?north=26.95&south=26.88&east=81.30&west=81.15"
+curl "https://localfind-localfind.hf.space/api/v1/map/bounds?north=26.95&south=26.88&east=81.30&west=81.15"
 ```
 
 #### `GET /api/v1/map/nearby`
@@ -421,7 +425,7 @@ Get businesses near a point, sorted by distance.
 | `limit`   | integer | 20      | Max results |
 
 ```bash
-curl "http://localhost:7860/api/v1/map/nearby?lat=26.92&lng=81.26&radius=3"
+curl "https://localfind-localfind.hf.space/api/v1/map/nearby?lat=26.92&lng=81.26&radius=3"
 ```
 
 Response includes `distance` (meters) and `distanceKm` for each business.
@@ -431,7 +435,7 @@ Response includes `distance` (meters) and `distanceKm` for each business.
 Get the default map center coordinates.
 
 ```bash
-curl http://localhost:7860/api/v1/map/center
+curl https://localfind-localfind.hf.space/api/v1/map/center
 ```
 
 ---
@@ -445,7 +449,7 @@ Track and retrieve business view statistics. Analytics are in-memory and reset o
 Record a business view (called when a user views a business detail).
 
 ```bash
-curl -X POST http://localhost:7860/api/v1/analytics/view/aman-garments
+curl -X POST https://localfind-localfind.hf.space/api/v1/analytics/view/aman-garments
 ```
 
 #### `GET /api/v1/analytics/view/{business_id}`
@@ -461,7 +465,7 @@ Get most viewed businesses.
 | `limit`   | integer | 10      | Number of results |
 
 ```bash
-curl http://localhost:7860/api/v1/analytics/popular?limit=5
+curl https://localfind-localfind.hf.space/api/v1/analytics/popular?limit=5
 ```
 
 #### `GET /api/v1/analytics/stats`
@@ -469,7 +473,7 @@ curl http://localhost:7860/api/v1/analytics/popular?limit=5
 Get overall analytics statistics.
 
 ```bash
-curl http://localhost:7860/api/v1/analytics/stats
+curl https://localfind-localfind.hf.space/api/v1/analytics/stats
 ```
 
 ---
@@ -501,7 +505,7 @@ Submit a contact form message. Rate limited to 5 requests per hour per IP.
 | `message`   | string | Yes      | 10–2000 characters |
 
 ```bash
-curl -X POST http://localhost:7860/api/v1/contact/submit \
+curl -X POST https://localfind-localfind.hf.space/api/v1/contact/submit \
   -H "Content-Type: application/json" \
   -d '{"name":"John","email":"john@example.com","message":"I have a question"}'
 ```
