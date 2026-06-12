@@ -20,6 +20,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 - **Dead Pydantic models** — `ContactSubmission` and `ContactResponse` in `models.py` were defined but never imported or used anywhere. `contact.py` defines its own `ContactForm`. Removed dead models and unused `Field` import. (`src/models.py`)
 - **Unauthenticated `GET /contact/submissions` endpoint** — Exposed submitted PII (name, email, phone, IP address, user-agent) with zero authentication. Removed to eliminate the PII leak vector. `POST /contact/submit` remains functional. (`src/routes/contact.py`, `README.md`)
+- **Dead code cleanup** — Removed unused `normalize_text` import from `search_service.py` (only `matches_search_term` was used). Removed dead function `normalize_list()` from `text_normalizer.py` (never called). Removed dead functions `get_featured_listings()` and `get_verified_listings()` from `loader.py` (never imported). (`src/services/search_service.py`, `src/utils/text_normalizer.py`, `src/data/loader.py`)
 
 ### Changed
 

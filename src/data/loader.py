@@ -59,12 +59,4 @@ def get_listings_by_category(slug: str) -> list[dict[str, Any]]:
     return [b for b in load_listings() if b.get("categorySlug") == slug]
 
 
-def get_featured_listings() -> list[dict[str, Any]]:
-    return [b for b in load_listings() if b.get("featured")]
-
-
-def get_verified_listings() -> list[dict[str, Any]]:
-    return [b for b in load_listings() if b.get("verified")]
-
-
 

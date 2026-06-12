@@ -5,7 +5,7 @@ from typing import Any
 from src.data.loader import get_all_listings
 from src.models import business_to_summary
 from src.utils.search_aliases import expand_search_query
-from src.utils.text_normalizer import normalize_text, matches_search_term
+from src.utils.text_normalizer import matches_search_term
 from src.utils.time_utils import get_business_status, IST_OFFSET
 
 

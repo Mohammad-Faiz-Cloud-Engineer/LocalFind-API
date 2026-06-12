@@ -10,12 +10,6 @@ def normalize_text(text: str | None) -> str:
     return result
 
 
-def normalize_list(text: str | None) -> str:
-    if not text:
-        return ""
-    return re.sub(r"\s+", " ", text.lower().strip())
-
-
 def matches_search_term(text: str | None, term: str) -> bool:
     if not text:
         return False
