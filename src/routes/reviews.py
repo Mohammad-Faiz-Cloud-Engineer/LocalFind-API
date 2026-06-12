@@ -1,19 +1,9 @@
-from typing import Optional
-
 from fastapi import APIRouter, HTTPException, Query
-from pydantic import BaseModel, Field
 
 from src.data.loader import get_listing_by_id, get_all_listings
 
 router = APIRouter(prefix="/reviews", tags=["Reviews"])
 
-
-class ReviewSubmission(BaseModel):
-    author: str = Field(..., min_length=2, max_length=100)
-    role: str = Field(default="", max_length=100)
-    rating: float = Field(..., ge=0.5, le=5.0)
-    text: str = Field(..., min_length=5, max_length=2000)
-    email: Optional[str] = Field(default=None, pattern=r"^[^\s@]+@[^\s@]+\.[^\s@]+$")
 
 
 @router.get("")

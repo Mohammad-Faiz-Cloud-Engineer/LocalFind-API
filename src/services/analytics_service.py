@@ -59,6 +59,4 @@ def get_stats() -> dict[str, Any]:
     }
 
 
-def reset_stats() -> None:
-    _view_counts.clear()
-    _view_history.clear()
+

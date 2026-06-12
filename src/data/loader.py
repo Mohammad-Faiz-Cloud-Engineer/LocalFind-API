@@ -65,7 +65,4 @@ def get_verified_listings() -> list[dict[str, Any]]:
     return [b for b in load_listings() if b.get("verified")]
 
 
-def reload_listings() -> None:
-    global _listings_cache
-    _listings_cache = None
-    load_listings()
+

@@ -51,10 +51,10 @@ A production-ready REST API that powers the LocalFind business discovery platfor
 - Python 3.11+
 - pip
 
-### 1. Clone and Enter Server Directory
+### 1. Clone and Enter Project Directory
 
 ```bash
-cd Server
+cd LocalFind-API
 ```
 
 ### 2. Install Dependencies
@@ -613,7 +613,7 @@ The `Dockerfile` uses `python:3.11-slim` and exposes port 7860.
 
 ```bash
 # Clone the repository
-cd Server
+cd LocalFind-API
 
 # Create virtual environment
 python -m venv venv
@@ -776,7 +776,7 @@ A lighter version returned by list endpoints:
 ## Architecture
 
 ```
-Server/
+./
 ├── app.py                    # FastAPI entry point (HuggingFace-compatible)
 ├── requirements.txt          # Python dependencies
 ├── Dockerfile                # Docker build for HuggingFace Spaces
@@ -854,7 +854,7 @@ Client Request
 ### Run All Tests
 
 ```bash
-cd Server
+cd LocalFind-API
 python -m pytest tests/ -v
 ```
 
@@ -898,6 +898,6 @@ Using Indian Standard Time (IST, UTC+5:30). The API checks the business's hours 
 
 ## License
 
-MIT License — see the [LICENSE](LICENSE) file for details.
+BSD 2-Clause License — see the [LICENSE](LICENSE) file for details.
 
 Built with ❤️ by the LocalFind Team

@@ -138,10 +138,6 @@ class Settings:
     }
 
     @property
-    def search_alias_map(self) -> dict[str, list[str]]:
-        return self.search_aliases
-
-    @property
     def alias_to_terms(self) -> dict[str, str]:
         result: dict[str, str] = {}
         for alias, terms in self.search_aliases.items():

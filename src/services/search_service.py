@@ -54,7 +54,6 @@ def apply_special_command_filter(listings: list[dict], cmd: dict) -> list[dict]:
     prop = cmd["property"]
     value = cmd["value"]
     if prop == "isNew":
-        seven_days_ago = datetime.now(timezone.utc).timestamp() - (7 * 86400)
         ist_now = datetime.now(timezone.utc) + IST_OFFSET
         return [
             b for b in listings

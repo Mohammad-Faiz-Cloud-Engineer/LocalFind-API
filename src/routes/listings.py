@@ -11,6 +11,7 @@ from src.services.business_service import (
     get_business_reviews,
 )
 from src.services.status_service import get_status_for_business
+from src.utils.time_utils import convert_to_12_hour
 from src.data.loader import get_listing_by_id
 
 router = APIRouter(prefix="/listings", tags=["Listings"])
@@ -143,7 +144,7 @@ async def get_appointment_message(
         raise HTTPException(status_code=404, detail=f"Business '{business_id}' not found")
     category = (biz.get("category") or "").lower()
     biz_name = biz.get("name", "")
-    time_12h = convert_to_12h(time)
+    time_12h = convert_to_12_hour(time)
     if any(kw in category for kw in ["hospital", "clinic", "healthcare", "pharmacy"]):
         message = f"Hello, I would like to book an appointment for {time_12h}. My name is [Your Name]. Please let me know if the slot is available."
     elif any(kw in category for kw in ["salon", "spa", "beauty"]):
@@ -177,15 +178,3 @@ async def get_appointment_message(
         "contacts": contacts,
     }
 
-
-def convert_to_12h(time_str: str) -> str:
-    try:
-        parts = time_str.split(":")
-        h, m = int(parts[0]), int(parts[1])
-        period = "PM" if h >= 12 else "AM"
-        h12 = h % 12
-        if h12 == 0:
-            h12 = 12
-        return f"{h12}:{m:02d} {period}"
-    except (ValueError, IndexError):
-        return time_str

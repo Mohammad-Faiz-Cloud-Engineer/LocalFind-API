@@ -8,7 +8,7 @@ from src.data.loader import (
     get_listing_by_id,
 )
 from src.models import business_to_summary, normalize_business
-from src.services.search_service import calculate_relevance, expand_search_query, parse_special_command, apply_special_command_filter, is_business_new
+from src.services.search_service import calculate_relevance, expand_search_query, parse_special_command, apply_special_command_filter, is_business_new, find_malls_with_matching_tenants
 from src.utils.time_utils import get_business_status, IST_OFFSET
 
 
@@ -74,7 +74,6 @@ def get_listings(
                 score = calculate_relevance(biz, search_terms, search)
                 if score > 0:
                     scored.append((score, biz))
-            from src.services.search_service import find_malls_with_matching_tenants
             mall_tenants = find_malls_with_matching_tenants(search_terms)
             existing_ids = {b.get("id") for _, b in scored}
             for mall in mall_tenants:

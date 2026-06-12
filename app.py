@@ -54,8 +54,8 @@ app = FastAPI(
         "url": "https://localfind.com",
     },
     license_info={
-        "name": "MIT License",
-        "url": "https://opensource.org/licenses/MIT",
+        "name": "BSD 2-Clause License",
+        "url": "https://opensource.org/licenses/BSD-2-Clause",
     },
     lifespan=lifespan,
 )
