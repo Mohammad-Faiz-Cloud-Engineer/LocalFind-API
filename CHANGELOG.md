@@ -24,3 +24,9 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ### Changed
 
 - **License metadata corrected** — README frontmatter `license: mit` changed to `license: bsd-2-clause` to match the actual LICENSE file (BSD 2-Clause). (`README.md`)
+
+### Dependencies
+
+- **Removed unused `pydantic-settings`** — Listed in `requirements.txt` but never imported anywhere in the codebase. Settings uses a custom `@dataclass` instead. (`requirements.txt`)
+- **Docker base image upgraded** — `python:3.11-slim` → `python:3.13-slim` (latest stable Python release). (`Dockerfile`)
+- **GitHub Actions updated to latest major versions** — `actions/checkout` v4→v6, `actions/configure-pages` v5→v6, `actions/upload-pages-artifact` v3→v5. `actions/deploy-pages` remains at v5 (already latest). (`.github/workflows/static.yml`, `.github/workflows/sync-huggingface.yml`)
