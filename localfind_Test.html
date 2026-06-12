@@ -1,0 +1,1862 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
+    <meta http-equiv="Pragma" content="no-cache">
+    <meta http-equiv="Expires" content="0">
+    <title>LocalFind API Dashboard</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        :root {
+            --color-bg: #ffffff;
+            --color-surface: #f8f9fa;
+            --color-surface-hover: #f1f3f5;
+            --color-border: #e9ecef;
+            --color-border-hover: #dee2e6;
+            --color-text-primary: #212529;
+            --color-text-secondary: #6c757d;
+            --color-text-tertiary: #adb5bd;
+            --color-primary: #2563eb;
+            --color-primary-hover: #1d4ed8;
+            --color-primary-light: #dbeafe;
+            --color-success: #16a34a;
+            --color-success-light: #dcfce7;
+            --color-warning: #ea580c;
+            --color-warning-light: #ffedd5;
+            --color-danger: #dc2626;
+            --color-danger-light: #fee2e2;
+            --color-info: #0891b2;
+            --color-info-light: #cffafe;
+            --shadow-sm: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+            --shadow-md: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+            --shadow-lg: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+            --shadow-xl: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+            --radius-sm: 4px;
+            --radius-md: 6px;
+            --radius-lg: 8px;
+            --radius-xl: 12px;
+            --ease-out: cubic-bezier(0.33, 1, 0.68, 1);
+            --ease-in-out: cubic-bezier(0.65, 0, 0.35, 1);
+        }
+
+        body {
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+            background: #fafbfc;
+            color: var(--color-text-primary);
+            line-height: 1.5;
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+            min-height: 100vh;
+        }
+
+        /* Scrollbar Styling */
+        ::-webkit-scrollbar {
+            width: 10px;
+            height: 10px;
+        }
+
+        ::-webkit-scrollbar-track {
+            background: transparent;
+        }
+
+        ::-webkit-scrollbar-thumb {
+            background: var(--color-border);
+            border-radius: 5px;
+            border: 2px solid transparent;
+            background-clip: padding-box;
+        }
+
+        ::-webkit-scrollbar-thumb:hover {
+            background: var(--color-text-tertiary);
+            border: 2px solid transparent;
+            background-clip: padding-box;
+        }
+
+        .container {
+            max-width: 1280px;
+            margin: 0 auto;
+            padding: 24px;
+        }
+
+        /* Header */
+        .header {
+            background: var(--color-bg);
+            border: 1px solid var(--color-border);
+            border-radius: var(--radius-xl);
+            padding: 24px 32px;
+            margin-bottom: 24px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            box-shadow: var(--shadow-sm);
+        }
+
+        .header-brand {
+            display: flex;
+            align-items: center;
+            gap: 16px;
+        }
+
+        .brand-logo {
+            width: 40px;
+            height: 40px;
+            background: var(--color-primary);
+            border-radius: var(--radius-md);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+        }
+
+        .brand-info h1 {
+            font-size: 20px;
+            font-weight: 700;
+            color: var(--color-text-primary);
+            margin-bottom: 2px;
+        }
+
+        .brand-info p {
+            font-size: 13px;
+            color: var(--color-text-secondary);
+            font-weight: 500;
+        }
+
+        .status-badge {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            padding: 8px 16px;
+            background: #f0fdf4;
+            border: 1px solid #bbf7d0;
+            border-radius: var(--radius-md);
+            font-size: 13px;
+            font-weight: 600;
+            color: var(--color-success);
+        }
+
+        .status-dot {
+            width: 6px;
+            height: 6px;
+            background: var(--color-success);
+            border-radius: 50%;
+        }
+
+        /* Stats Grid */
+        .stats-grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 16px;
+            margin-bottom: 24px;
+        }
+
+        .stat-card {
+            background: var(--color-bg);
+            border: 1px solid var(--color-border);
+            border-radius: var(--radius-lg);
+            padding: 20px;
+            transition: border-color 0.15s var(--ease-out), box-shadow 0.15s var(--ease-out);
+            cursor: default;
+        }
+
+        .stat-card:hover {
+            border-color: var(--color-border-hover);
+            box-shadow: var(--shadow-md);
+        }
+
+        .stat-card:hover .stat-icon {
+            background: var(--color-primary-light);
+            color: var(--color-primary);
+        }
+
+        .stat-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 12px;
+        }
+
+        .stat-label {
+            font-size: 13px;
+            font-weight: 600;
+            color: var(--color-text-secondary);
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+
+        .stat-icon {
+            width: 36px;
+            height: 36px;
+            background: var(--color-surface);
+            border-radius: var(--radius-md);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: var(--color-primary);
+            font-size: 16px;
+            transition: background-color 0.15s var(--ease-out), color 0.15s var(--ease-out);
+        }
+
+        .stat-value {
+            font-size: 32px;
+            font-weight: 700;
+            color: var(--color-text-primary);
+            line-height: 1;
+        }
+
+        /* Main Content */
+        .main-content {
+            display: grid;
+            grid-template-columns: 380px 1fr;
+            gap: 24px;
+        }
+
+        /* Control Panel */
+        .control-panel {
+            background: var(--color-bg);
+            border: 1px solid var(--color-border);
+            border-radius: var(--radius-xl);
+            padding: 24px;
+            height: fit-content;
+            box-shadow: var(--shadow-sm);
+            position: sticky;
+            top: 24px;
+        }
+
+        .panel-title {
+            font-size: 16px;
+            font-weight: 700;
+            color: var(--color-text-primary);
+            margin-bottom: 20px;
+            padding-bottom: 16px;
+            border-bottom: 1px solid var(--color-border);
+        }
+
+        .form-group {
+            margin-bottom: 20px;
+        }
+
+        .form-label {
+            display: block;
+            font-size: 13px;
+            font-weight: 600;
+            color: var(--color-text-primary);
+            margin-bottom: 8px;
+        }
+
+        select, input {
+            width: 100%;
+            padding: 10px 12px;
+            background: var(--color-bg);
+            border: 1px solid var(--color-border);
+            border-radius: var(--radius-md);
+            font-size: 14px;
+            font-family: inherit;
+            color: var(--color-text-primary);
+            transition: border-color 0.15s var(--ease-out), box-shadow 0.15s var(--ease-out);
+        }
+
+        select:focus, input:focus {
+            outline: none;
+            border-color: var(--color-primary);
+            box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.08);
+        }
+
+        select:hover:not(:focus), input:hover:not(:focus) {
+            border-color: var(--color-border-hover);
+        }
+
+        input::placeholder {
+            color: var(--color-text-tertiary);
+        }
+
+        .form-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 12px;
+        }
+
+        .form-grid-3 {
+            grid-template-columns: 1fr 1fr 1fr;
+        }
+
+        .form-grid-4 {
+            grid-template-columns: 1fr 1fr 1fr 1fr;
+        }
+
+        .btn-primary {
+            width: 100%;
+            padding: 12px 20px;
+            background: var(--color-primary);
+            border: none;
+            border-radius: var(--radius-md);
+            color: white;
+            font-size: 14px;
+            font-weight: 600;
+            cursor: pointer;
+            transition: background-color 0.15s var(--ease-out), box-shadow 0.15s var(--ease-out);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 8px;
+        }
+
+        .btn-primary:hover {
+            background: var(--color-primary-hover);
+            box-shadow: 0 4px 12px rgba(37, 99, 235, 0.2);
+        }
+
+        .btn-primary:active {
+            background: #1e40af;
+            box-shadow: 0 2px 8px rgba(37, 99, 235, 0.2);
+        }
+
+        .btn-primary:disabled {
+            opacity: 0.5;
+            cursor: not-allowed;
+        }
+
+        /* Results Section */
+        .results-section {
+            background: var(--color-bg);
+            border: 1px solid var(--color-border);
+            border-radius: var(--radius-xl);
+            padding: 24px;
+            box-shadow: var(--shadow-sm);
+            min-height: 400px;
+        }
+
+        .results-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 20px;
+            padding-bottom: 16px;
+            border-bottom: 1px solid var(--color-border);
+        }
+
+        .results-title {
+            font-size: 16px;
+            font-weight: 700;
+            color: var(--color-text-primary);
+        }
+
+        .results-count {
+            padding: 6px 12px;
+            background: var(--color-surface);
+            border: 1px solid var(--color-border);
+            border-radius: var(--radius-sm);
+            font-size: 13px;
+            font-weight: 600;
+            color: var(--color-text-secondary);
+        }
+
+        /* Business Card */
+        .business-card {
+            background: var(--color-bg);
+            border: 1px solid var(--color-border);
+            border-radius: var(--radius-lg);
+            padding: 20px;
+            margin-bottom: 16px;
+            transition: border-color 0.15s var(--ease-out), box-shadow 0.15s var(--ease-out);
+        }
+
+        .business-card:hover {
+            border-color: var(--color-border-hover);
+            box-shadow: var(--shadow-md);
+        }
+
+        .business-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            margin-bottom: 16px;
+        }
+
+        .business-title-row {
+            flex: 1;
+        }
+
+        .business-name {
+            font-size: 18px;
+            font-weight: 700;
+            color: var(--color-text-primary);
+            margin-bottom: 8px;
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            flex-wrap: wrap;
+        }
+
+        .badge {
+            padding: 4px 10px;
+            border-radius: var(--radius-sm);
+            font-size: 11px;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+
+        .badge-featured {
+            background: #fef3c7;
+            color: #92400e;
+            border: 1px solid #fde68a;
+        }
+
+        .badge-verified {
+            background: #d1fae5;
+            color: #065f46;
+            border: 1px solid #a7f3d0;
+        }
+
+        .category-tag {
+            padding: 6px 12px;
+            background: var(--color-surface);
+            border: 1px solid var(--color-border);
+            border-radius: var(--radius-sm);
+            font-size: 13px;
+            font-weight: 600;
+            color: var(--color-text-secondary);
+        }
+
+        .expand-btn {
+            width: 32px;
+            height: 32px;
+            background: var(--color-surface);
+            border: 1px solid var(--color-border);
+            border-radius: var(--radius-md);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+            transition: background-color 0.15s var(--ease-out), border-color 0.15s var(--ease-out), color 0.15s var(--ease-out);
+            color: var(--color-text-secondary);
+            flex-shrink: 0;
+        }
+
+        .expand-btn:hover {
+            background: var(--color-primary);
+            border-color: var(--color-primary);
+            color: white;
+        }
+
+        .expand-btn.active {
+            background: var(--color-primary);
+            border-color: var(--color-primary);
+            color: white;
+        }
+
+        .expand-btn i {
+            transition: transform 0.2s var(--ease-in-out);
+        }
+
+        .expand-btn.active i {
+            transform: rotate(180deg);
+        }
+
+        .business-meta {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 12px;
+            margin-bottom: 12px;
+        }
+
+        .meta-item {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            font-size: 14px;
+            color: var(--color-text-secondary);
+        }
+
+        .meta-icon {
+            width: 16px;
+            text-align: center;
+            color: var(--color-text-tertiary);
+        }
+
+        .business-description {
+            color: var(--color-text-secondary);
+            line-height: 1.6;
+            font-size: 14px;
+        }
+
+        .business-details {
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.3s var(--ease-in-out);
+        }
+
+        .business-details.show {
+            max-height: 5000px;
+        }
+
+        .details-content {
+            padding-top: 20px;
+            border-top: 1px solid var(--color-border);
+            margin-top: 16px;
+        }
+
+        .detail-section {
+            margin-bottom: 24px;
+        }
+
+        .detail-section h3 {
+            font-size: 14px;
+            font-weight: 700;
+            color: var(--color-text-primary);
+            margin-bottom: 12px;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .detail-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 12px;
+            background: var(--color-surface);
+            padding: 16px;
+            border-radius: var(--radius-md);
+            border: 1px solid var(--color-border);
+        }
+
+        .detail-item {
+            display: flex;
+            align-items: flex-start;
+            gap: 8px;
+            font-size: 14px;
+            color: var(--color-text-secondary);
+        }
+
+        .detail-item strong {
+            color: var(--color-text-primary);
+            font-weight: 600;
+        }
+
+        .detail-item a {
+            color: var(--color-primary);
+            text-decoration: none;
+            font-weight: 600;
+        }
+
+        .detail-item a:hover {
+            text-decoration: underline;
+        }
+
+        .hours-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(110px, 1fr));
+            gap: 8px;
+        }
+
+        .hour-card {
+            background: var(--color-bg);
+            padding: 12px;
+            border-radius: var(--radius-md);
+            border: 1px solid var(--color-border);
+            text-align: center;
+            transition: border-color 0.15s var(--ease-out);
+        }
+
+        .hour-card:hover {
+            border-color: var(--color-border-hover);
+        }
+
+        .hour-day {
+            font-weight: 700;
+            font-size: 12px;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            margin-bottom: 6px;
+            color: var(--color-text-primary);
+        }
+
+        .hour-time {
+            color: var(--color-text-secondary);
+            font-size: 13px;
+            font-weight: 500;
+        }
+
+        .tags-container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 8px;
+        }
+
+        .tag {
+            padding: 6px 12px;
+            background: var(--color-surface);
+            border: 1px solid var(--color-border);
+            border-radius: var(--radius-sm);
+            font-size: 13px;
+            font-weight: 600;
+            color: var(--color-text-secondary);
+            transition: background-color 0.15s var(--ease-out), border-color 0.15s var(--ease-out), color 0.15s var(--ease-out);
+            cursor: pointer;
+        }
+
+        .tag:hover {
+            background: var(--color-primary-light);
+            border-color: var(--color-primary);
+            color: var(--color-primary);
+        }
+
+        .reviews-container {
+            display: grid;
+            gap: 12px;
+        }
+
+        .review-card {
+            background: var(--color-surface);
+            padding: 16px;
+            border-radius: var(--radius-md);
+            border-left: 3px solid var(--color-primary);
+            transition: background-color 0.15s var(--ease-out);
+        }
+
+        .review-card:hover {
+            background: var(--color-bg);
+        }
+
+        .review-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            margin-bottom: 12px;
+        }
+
+        .review-author {
+            font-weight: 700;
+            font-size: 14px;
+            color: var(--color-text-primary);
+        }
+
+        .review-role {
+            color: var(--color-text-secondary);
+            font-size: 13px;
+            font-weight: 500;
+        }
+
+        .review-rating {
+            color: var(--color-warning);
+            font-size: 14px;
+        }
+
+        .review-date {
+            font-size: 12px;
+            color: var(--color-text-tertiary);
+            margin-top: 4px;
+        }
+
+        .review-text {
+            color: var(--color-text-secondary);
+            line-height: 1.6;
+            font-size: 14px;
+        }
+
+        .action-buttons {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 12px;
+            margin-top: 20px;
+        }
+
+        .action-btn {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            padding: 10px 16px;
+            border-radius: var(--radius-md);
+            font-size: 14px;
+            font-weight: 600;
+            text-decoration: none;
+            transition: background-color 0.15s var(--ease-out), box-shadow 0.15s var(--ease-out);
+            border: 1px solid;
+        }
+
+        .action-btn-primary {
+            background: var(--color-primary);
+            border-color: var(--color-primary);
+            color: white;
+        }
+
+        .action-btn-primary:hover {
+            background: var(--color-primary-hover);
+            box-shadow: 0 4px 12px rgba(37, 99, 235, 0.2);
+        }
+
+        .action-btn-primary:active {
+            background: #1e40af;
+        }
+
+        .action-btn-success {
+            background: var(--color-success);
+            border-color: var(--color-success);
+            color: white;
+        }
+
+        .action-btn-success:hover {
+            background: #15803d;
+            box-shadow: 0 4px 12px rgba(22, 163, 74, 0.2);
+        }
+
+        .action-btn-success:active {
+            background: #166534;
+        }
+
+        .action-btn-danger {
+            background: var(--color-danger);
+            border-color: var(--color-danger);
+            color: white;
+        }
+
+        .action-btn-danger:hover {
+            background: #b91c1c;
+            box-shadow: 0 4px 12px rgba(220, 38, 38, 0.2);
+        }
+
+        .action-btn-danger:active {
+            background: #991b1b;
+        }
+
+        .loading-state, .empty-state {
+            text-align: center;
+            padding: 60px 20px;
+        }
+
+        .spinner {
+            width: 48px;
+            height: 48px;
+            border: 3px solid var(--color-border);
+            border-top-color: var(--color-primary);
+            border-radius: 50%;
+            animation: spin 0.8s linear infinite;
+            margin: 0 auto 16px;
+        }
+
+        @keyframes spin {
+            to { transform: rotate(360deg); }
+        }
+
+        .loading-text, .empty-text {
+            font-size: 14px;
+            color: var(--color-text-secondary);
+            font-weight: 600;
+        }
+
+        .empty-icon {
+            font-size: 48px;
+            color: var(--color-text-tertiary);
+            margin-bottom: 16px;
+        }
+
+        .error-state {
+            background: #fef2f2;
+            border: 1px solid #fecaca;
+            border-radius: var(--radius-md);
+            padding: 16px;
+            color: var(--color-danger);
+        }
+
+        .error-state strong {
+            display: block;
+            font-size: 14px;
+            margin-bottom: 8px;
+            font-weight: 700;
+        }
+
+        /* Toast Notification */
+        .toast {
+            position: fixed;
+            bottom: 24px;
+            right: 24px;
+            background: var(--color-bg);
+            border: 1px solid var(--color-border);
+            border-radius: var(--radius-lg);
+            padding: 16px 20px;
+            box-shadow: var(--shadow-xl);
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            min-width: 300px;
+            transform: translateX(400px);
+            opacity: 0;
+            transition: transform 0.3s var(--ease-out), opacity 0.3s var(--ease-out);
+            z-index: 1000;
+        }
+
+        .toast.show {
+            transform: translateX(0);
+            opacity: 1;
+        }
+
+        .toast-icon {
+            width: 20px;
+            height: 20px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-shrink: 0;
+        }
+
+        .toast-success { border-left: 3px solid var(--color-success); }
+        .toast-error { border-left: 3px solid var(--color-danger); }
+        .toast-info { border-left: 3px solid var(--color-info); }
+
+        .toast-message {
+            flex: 1;
+            font-size: 14px;
+            font-weight: 500;
+            color: var(--color-text-primary);
+        }
+
+        /* Skeleton Loader */
+        .skeleton {
+            background: linear-gradient(90deg, var(--color-surface) 25%, var(--color-border) 50%, var(--color-surface) 75%);
+            background-size: 200% 100%;
+            animation: skeleton-loading 1.5s ease-in-out infinite;
+            border-radius: var(--radius-md);
+        }
+
+        @keyframes skeleton-loading {
+            0% { background-position: 200% 0; }
+            100% { background-position: -200% 0; }
+        }
+
+        .skeleton-card {
+            background: var(--color-bg);
+            border: 1px solid var(--color-border);
+            border-radius: var(--radius-lg);
+            padding: 20px;
+            margin-bottom: 16px;
+        }
+
+        .skeleton-title {
+            height: 24px;
+            width: 60%;
+            margin-bottom: 16px;
+        }
+
+        .skeleton-text {
+            height: 16px;
+            width: 100%;
+            margin-bottom: 8px;
+        }
+
+        .skeleton-text:last-child {
+            width: 80%;
+        }
+
+        /* Keyboard Shortcut Hint */
+        .kbd {
+            display: inline-block;
+            padding: 2px 6px;
+            background: var(--color-surface);
+            border: 1px solid var(--color-border);
+            border-radius: var(--radius-sm);
+            font-size: 11px;
+            font-weight: 600;
+            font-family: 'Inter', monospace;
+            color: var(--color-text-secondary);
+            box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05);
+        }
+
+        .shortcut-hint {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            font-size: 12px;
+            color: var(--color-text-tertiary);
+            margin-top: 12px;
+            padding-top: 12px;
+            border-top: 1px solid var(--color-border);
+        }
+
+        /* Responsive */
+        @media (max-width: 1024px) {
+            .main-content {
+                grid-template-columns: 1fr;
+            }
+
+            .stats-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+
+        @media (max-width: 768px) {
+            .container {
+                padding: 16px;
+            }
+
+            .header {
+                flex-direction: column;
+                align-items: flex-start;
+                gap: 16px;
+            }
+
+            .stats-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .form-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .business-name {
+                font-size: 16px;
+            }
+
+            .stat-value {
+                font-size: 28px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <div class="header-brand">
+                <div class="brand-logo">
+                    <i class="fas fa-map-marked-alt"></i>
+                </div>
+                <div class="brand-info">
+                    <h1>LocalFind API</h1>
+                    <p>localfind-localfind.hf.space</p>
+                </div>
+            </div>
+            <div class="status-badge">
+                <span class="status-dot"></span>
+                <span>API Online</span>
+            </div>
+        </header>
+
+        <div class="stats-grid" id="statsGrid"></div>
+
+        <div class="main-content">
+            <aside class="control-panel">
+                <h2 class="panel-title">API Explorer</h2>
+
+                <div class="form-group">
+                    <label class="form-label">Endpoint</label>
+                    <select id="endpoint">
+                        <optgroup label="General">
+                            <option value="businesses">Get All Businesses</option>
+                            <option value="categories">Get Categories</option>
+                            <option value="stats">Get Statistics</option>
+                            <option value="health">Health Check</option>
+                        </optgroup>
+                        <optgroup label="Search">
+                            <option value="search">Search Businesses</option>
+                            <option value="search_commands">List Search Commands</option>
+                            <option value="search_aliases">List Search Aliases</option>
+                        </optgroup>
+                        <optgroup label="Map &amp; Geography">
+                            <option value="map_bounds">Geographic Bounds</option>
+                            <option value="map_nearby">Nearby Businesses</option>
+                            <option value="map_center">Map Center</option>
+                        </optgroup>
+                        <optgroup label="Status &amp; Analytics">
+                            <option value="status">All Business Statuses</option>
+                            <option value="status_open">Open Businesses</option>
+                            <option value="analytics_popular">Popular Businesses</option>
+                        </optgroup>
+                        <optgroup label="Other">
+                            <option value="reviews">All Reviews</option>
+                            <option value="donation">Donation Configuration</option>
+                        </optgroup>
+                    </select>
+                </div>
+
+                <div class="form-group" id="searchGroup" style="display: none;">
+                    <label class="form-label">Search Query</label>
+                    <input type="text" id="searchQuery" placeholder="Enter search term...">
+                </div>
+
+                <div id="filterGroup">
+                    <div class="form-group">
+                        <label class="form-label">Filters</label>
+                        <div class="form-grid">
+                            <select id="filterFeatured">
+                                <option value="">All Businesses</option>
+                                <option value="true">Featured Only</option>
+                            </select>
+                            <select id="filterCategory">
+                                <option value="">All Categories</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label class="form-label">Limit Results</label>
+                        <input type="number" id="filterLimit" placeholder="Optional" min="1">
+                    </div>
+                </div>
+
+                <div class="form-group" id="mapNearbyGroup" style="display: none;">
+                    <label class="form-label">Location &amp; Radius</label>
+                    <div class="form-grid form-grid-3">
+                        <input type="number" step="any" id="mapLat" placeholder="Latitude">
+                        <input type="number" step="any" id="mapLng" placeholder="Longitude">
+                        <input type="number" step="any" id="mapRadius" placeholder="Radius (km)" value="5">
+                    </div>
+                </div>
+
+                <div class="form-group" id="mapBoundsGroup" style="display: none;">
+                    <label class="form-label">Bounding Box</label>
+                    <div class="form-grid form-grid-4">
+                        <input type="number" step="any" id="boundsNorth" placeholder="North">
+                        <input type="number" step="any" id="boundsSouth" placeholder="South">
+                        <input type="number" step="any" id="boundsEast" placeholder="East">
+                        <input type="number" step="any" id="boundsWest" placeholder="West">
+                    </div>
+                </div>
+
+                <button class="btn-primary" onclick="fetchData()">
+                    <i class="fas fa-play"></i>
+                    <span>Execute Request</span>
+                </button>
+
+                <div class="shortcut-hint">
+                    <i class="fas fa-keyboard"></i>
+                    <span>Press <kbd class="kbd">Ctrl</kbd> + <kbd class="kbd">Enter</kbd> to execute</span>
+                </div>
+            </aside>
+
+            <main class="results-section">
+                <div class="results-header">
+                    <h2 class="results-title">Results</h2>
+                    <div class="results-count" id="resultsCount"></div>
+                </div>
+                <div id="results">
+                    <div class="empty-state">
+                        <div class="empty-icon">
+                            <i class="fas fa-inbox"></i>
+                        </div>
+                        <div class="empty-text">Select an endpoint and execute request</div>
+                    </div>
+                </div>
+            </main>
+        </div>
+    </div>
+
+    <script>
+        const API_BASE = 'https://localfind-localfind.hf.space/api/v1';
+        const API_ROOT = 'https://localfind-localfind.hf.space';
+
+        // XSS Protection - Escape HTML entities
+        function escapeHtml(text) {
+            if (!text) return '';
+            const div = document.createElement('div');
+            div.textContent = text;
+            return div.innerHTML;
+        }
+
+        // Check if value exists and is not empty string
+        function hasValue(val) {
+            return val !== undefined && val !== null && val !== '';
+        }
+
+        window.addEventListener('DOMContentLoaded', () => {
+            initStatsGrid();
+            loadCategories();
+            initKeyboardShortcuts();
+            initEventDelegation();
+        });
+
+        document.getElementById('endpoint').addEventListener('change', (e) => {
+            const endpoint = e.target.value;
+            document.getElementById('searchGroup').style.display = endpoint === 'search' ? 'block' : 'none';
+            document.getElementById('filterGroup').style.display = endpoint === 'businesses' ? 'block' : 'none';
+            document.getElementById('mapNearbyGroup').style.display = endpoint === 'map_nearby' ? 'block' : 'none';
+            document.getElementById('mapBoundsGroup').style.display = endpoint === 'map_bounds' ? 'block' : 'none';
+        });
+
+        // Keyboard shortcuts
+        function initKeyboardShortcuts() {
+            document.addEventListener('keydown', (e) => {
+                // Ctrl/Cmd + Enter to execute
+                // Ctrl/Cmd + Enter to execute
+                if ((e.ctrlKey || e.metaKey) && e.key === 'Enter') {
+                    e.preventDefault();
+                    fetchData();
+                }
+                // Escape to close expanded cards
+                if (e.key === 'Escape') {
+                    document.querySelectorAll('.business-details.show').forEach(detail => {
+                        detail.classList.remove('show');
+                        const btn = detail.previousElementSibling.querySelector('.expand-btn');
+                        if (btn) btn.classList.remove('active');
+                    });
+                }
+            });
+        }
+
+        // Toast notification
+        function showToast(message, type = 'info') {
+            const existingToast = document.querySelector('.toast');
+            if (existingToast) {
+                existingToast.classList.remove('show');
+                setTimeout(() => existingToast.remove(), 300);
+            }
+
+            const toast = document.createElement('div');
+            toast.className = `toast toast-${type}`;
+            
+            const icon = type === 'success' ? 'fa-check-circle' : 
+                        type === 'error' ? 'fa-exclamation-circle' : 
+                        'fa-info-circle';
+            
+            toast.innerHTML = `
+                <div class="toast-icon">
+                    <i class="fas ${icon}" style="color: var(--color-${type})"></i>
+                </div>
+                <div class="toast-message">${escapeHtml(message)}</div>
+            `;
+            
+            document.body.appendChild(toast);
+            
+            setTimeout(() => toast.classList.add('show'), 10);
+            setTimeout(() => {
+                toast.classList.remove('show');
+                setTimeout(() => toast.remove(), 300);
+            }, 3000);
+        }
+
+        // Skeleton loader
+        function showSkeletonLoader() {
+            const resultsDiv = document.getElementById('results');
+            resultsDiv.innerHTML = Array(3).fill(0).map(() => `
+                <div class="skeleton-card">
+                    <div class="skeleton skeleton-title"></div>
+                    <div class="skeleton skeleton-text"></div>
+                    <div class="skeleton skeleton-text"></div>
+                    <div class="skeleton skeleton-text"></div>
+                </div>
+            `).join('');
+        }
+
+        async function initStatsGrid() {
+            try {
+                const [statsResp, catsResp] = await Promise.all([
+                    fetch(`${API_BASE}/analytics/stats`, { cache: 'no-store', headers: { 'Cache-Control': 'no-cache', 'Pragma': 'no-cache' } }),
+                    fetch(`${API_BASE}/categories`, { cache: 'no-store', headers: { 'Cache-Control': 'no-cache', 'Pragma': 'no-cache' } }),
+                ]);
+                const stats = statsResp.ok ? await statsResp.json() : {};
+                const cats = catsResp.ok ? await catsResp.json() : {};
+                const catCount = (cats.categories || []).length;
+                document.getElementById('statsGrid').innerHTML = `
+                    <div class="stat-card">
+                        <div class="stat-header">
+                            <span class="stat-label">Total Businesses</span>
+                            <div class="stat-icon"><i class="fas fa-building"></i></div>
+                        </div>
+                        <div class="stat-value">${stats.totalListings || 0}</div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-header">
+                            <span class="stat-label">Categories</span>
+                            <div class="stat-icon"><i class="fas fa-folder"></i></div>
+                        </div>
+                        <div class="stat-value">${catCount}</div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-header">
+                            <span class="stat-label">Total Views</span>
+                            <div class="stat-icon"><i class="fas fa-eye"></i></div>
+                        </div>
+                        <div class="stat-value">${stats.totalViews || 0}</div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-header">
+                            <span class="stat-label">Businesses Viewed</span>
+                            <div class="stat-icon"><i class="fas fa-chart-bar"></i></div>
+                        </div>
+                        <div class="stat-value">${stats.uniqueBusinessesViewed || 0}</div>
+                    </div>
+                `;
+            } catch (error) {
+                console.error('Error loading stats grid:', error);
+            }
+        }
+
+        async function loadCategories() {
+            try {
+                const response = await fetch(`${API_BASE}/categories`, {
+                    cache: 'no-store',
+                    headers: {
+                        'Cache-Control': 'no-cache',
+                        'Pragma': 'no-cache'
+                    }
+                });
+                
+                if (!response.ok) {
+                    throw new Error(`HTTP ${response.status}: ${response.statusText}`);
+                }
+                
+                const data = await response.json();
+                const cats = data.categories || [];
+                
+                const select = document.getElementById('filterCategory');
+                cats.forEach(cat => {
+                    const option = document.createElement('option');
+                    option.value = cat.slug;
+                    option.textContent = `${cat.name} (${cat.count})`;
+                    select.appendChild(option);
+                });
+            } catch (error) {
+                console.error('Error loading categories:', error);
+            }
+        }
+
+        const ENDPOINT_PATHS = {
+            businesses: 'listings',
+            categories: 'categories',
+            stats: 'analytics/stats',
+            search: 'search',
+            search_commands: 'search/commands',
+            search_aliases: 'search/aliases',
+            map_bounds: 'map/bounds',
+            map_nearby: 'map/nearby',
+            map_center: 'map/center',
+            status: 'status',
+            status_open: 'status/open',
+            analytics_popular: 'analytics/popular',
+            reviews: 'reviews',
+            donation: 'donation',
+        };
+
+        async function fetchData() {
+            const endpoint = document.getElementById('endpoint').value;
+            const resultsDiv = document.getElementById('results');
+            const resultsCount = document.getElementById('resultsCount');
+            
+            showSkeletonLoader();
+            resultsCount.textContent = '';
+            
+            try {
+                const isHealth = endpoint === 'health';
+                let url = isHealth ? `${API_ROOT}/health` : `${API_BASE}/${ENDPOINT_PATHS[endpoint] || endpoint}`;
+                const params = new URLSearchParams();
+                
+                if (endpoint === 'businesses') {
+                    const featured = document.getElementById('filterFeatured').value;
+                    const category = document.getElementById('filterCategory').value;
+                    const limit = document.getElementById('filterLimit').value;
+                    
+                    if (featured) params.append('featured', featured);
+                    if (category) params.append('category', category);
+                    if (limit) params.append('limit', limit);
+                } else if (endpoint === 'search') {
+                    const query = document.getElementById('searchQuery').value;
+                    if (!query) {
+                        resultsDiv.innerHTML = '<div class="error-state"><strong>Error</strong>Please enter a search query</div>';
+                        showToast('Please enter a search query', 'error');
+                        return;
+                    }
+                    params.append('q', query);
+                } else if (endpoint === 'map_nearby') {
+                    const lat = document.getElementById('mapLat').value;
+                    const lng = document.getElementById('mapLng').value;
+                    const radius = document.getElementById('mapRadius').value;
+                    if (!lat || !lng) {
+                        resultsDiv.innerHTML = '<div class="error-state"><strong>Error</strong>Please enter latitude and longitude</div>';
+                        showToast('Please enter latitude and longitude', 'error');
+                        return;
+                    }
+                    params.append('lat', lat);
+                    params.append('lng', lng);
+                    if (radius) params.append('radius', radius);
+                } else if (endpoint === 'map_bounds') {
+                    const north = document.getElementById('boundsNorth').value;
+                    const south = document.getElementById('boundsSouth').value;
+                    const east = document.getElementById('boundsEast').value;
+                    const west = document.getElementById('boundsWest').value;
+                    if (!north || !south || !east || !west) {
+                        resultsDiv.innerHTML = '<div class="error-state"><strong>Error</strong>Please enter all bounding box coordinates</div>';
+                        showToast('Please enter all four bounding box coordinates', 'error');
+                        return;
+                    }
+                    params.append('north', north);
+                    params.append('south', south);
+                    params.append('east', east);
+                    params.append('west', west);
+                }
+                
+                if (params.toString()) url += '?' + params.toString();
+                
+                // Add cache-busting timestamp
+                const separator = url.includes('?') ? '&' : '?';
+                url += `${separator}_t=${Date.now()}`;
+                
+                const response = await fetch(url, {
+                    cache: 'no-store',
+                    headers: {
+                        'Cache-Control': 'no-cache',
+                        'Pragma': 'no-cache'
+                    }
+                });
+                
+                if (!response.ok) {
+                    throw new Error(`HTTP ${response.status}: ${response.statusText}`);
+                }
+                
+                const data = await response.json();
+                
+                displayResults(data, endpoint);
+                showToast('Data loaded successfully', 'success');
+                
+            } catch (error) {
+                resultsDiv.innerHTML = `<div class="error-state"><strong>Error</strong>${error.message}</div>`;
+                showToast('Failed to load data', 'error');
+            }
+        }
+
+        function toggleDetails(index) {
+            const details = document.getElementById(`details-${index}`);
+            const btn = document.getElementById(`btn-${index}`);
+            
+            if (details && btn) {
+                if (details.classList.contains('show')) {
+                    details.classList.remove('show');
+                    btn.classList.remove('active');
+                } else {
+                    details.classList.add('show');
+                    btn.classList.add('active');
+                }
+            }
+        }
+
+        // Event delegation for better memory management
+        function initEventDelegation() {
+            document.getElementById('results').addEventListener('click', (e) => {
+                const expandBtn = e.target.closest('.expand-btn');
+                if (expandBtn) {
+                    const index = expandBtn.id.replace('btn-', '');
+                    toggleDetails(index);
+                }
+            });
+        }
+
+        function displayResults(data, endpoint) {
+            const resultsDiv = document.getElementById('results');
+            const resultsCount = document.getElementById('resultsCount');
+            
+            if (endpoint === 'health') {
+                resultsCount.textContent = 'System Status';
+                resultsDiv.innerHTML = `
+                    <div class="business-card">
+                        <div class="business-header">
+                            <div class="business-title-row">
+                                <div class="business-name">
+                                    <span>API Status: ${(data.status || 'unknown').toUpperCase()}</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="business-meta">
+                            <div class="meta-item">
+                                <i class="fas fa-tag meta-icon"></i>
+                                <span>Version: ${data.version || 'N/A'}</span>
+                            </div>
+                            <div class="meta-item">
+                                <i class="fas fa-calendar meta-icon"></i>
+                                <span>${data.timestamp ? new Date(data.timestamp).toLocaleString() : 'N/A'}</span>
+                            </div>
+                            <div class="meta-item">
+                                <i class="fas fa-building meta-icon"></i>
+                                <span>${data.businesses || 0} businesses</span>
+                            </div>
+                        </div>
+                    </div>
+                `;
+                return;
+            }
+            
+            if (endpoint === 'stats') {
+                resultsCount.textContent = 'API Statistics';
+                resultsDiv.innerHTML = `
+                    <div class="business-card">
+                        <div class="business-header">
+                            <div class="business-title-row">
+                                <div class="business-name">Complete Statistics</div>
+                            </div>
+                        </div>
+                        <div class="detail-grid">
+                            <div class="detail-item"><i class="fas fa-building meta-icon"></i> <strong>Total Businesses:</strong> ${data.totalListings || 0}</div>
+                            <div class="detail-item"><i class="fas fa-eye meta-icon"></i> <strong>Total Views:</strong> ${data.totalViews || 0}</div>
+                            <div class="detail-item"><i class="fas fa-chart-bar meta-icon"></i> <strong>Businesses Viewed:</strong> ${data.uniqueBusinessesViewed || 0}</div>
+                            <div class="detail-item"><i class="fas fa-fire meta-icon"></i> <strong>Popular Count:</strong> ${(data.popular || []).length}</div>
+                        </div>
+                    </div>
+                `;
+                return;
+            }
+            
+            if (endpoint === 'categories') {
+                const catList = data.categories || data.data || [];
+                resultsCount.textContent = `${data.total || catList.length} Categories`;
+                resultsDiv.innerHTML = catList.map(cat => `
+                    <div class="business-card">
+                        <div class="business-header">
+                            <div class="business-title-row">
+                                <div class="business-name">${cat.name}</div>
+                            </div>
+                        </div>
+                        <div class="business-meta">
+                            <div class="meta-item">
+                                <i class="fas fa-tag meta-icon"></i>
+                                <span>Slug: <strong>${cat.slug}</strong></span>
+                            </div>
+                            <div class="meta-item">
+                                <i class="fas fa-chart-bar meta-icon"></i>
+                                <span><strong>${cat.count}</strong> businesses</span>
+                            </div>
+                        </div>
+                    </div>
+                `).join('');
+                return;
+            }
+
+            if (endpoint === 'search_commands') {
+                resultsCount.textContent = `${data.total} Commands Available`;
+                resultsDiv.innerHTML = data.commands.map(cmd => `
+                    <div class="business-card">
+                        <div class="business-header">
+                            <div class="business-title-row">
+                                <div class="business-name"><code style="background:var(--color-surface);padding:2px 8px;border-radius:4px;font-size:0.9rem;">${escapeHtml(cmd.command)}</code></div>
+                            </div>
+                        </div>
+                        <div class="business-meta">
+                            <div class="meta-item">
+                                <i class="fas fa-tag meta-icon"></i>
+                                <span><strong>${escapeHtml(cmd.label)}</strong></span>
+                            </div>
+                            <div class="meta-item">
+                                <i class="fas fa-code meta-icon"></i>
+                                <span>${escapeHtml(cmd.property)}</span>
+                            </div>
+                        </div>
+                    </div>
+                `).join('');
+                return;
+            }
+
+            if (endpoint === 'search_aliases') {
+                const aliasEntries = Object.entries(data.aliases || {});
+                resultsCount.textContent = `${data.total} Alias Groups`;
+                resultsDiv.innerHTML = aliasEntries.map(([term, aliases]) => `
+                    <div class="business-card">
+                        <div class="business-header">
+                            <div class="business-title-row">
+                                <div class="business-name" style="font-size:0.95rem;">${escapeHtml(term)}</div>
+                                <span class="category-tag">${Array.isArray(aliases) ? aliases.length : 0}</span>
+                            </div>
+                        </div>
+                        <div class="business-meta">
+                            <div class="meta-item" style="word-break:break-all;">
+                                <i class="fas fa-sync-alt meta-icon"></i>
+                                <span>${Array.isArray(aliases) ? aliases.map(a => `<code style="background:var(--color-surface);padding:1px 6px;border-radius:3px;font-size:0.8rem;margin:0 2px;">${escapeHtml(String(a))}</code>`).join(' ') : escapeHtml(String(aliases))}</span>
+                            </div>
+                        </div>
+                    </div>
+                `).join('');
+                return;
+            }
+
+            if (endpoint === 'map_center') {
+                resultsCount.textContent = 'Map Center';
+                resultsDiv.innerHTML = `
+                    <div class="business-card">
+                        <div class="business-header">
+                            <div class="business-title-row">
+                                <div class="business-name">Map Configuration</div>
+                            </div>
+                        </div>
+                        <div class="detail-grid">
+                            <div class="detail-item"><i class="fas fa-map-pin meta-icon"></i> <strong>Latitude:</strong> ${data.latitude}</div>
+                            <div class="detail-item"><i class="fas fa-map-pin meta-icon"></i> <strong>Longitude:</strong> ${data.longitude}</div>
+                            <div class="detail-item"><i class="fas fa-search-plus meta-icon"></i> <strong>Zoom:</strong> ${data.zoom}</div>
+                            <div class="detail-item"><i class="fas fa-map-marked-alt meta-icon"></i> <strong>Area:</strong> ${escapeHtml(data.areaName)}</div>
+                        </div>
+                    </div>
+                `;
+                return;
+            }
+
+            if (endpoint === 'status') {
+                resultsCount.textContent = `${data.total} Businesses`;
+                resultsDiv.innerHTML = (data.statuses || []).map(s => `
+                    <div class="business-card">
+                        <div class="business-header">
+                            <div class="business-title-row">
+                                <div class="business-name" style="font-size:0.95rem;">${escapeHtml(s.businessName)}</div>
+                                <span class="category-tag" style="background:${s.isOpen ? 'var(--color-success-light)' : 'var(--color-danger-light)'};color:${s.isOpen ? 'var(--color-success)' : 'var(--color-danger)'};">${s.isOpen ? 'OPEN' : 'CLOSED'}</span>
+                            </div>
+                        </div>
+                        <div class="business-meta">
+                            <div class="meta-item"><i class="fas fa-clock meta-icon"></i><span>${escapeHtml(s.message || '')}</span></div>
+                            ${s.nextChange ? `<div class="meta-item"><i class="fas fa-hourglass-half meta-icon"></i><span>Next: ${escapeHtml(s.nextChange)}</span></div>` : ''}
+                        </div>
+                    </div>
+                `).join('');
+                return;
+            }
+
+            if (endpoint === 'status_open') {
+                const items = data.businesses || [];
+                resultsCount.textContent = `${data.total} Open Businesses`;
+                if (items.length === 0) {
+                    resultsDiv.innerHTML = '<div class="empty-state"><div class="empty-icon"><i class="fas fa-door-closed"></i></div><div class="empty-text">No businesses are currently open</div></div>';
+                    return;
+                }
+                resultsDiv.innerHTML = items.map(b => `
+                    <div class="business-card">
+                        <div class="business-header">
+                            <div class="business-title-row">
+                                <div class="business-name" style="font-size:0.95rem;">${escapeHtml(b.businessName)}</div>
+                                <span class="category-tag">${b.isOpen ? 'OPEN' : 'CLOSED'}</span>
+                            </div>
+                        </div>
+                        <div class="business-meta">
+                            <div class="meta-item"><i class="fas fa-tag meta-icon"></i><span>${escapeHtml(b.category || '')}</span></div>
+                            <div class="meta-item"><i class="fas fa-clock meta-icon"></i><span>${escapeHtml(b.message || '')}</span></div>
+                            ${b.nextChange ? `<div class="meta-item"><i class="fas fa-hourglass-half meta-icon"></i><span>Next: ${escapeHtml(b.nextChange)}</span></div>` : ''}
+                        </div>
+                    </div>
+                `).join('');
+                return;
+            }
+
+            if (endpoint === 'analytics_popular') {
+                const items = data.businesses || [];
+                resultsCount.textContent = `${items.length} Most Popular`;
+                if (items.length === 0) {
+                    resultsDiv.innerHTML = '<div class="empty-state"><div class="empty-icon"><i class="fas fa-chart-bar"></i></div><div class="empty-text">No view data available yet</div></div>';
+                    return;
+                }
+                resultsDiv.innerHTML = items.map((b, index) => `
+                    <div class="business-card">
+                        <div class="business-header">
+                            <div class="business-title-row">
+                                <div class="business-name">
+                                    <span>#${index + 1}. ${escapeHtml(b.name)}</span>
+                                </div>
+                                <span class="badge badge-featured">${b.views || 0} views</span>
+                            </div>
+                        </div>
+                        <div class="business-meta">
+                            <div class="meta-item"><i class="fas fa-tag meta-icon"></i><span>${escapeHtml(b.category || '')}</span></div>
+                        </div>
+                    </div>
+                `).join('');
+                return;
+            }
+
+            if (endpoint === 'reviews') {
+                const reviews = data.reviews || [];
+                resultsCount.textContent = `${data.total} Reviews (page ${data.page || 1})`;
+                if (reviews.length === 0) {
+                    resultsDiv.innerHTML = '<div class="empty-state"><div class="empty-icon"><i class="fas fa-comments"></i></div><div class="empty-text">No reviews found</div></div>';
+                    return;
+                }
+                resultsDiv.innerHTML = reviews.map(r => `
+                    <div class="business-card">
+                        <div class="business-header">
+                            <div class="business-title-row">
+                                <div class="business-name" style="font-size:0.95rem;">${escapeHtml(r.author)}</div>
+                                <span class="category-tag">${'★'.repeat(r.rating)}${'☆'.repeat(5 - r.rating)}</span>
+                            </div>
+                        </div>
+                        <div class="business-meta">
+                            <div class="meta-item"><i class="fas fa-building meta-icon"></i><span>${escapeHtml(r.businessName)}</span></div>
+                            ${r.role ? `<div class="meta-item"><i class="fas fa-user-tag meta-icon"></i><span>${escapeHtml(r.role)}</span></div>` : ''}
+                            ${r.date ? `<div class="meta-item"><i class="fas fa-calendar meta-icon"></i><span>${escapeHtml(r.date)}</span></div>` : ''}
+                        </div>
+                        <p class="business-description">${escapeHtml(r.text || '').substring(0, 200)}</p>
+                    </div>
+                `).join('');
+                return;
+            }
+
+            if (endpoint === 'donation') {
+                resultsCount.textContent = 'Donation Configuration';
+                resultsDiv.innerHTML = `
+                    <div class="business-card">
+                        <div class="business-header">
+                            <div class="business-title-row">
+                                <div class="business-name">Support LocalFind</div>
+                            </div>
+                        </div>
+                        <div class="detail-grid">
+                            <div class="detail-item"><i class="fas fa-wallet meta-icon"></i> <strong>UPI ID:</strong> ${escapeHtml(data.upiId)}</div>
+                            <div class="detail-item"><i class="fas fa-user meta-icon"></i> <strong>Payee:</strong> ${escapeHtml(data.payeeName)}</div>
+                            <div class="detail-item"><i class="fas fa-money-bill-wave meta-icon"></i> <strong>Currency:</strong> ${data.currency}</div>
+                            <div class="detail-item" style="grid-column:1/-1;"><i class="fas fa-info-circle meta-icon"></i> <strong>Message:</strong> ${escapeHtml(data.message)}</div>
+                            <div class="detail-item" style="grid-column:1/-1;">
+                                <a href="${escapeHtml(data.upiDeepLink)}" target="_blank" rel="noopener noreferrer" class="action-btn action-btn-success" style="display:inline-flex;align-items:center;gap:8px;padding:10px 20px;border-radius:var(--radius-md);text-decoration:none;font-weight:600;font-size:0.875rem;">
+                                    <i class="fas fa-external-link-alt"></i> Open UPI App
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                `;
+                return;
+            }
+
+            if (endpoint === 'map_bounds' || endpoint === 'map_nearby') {
+            if (endpoint === 'search') {
+                const results = data.results || [];
+                resultsCount.textContent = `${data.total || results.length} search results`;
+                if (results.length === 0) {
+                    resultsDiv.innerHTML = '<div class="empty-state"><div class="empty-icon"><i class="fas fa-search"></i></div><div class="empty-text">No results found for your query</div></div>';
+                    return;
+                }
+                resultsDiv.innerHTML = results.map((b, index) => renderBusinessCard(b, index, results)).join('');
+                return;
+            }
+
+            const businesses = data.data || [];
+                resultsCount.textContent = `${data.total || businesses.length} businesses`;
+                if (businesses.length === 0) {
+                    resultsDiv.innerHTML = '<div class="empty-state"><div class="empty-icon"><i class="fas fa-map-marked-alt"></i></div><div class="empty-text">No businesses found in this area</div></div>';
+                    return;
+                }
+                resultsDiv.innerHTML = businesses.map((b, index) => renderBusinessCard(b, index, businesses)).join('');
+                return;
+            }
+
+            const businesses = data.data || [];
+            
+            if (businesses.length === 0) {
+                resultsCount.textContent = '';
+                resultsDiv.innerHTML = `
+                    <div class="empty-state">
+                        <div class="empty-icon">
+                            <i class="fas fa-search"></i>
+                        </div>
+                        <div class="empty-text">No results found</div>
+                    </div>
+                `;
+                return;
+            }
+            
+            resultsCount.textContent = `${data.count || businesses.length} of ${data.total || businesses.length} results`;
+
+            resultsDiv.innerHTML = businesses.map((business, index) => renderBusinessCard(business, index, businesses)).join('');
+        }
+
+        function renderBusinessCard(business, index, allBusinesses) {
+            return `
+                <div class="business-card">
+                    <div class="business-header">
+                        <div class="business-title-row">
+                            <div class="business-name">
+                                <span>${escapeHtml(business.name)}</span>
+                                ${business.featured ? '<span class="badge badge-featured">Featured</span>' : ''}
+                                ${business.verified ? '<span class="badge badge-verified">Verified</span>' : ''}
+                            </div>
+                            <span class="category-tag">${escapeHtml(business.category)}</span>
+                        </div>
+                        <button class="expand-btn" id="btn-${index}" data-index="${index}">
+                            <i class="fas fa-chevron-down"></i>
+                        </button>
+                    </div>
+                    
+                    <div class="business-meta">
+                        <div class="meta-item">
+                            <i class="fas fa-star meta-icon"></i>
+                            <span>${escapeHtml(String(business.rating))} (${escapeHtml(String(business.reviewCount))} reviews)</span>
+                        </div>
+                        <div class="meta-item">
+                            <i class="fas fa-phone meta-icon"></i>
+                            <span>${escapeHtml(business.phone)}${business.phoneName ? ` (${escapeHtml(business.phoneName)})` : ''}${business.phoneSecondary ? ' +' + (business.phoneThird ? '2 more' : '1 more') : ''}</span>
+                        </div>
+                        <div class="meta-item">
+                            <i class="fas fa-envelope meta-icon"></i>
+                            <span>${escapeHtml(business.email || 'N/A')}</span>
+                        </div>
+                        <div class="meta-item">
+                            <i class="fas fa-circle meta-icon"></i>
+                            <span>${escapeHtml(business.status)}</span>
+                        </div>
+                        ${business.tenants && business.tenants.length > 0 ? `<div class="meta-item"><i class="fas fa-store meta-icon"></i><span>Tenants: ${business.tenants.length}</span></div>` : ''}
+                    </div>
+                    
+                    <p class="business-description">${escapeHtml((business.description || '').substring(0, 200))}${business.description ? '...' : ''}</p>
+                    
+                    <div class="business-details" id="details-${index}">
+                        <div class="details-content">
+                            <div class="detail-section">
+                                <h3><i class="fas fa-file-alt"></i> Full Description</h3>
+                                <p style="color: var(--color-text-secondary); line-height: 1.6;">${escapeHtml(business.description || 'No description available')}</p>
+                            </div>
+
+                            <div class="detail-section">
+                                <h3><i class="fas fa-address-card"></i> Contact Information</h3>
+                                <div class="detail-grid">
+                                    <div class="detail-item"><i class="fas fa-phone meta-icon"></i> <strong>Phone:</strong> ${escapeHtml(business.phone)}${business.phoneName ? ` (${escapeHtml(business.phoneName)})` : ''}</div>
+                                    ${hasValue(business.phoneSecondary) ? `<div class="detail-item"><i class="fas fa-phone meta-icon"></i> <strong>Phone 2:</strong> ${escapeHtml(business.phoneSecondary)}${business.phoneSecondaryName ? ` (${escapeHtml(business.phoneSecondaryName)})` : ''}</div>` : ''}
+                                    ${hasValue(business.phoneThird) ? `<div class="detail-item"><i class="fas fa-phone meta-icon"></i> <strong>Phone 3:</strong> ${escapeHtml(business.phoneThird)}${business.phoneThirdName ? ` (${escapeHtml(business.phoneThirdName)})` : ''}</div>` : ''}
+                                    ${hasValue(business.phoneFourth) ? `<div class="detail-item"><i class="fas fa-phone meta-icon"></i> <strong>Phone 4:</strong> ${escapeHtml(business.phoneFourth)}${business.phoneFourthName ? ` (${escapeHtml(business.phoneFourthName)})` : ''}</div>` : ''}
+                                    ${hasValue(business.email) ? `<div class="detail-item"><i class="fas fa-envelope meta-icon"></i> <strong>Email:</strong> ${escapeHtml(business.email)}</div>` : ''}
+                                    ${hasValue(business.website) ? `<div class="detail-item"><i class="fas fa-globe meta-icon"></i> <strong>Website:</strong> <a href="${escapeHtml(business.website)}" target="_blank" rel="noopener noreferrer">Visit</a></div>` : ''}
+                                    ${hasValue(business.whatsapp) ? `<div class="detail-item"><i class="fab fa-whatsapp meta-icon"></i> <strong>WhatsApp:</strong> ${escapeHtml(business.whatsapp)}</div>` : ''}
+                                    ${hasValue(business.instagram) ? `<div class="detail-item"><i class="fab fa-instagram meta-icon"></i> <strong>Instagram:</strong> <a href="${escapeHtml(business.instagram)}" target="_blank" rel="noopener noreferrer">View</a></div>` : ''}
+                                    ${hasValue(business.youtube) ? `<div class="detail-item"><i class="fab fa-youtube meta-icon"></i> <strong>YouTube:</strong> <a href="${escapeHtml(business.youtube)}" target="_blank" rel="noopener noreferrer">Watch</a></div>` : ''}
+                                    ${hasValue(business.onlineOrder) ? `<div class="detail-item"><i class="fas fa-shopping-bag meta-icon"></i> <strong>Order Online:</strong> <a href="${escapeHtml(business.onlineOrder)}" target="_blank" rel="noopener noreferrer">Order Now</a></div>` : ''}
+                                    ${hasValue(business.zomato) ? `<div class="detail-item"><i class="fas fa-utensils meta-icon"></i> <strong>Zomato:</strong> <a href="${escapeHtml(business.zomato)}" target="_blank" rel="noopener noreferrer">Order</a></div>` : ''}
+                                    ${hasValue(business.bookMyShow) ? `<div class="detail-item"><i class="fas fa-ticket-alt meta-icon"></i> <strong>BookMyShow:</strong> <a href="${escapeHtml(business.bookMyShow)}" target="_blank" rel="noopener noreferrer">Book Tickets</a></div>` : ''}
+                                    ${hasValue(business.districtIn) ? `<div class="detail-item"><i class="fas fa-film meta-icon"></i> <strong>District.in:</strong> <a href="${escapeHtml(business.districtIn)}" target="_blank" rel="noopener noreferrer">Book Tickets</a></div>` : ''}
+                                    ${hasValue(business.bloodDonor) ? `<div class="detail-item"><i class="fas fa-tint meta-icon"></i> <strong>Blood Donor:</strong> <a href="${escapeHtml(business.bloodDonor)}" target="_blank" rel="noopener noreferrer">Register</a></div>` : ''}
+                                </div>
+                            </div>
+
+                            <div class="detail-section">
+                                <h3><i class="fas fa-map-marker-alt"></i> Location</h3>
+                                <p style="color: var(--color-text-secondary); margin-bottom: 12px;">${escapeHtml(business.address)}</p>
+                                <div class="detail-grid">
+                                    <div class="detail-item"><i class="fas fa-map-pin meta-icon"></i> <strong>Coordinates:</strong> ${escapeHtml(String(business.coordinates.lat))}, ${escapeHtml(String(business.coordinates.lng))}</div>
+                                    ${hasValue(business.mapLink) ? `<div class="detail-item"><i class="fas fa-map meta-icon"></i> <a href="${escapeHtml(business.mapLink)}" target="_blank" rel="noopener noreferrer">Open in Google Maps</a></div>` : ''}
+                                </div>
+                            </div>
+
+                            ${business.tenants && business.tenants.length > 0 ? `
+                            <div class="detail-section">
+                                <h3><i class="fas fa-store"></i> Tenant Businesses (${business.tenants.length})</h3>
+                                <div class="reviews-container">
+                                    ${business.tenants.map(tenantId => {
+                                        const tenant = allBusinesses.find(b => b.id === tenantId);
+                                        if (!tenant) {
+                                            return `
+                                                <div class="review-card" style="border-left-color: var(--color-warning);">
+                                                    <div style="color: var(--color-text-secondary); font-size: 0.875rem;">
+                                                        <i class="fas fa-exclamation-triangle"></i> Tenant data not available in current results (ID: ${escapeHtml(String(tenantId))})
+                                                    </div>
+                                                </div>
+                                            `;
+                                        }
+                                        return `
+                                            <div class="review-card" style="border-left-color: var(--color-info);">
+                                                <div style="display: flex; justify-content: space-between; align-items: flex-start; margin-bottom: 12px;">
+                                                    <div>
+                                                        <div style="font-weight: 700; font-size: 1.0625rem; color: var(--color-text-primary); margin-bottom: 4px;">
+                                                            ${escapeHtml(tenant.name)}
+                                                        </div>
+                                                        <div style="color: var(--color-text-secondary); font-size: 0.875rem; font-weight: 500;">
+                                                            ${escapeHtml(tenant.category)}
+                                                        </div>
+                                                    </div>
+                                                    <div style="text-align: right;">
+                                                        <div style="color: #f59e0b; font-size: 0.9375rem;">★ ${escapeHtml(String(tenant.rating))}</div>
+                                                        <div style="color: var(--color-text-tertiary); font-size: 0.8125rem;">${escapeHtml(String(tenant.reviewCount))} reviews</div>
+                                                    </div>
+                                                </div>
+                                                <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 8px; margin-bottom: 8px;">
+                                                    ${tenant.phone ? `<div style="display: flex; align-items: center; gap: 6px; font-size: 0.875rem; color: var(--color-text-secondary);"><i class="fas fa-phone" style="width: 14px;"></i> ${escapeHtml(tenant.phone)}</div>` : ''}
+                                                    ${tenant.email ? `<div style="display: flex; align-items: center; gap: 6px; font-size: 0.875rem; color: var(--color-text-secondary);"><i class="fas fa-envelope" style="width: 14px;"></i> ${escapeHtml(tenant.email)}</div>` : ''}
+                                                </div>
+                                                <div style="display: flex; flex-wrap: wrap; gap: 8px; margin-top: 12px;">
+                                                    ${hasValue(tenant.phone) ? `<a href="tel:${escapeHtml(tenant.phone)}" class="action-btn action-btn-primary" style="padding: 8px 14px; font-size: 0.8125rem;"><i class="fas fa-phone"></i> Call</a>` : ''}
+                                                    ${hasValue(tenant.mapLink) ? `<a href="${escapeHtml(tenant.mapLink)}" target="_blank" rel="noopener noreferrer" class="action-btn action-btn-primary" style="padding: 8px 14px; font-size: 0.8125rem;"><i class="fas fa-map-marker-alt"></i> Directions</a>` : ''}
+                                                    ${hasValue(tenant.website) ? `<a href="${escapeHtml(tenant.website)}" target="_blank" rel="noopener noreferrer" class="action-btn action-btn-primary" style="padding: 8px 14px; font-size: 0.8125rem;"><i class="fas fa-globe"></i> Website</a>` : ''}
+                                                </div>
+                                            </div>
+                                        `;
+                                    }).join('')}
+                                </div>
+                            </div>
+                            ` : ''}
+
+                            ${business.hours ? `
+                            <div class="detail-section">
+                                <h3><i class="fas fa-clock"></i> Business Hours</h3>
+                                <div class="hours-grid">
+                                    ${Object.entries(business.hours).map(([day, hours]) => `
+                                        <div class="hour-card">
+                                            <div class="hour-day">${day}</div>
+                                            <div class="hour-time">
+                                                ${hours.open === '00:00' && hours.close === '00:00' ? 'Closed' : 
+                                                  hours.open === '00:00' && hours.close === '23:59' ? '24 Hours' :
+                                                  `${hours.open} - ${hours.close}`}
+                                            </div>
+                                        </div>
+                                    `).join('')}
+                                </div>
+                            </div>
+                            ` : ''}
+
+                            ${business.tags && business.tags.length > 0 ? `
+                            <div class="detail-section">
+                                <h3><i class="fas fa-tags"></i> Tags</h3>
+                                <div class="tags-container">
+                                    ${business.tags.map(tag => `<span class="tag">${escapeHtml(tag)}</span>`).join('')}
+                                </div>
+                            </div>
+                            ` : ''}
+
+                            ${business.reviews && business.reviews.length > 0 ? `
+                            <div class="detail-section">
+                                <h3><i class="fas fa-star"></i> Customer Reviews</h3>
+                                <div class="reviews-container">
+                                    ${business.reviews.map(review => `
+                                        <div class="review-card">
+                                            <div class="review-header">
+                                                <div>
+                                                    <div class="review-author">${escapeHtml(review.author)}</div>
+                                                    ${review.role ? `<div class="review-role">${escapeHtml(review.role)}</div>` : ''}
+                                                </div>
+                                                <div>
+                                                    <div class="review-rating">${'★'.repeat(review.rating)}${'☆'.repeat(5-review.rating)}</div>
+                                                    <div class="review-date">${escapeHtml(review.date)}</div>
+                                                </div>
+                                            </div>
+                                            <p class="review-text">${escapeHtml(review.text)}</p>
+                                        </div>
+                                    `).join('')}
+                                </div>
+                            </div>
+                            ` : ''}
+
+                            ${business.upiId ? `
+                            <div class="detail-section">
+                                <h3><i class="fas fa-credit-card"></i> Payment Information</h3>
+                                <div class="detail-grid">
+                                    <div class="detail-item"><i class="fas fa-wallet meta-icon"></i> <strong>UPI ID:</strong> ${escapeHtml(business.upiId)}</div>
+                                    ${business.upiName ? `<div class="detail-item"><i class="fas fa-user meta-icon"></i> <strong>UPI Name:</strong> ${escapeHtml(business.upiName)}</div>` : ''}
+                                </div>
+                            </div>
+                            ` : ''}
+
+                            <div class="action-buttons">
+                                ${hasValue(business.mapLink) ? `<a href="${escapeHtml(business.mapLink)}" target="_blank" rel="noopener noreferrer" class="action-btn action-btn-primary"><i class="fas fa-map-marker-alt"></i> Open in Maps</a>` : ''}
+                                ${hasValue(business.whatsapp) ? `<a href="https://wa.me/${escapeHtml(business.whatsapp.replace(/[^0-9]/g, ''))}" target="_blank" rel="noopener noreferrer" class="action-btn action-btn-success"><i class="fab fa-whatsapp"></i> WhatsApp</a>` : ''}
+                                ${hasValue(business.phone) ? `<a href="tel:${escapeHtml(business.phone)}" class="action-btn action-btn-primary"><i class="fas fa-phone"></i> Call ${escapeHtml(business.phoneName || 'Now')}</a>` : ''}
+                                ${hasValue(business.phoneSecondary) ? `<a href="tel:${escapeHtml(business.phoneSecondary)}" class="action-btn action-btn-primary"><i class="fas fa-phone"></i> Call ${escapeHtml(business.phoneSecondaryName || 'Phone 2')}</a>` : ''}
+                                ${hasValue(business.phoneThird) ? `<a href="tel:${escapeHtml(business.phoneThird)}" class="action-btn action-btn-primary"><i class="fas fa-phone"></i> Call ${escapeHtml(business.phoneThirdName || 'Phone 3')}</a>` : ''}
+                                ${hasValue(business.phoneFourth) ? `<a href="tel:${escapeHtml(business.phoneFourth)}" class="action-btn action-btn-primary"><i class="fas fa-phone"></i> Call ${escapeHtml(business.phoneFourthName || 'Phone 4')}</a>` : ''}
+                                ${hasValue(business.website) ? `<a href="${escapeHtml(business.website)}" target="_blank" rel="noopener noreferrer" class="action-btn action-btn-primary"><i class="fas fa-globe"></i> Visit Website</a>` : ''}
+                                ${hasValue(business.instagram) ? `<a href="${escapeHtml(business.instagram)}" target="_blank" rel="noopener noreferrer" class="action-btn action-btn-danger"><i class="fab fa-instagram"></i> Instagram</a>` : ''}
+                                ${hasValue(business.youtube) ? `<a href="${escapeHtml(business.youtube)}" target="_blank" rel="noopener noreferrer" class="action-btn action-btn-danger" style="background: #FF0000; border-color: #FF0000;"><i class="fab fa-youtube"></i> YouTube</a>` : ''}
+                                ${hasValue(business.onlineOrder) ? `<a href="${escapeHtml(business.onlineOrder)}" target="_blank" rel="noopener noreferrer" class="action-btn action-btn-success"><i class="fas fa-shopping-bag"></i> Order Online</a>` : ''}
+                                ${hasValue(business.zomato) ? `<a href="${escapeHtml(business.zomato)}" target="_blank" rel="noopener noreferrer" class="action-btn action-btn-danger" style="background: #E23744; border-color: #E23744;"><i class="fas fa-utensils"></i> Zomato</a>` : ''}
+                                ${hasValue(business.bookMyShow) ? `<a href="${escapeHtml(business.bookMyShow)}" target="_blank" rel="noopener noreferrer" class="action-btn action-btn-danger" style="background: #C4242B; border-color: #C4242B;"><i class="fas fa-ticket-alt"></i> BookMyShow</a>` : ''}
+                                ${hasValue(business.districtIn) ? `<a href="${escapeHtml(business.districtIn)}" target="_blank" rel="noopener noreferrer" class="action-btn action-btn-primary" style="background: #1A1A1A; border-color: #1A1A1A;"><i class="fas fa-film"></i> District.in</a>` : ''}
+                                ${hasValue(business.bloodDonor) ? `<a href="${escapeHtml(business.bloodDonor)}" target="_blank" rel="noopener noreferrer" class="action-btn action-btn-danger"><i class="fas fa-tint"></i> Blood Donor</a>` : ''}
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            `;
+        }
+    </script>
+</body>
+</html>
