@@ -2,7 +2,6 @@ class Settings:
     app_name: str = "LocalFind API"
     app_version: str = "4.3.7"
     api_prefix: str = "/api/v1"
-    contact_email: str = "hello@localfind.com"
     contact_phone: str = "+91 8004037031"
     contact_whatsapp: str = "+91 8004037031"
     contact_address: str = "Rasauli, Barabanki, Uttar Pradesh 225001"

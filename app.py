@@ -49,9 +49,8 @@ app = FastAPI(
     description=f"{settings.tagline} - API for {settings.area_name}",
     version=settings.app_version,
     contact={
-        "name": "LocalFind Team",
-        "email": settings.contact_email,
-        "url": "https://localfind.com",
+        "name": settings.site_name,
+        "url": "https://mohammad-faiz-cloud-engineer.github.io/LocalFind/index.html",
     },
     license_info={
         "name": "BSD 2-Clause License",
