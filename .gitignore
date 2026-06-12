@@ -1,0 +1,181 @@
+# ==============================
+# Python
+# ==============================
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*$py.class
+*.egg-info/
+*.egg
+dist/
+build/
+.eggs/
+lib/
+lib64/
+develop-eggs/
+downloads/
+parts/
+sdist/
+var/
+wheels/
+*.whl
+MANIFEST
+pip-log.txt
+pip-delete-this-directory.txt
+
+# ==============================
+# Virtual Environments
+# ==============================
+.venv/
+venv/
+env/
+envs/
+.venv/
+virtualenv/
+ve/
+.virtualenvs/
+
+# ==============================
+# Testing & Coverage
+# ==============================
+.pytest_cache/
+.pytest_cache
+htmlcov/
+.coverage
+.coverage.*
+coverage.xml
+*.coverage
+.cache/
+.hypothesis/
+.tox/
+testresults/
+junit/
+nosetests.xml
+pytest_report.html
+
+# ==============================
+# Environment & Secrets
+# ==============================
+.env
+.env.local
+*.env.local
+.env.production
+.env.development
+.secrets
+*.key
+*.pem
+*.crt
+*.cert
+
+# ==============================
+# IDE, Editors & OS
+# ==============================
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
+Thumbs.db
+Desktop.ini
+ehthumbs.db
+*.lnk
+.directory
+.project
+.pydevproject
+.settings/
+*.sublime-workspace
+*.sublime-project
+.vs/
+*.ntvs*
+*.njsproj
+*.sln
+*.suo
+
+# ==============================
+# Logs & Temp Files
+# ==============================
+*.log
+*.bak
+*.orig
+*.tmp
+*.temp
+*.parts
+*.cache
+*.old
+*.swp
+session:*
+
+# ==============================
+# Linting & Type Checking
+# ==============================
+.mypy_cache/
+.ruff_cache/
+.ruff_cache
+.pylintrc-output
+pytype/
+.dmypy.json
+dmypy.json
+pyrightconfig.json
+bandit-report.json
+
+# ==============================
+# Docker
+# ==============================
+.dockerignore
+
+# ==============================
+# Node.js (extract-data.cjs)
+# ==============================
+node_modules/
+package-lock.json
+yarn.lock
+pnpm-lock.yaml
+.bun
+.bun.lock
+
+# ==============================
+# Jupyter / Notebooks (if any)
+# ==============================
+.ipynb_checkpoints/
+*.ipynb_checkpoints/
+*/.ipynb_checkpoints/*
+jupyter_execute/
+
+# ==============================
+# Python profiling / debug
+# ==============================
+profile/
+prof/
+callgrind.out.*
+*.prof
+*.profile
+
+# ==============================
+# OS generated files
+# ==============================
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+
+# ==============================
+# HuggingFace
+# ==============================
+.huggingface/
+
+# ==============================
+# Project-specific
+# ==============================
+extracted-data/
+*.csv
+*.tsv
+*.xlsx
+data/raw/
+data/processed/

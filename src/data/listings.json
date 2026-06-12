@@ -1,0 +1,3037 @@
+[
+  {
+    "id": "raheem-common-service-center",
+    "name": "Raheem CSC",
+    "category": "Government Services & CSC",
+    "categorySlug": "government-services",
+    "featured": true,
+    "verified": true,
+    "status": "open",
+    "rating": 5,
+    "reviewCount": 1,
+    "coordinates": {
+      "lat": 26.9230278,
+      "lng": 81.2608333
+    },
+    "reviews": [
+      {
+        "id": "review-1",
+        "author": "Admin",
+        "role": "LocalFind Team",
+        "rating": 5,
+        "date": "2026-02-27",
+        "text": "This is the Best Common Service Center in Rasauli, personal experience.",
+        "verified": true
+      }
+    ],
+    "address": "Village & Post Rasauli, District Barabanki, Rasauli Bazar, Near Rehan Clothing Store, Uttar Pradesh 225203",
+    "mapLink": "https://maps.app.goo.gl/sHcSAkevGAPCKDhSA",
+    "phone": "+91 91405 15707",
+    "phoneName": "Raheem/Chaand",
+    "email": "moraheem862@gmail.com",
+    "website": "",
+    "whatsapp": "+91 91405 15707",
+    "whatsappName": "Raheem/Chaand",
+    "hours": {
+      "mon": {
+        "open": "09:00",
+        "close": "19:00"
+      },
+      "tue": {
+        "open": "09:00",
+        "close": "19:00"
+      },
+      "wed": {
+        "open": "09:00",
+        "close": "19:00"
+      },
+      "thu": {
+        "open": "09:00",
+        "close": "19:00"
+      },
+      "fri": {
+        "open": "00:00",
+        "close": "00:00"
+      },
+      "sat": {
+        "open": "09:00",
+        "close": "19:00"
+      },
+      "sun": {
+        "open": "09:00",
+        "close": "19:00"
+      }
+    },
+    "description": "Raheem CSC (Common Service Center) is your one-stop solution for all government and digital services in Rasauli. We provide comprehensive services including Aadhaar card enrollment and updates, PAN card applications, income certificates, caste certificates, domicile certificates, birth and death certificates, and various other government document services. We also offer banking services, bill payments, insurance services, digital payments, and online form submissions. Our experienced team, led by owner Raheem, ensures quick, reliable, and hassle-free service delivery. Visit us for all your documentation and digital service needs.",
+    "tags": [
+      "csc",
+      "aadhaar",
+      "pan-card",
+      "certificates",
+      "banking",
+      "government-services",
+      "digital-services",
+      "bill-payment"
+    ],
+    "upiId": "paytm.s1qu5dh@pty",
+    "upiName": "Raheem CSC",
+    "addedDate": "2026-02-20"
+  },
+  {
+    "id": "aman-garments",
+    "name": "Aman Garments",
+    "category": "Fashion & Apparel",
+    "categorySlug": "fashion",
+    "featured": true,
+    "verified": true,
+    "status": "open",
+    "rating": 4,
+    "reviewCount": 1,
+    "coordinates": {
+      "lat": 26.9230278,
+      "lng": 81.2609167
+    },
+    "reviews": [
+      {
+        "id": "review-1",
+        "author": "Admin",
+        "role": "LocalFind Team",
+        "rating": 4,
+        "date": "2026-02-27",
+        "text": "Excellent service with very good behaviour from the staff. The clothing quality is top-notch (A1 grade) with a great variety of options. Prices are slightly on the higher side, so don't hesitate to bargain a bit - it's worth it for the quality you get. Highly recommended for quality garments in Rasauli!",
+        "verified": true
+      }
+    ],
+    "address": "Village & Post Rasauli, District Barabanki, Rasauli Bazar, Near Raheem Common Service Center Shop, Uttar Pradesh 225203",
+    "mapLink": "https://maps.app.goo.gl/9LD5tPFQh7qdWbu17",
+    "phone": "+91 63068 84047",
+    "phoneName": "Aman Yadav",
+    "email": "amanyadav92471@gmail.com",
+    "website": "",
+    "whatsapp": "+91 63068 84047",
+    "whatsappName": "Aman Yadav",
+    "instagram": "https://www.instagram.com/aman_garments_rasauli",
+    "hours": {
+      "mon": {
+        "open": "08:00",
+        "close": "23:00"
+      },
+      "tue": {
+        "open": "08:00",
+        "close": "23:00"
+      },
+      "wed": {
+        "open": "08:00",
+        "close": "23:00"
+      },
+      "thu": {
+        "open": "08:00",
+        "close": "23:00"
+      },
+      "fri": {
+        "open": "08:00",
+        "close": "23:00"
+      },
+      "sat": {
+        "open": "08:00",
+        "close": "23:00"
+      },
+      "sun": {
+        "open": "08:00",
+        "close": "23:00"
+      }
+    },
+    "description": "Aman Garments is your premier destination for fashionable clothing and apparel in Rasauli. We offer a wide selection of traditional and modern clothing for men, women, and children. From everyday wear to special occasion outfits, our store features quality fabrics and the latest fashion trends. Whether you're looking for ethnic wear, casual clothing, or formal attire, we have something for everyone. Our friendly staff is always ready to help you find the perfect outfit that matches your style and budget. Visit us for a complete shopping experience in the heart of Rasauli Bazar.",
+    "tags": [
+      "clothing",
+      "fashion",
+      "apparel",
+      "ethnic-wear",
+      "casual-wear",
+      "formal-wear",
+      "men-clothing",
+      "women-clothing",
+      "kids-clothing"
+    ],
+    "addedDate": "2026-02-25"
+  },
+  {
+    "id": "affan-garments",
+    "name": "Affan Garments",
+    "category": "Fashion & Apparel",
+    "categorySlug": "fashion",
+    "featured": true,
+    "verified": true,
+    "status": "open",
+    "rating": 4,
+    "reviewCount": 1,
+    "coordinates": {
+      "lat": 26.9239722,
+      "lng": 81.2612222
+    },
+    "reviews": [
+      {
+        "id": "review-1",
+        "author": "Admin",
+        "role": "LocalFind Team",
+        "rating": 4,
+        "date": "2026-02-28",
+        "text": "Quality is good but you have to bargain a bit. Good collection of garments with reasonable prices after negotiation. Friendly staff and decent variety available.",
+        "verified": true
+      }
+    ],
+    "address": "Village & Post Rasauli, District Barabanki, Near Rasauli Bazar, Uttar Pradesh 225203",
+    "mapLink": "https://maps.app.goo.gl/gQxABHCE634v2JXS9",
+    "phone": "+91 84234 19973",
+    "phoneName": "Affan",
+    "phoneSecondary": "+91 63062 03254",
+    "phoneSecondaryName": "Noman",
+    "email": "",
+    "website": "",
+    "whatsapp": "+91 63062 03254",
+    "whatsappName": "Noman",
+    "hours": {
+      "mon": {
+        "open": "10:00",
+        "close": "21:00"
+      },
+      "tue": {
+        "open": "10:00",
+        "close": "21:00"
+      },
+      "wed": {
+        "open": "10:00",
+        "close": "21:00"
+      },
+      "thu": {
+        "open": "10:00",
+        "close": "21:00"
+      },
+      "fri": {
+        "open": "10:00",
+        "close": "21:00"
+      },
+      "sat": {
+        "open": "10:00",
+        "close": "21:00"
+      },
+      "sun": {
+        "open": "10:00",
+        "close": "21:00"
+      }
+    },
+    "description": "Affan Garments is your trusted destination for quality clothing and fashion apparel in Rasauli. Managed by Affan and Noman, we specialize in providing a diverse range of garments for men, women, and children. Our store features traditional ethnic wear, trendy casual outfits, and elegant formal attire to suit every occasion. We pride ourselves on offering quality fabrics and stylish designs at competitive prices. Whether you're shopping for daily wear, festive occasions, or special events, our extensive collection has something for everyone. Our knowledgeable staff is dedicated to helping you find the perfect outfit that matches your style and budget. Visit Affan Garments for a personalized shopping experience in the heart of Rasauli Bazar.",
+    "tags": [
+      "clothing",
+      "fashion",
+      "garments",
+      "ethnic-wear",
+      "casual-wear",
+      "formal-wear",
+      "men-fashion",
+      "women-fashion",
+      "kids-clothing",
+      "traditional-wear"
+    ],
+    "addedDate": "2026-03-15"
+  },
+  {
+    "id": "shariq-hashmi-electric-shop",
+    "name": "Shariq Hashmi Electric Shop",
+    "category": "Electrical Services & Repairs",
+    "categorySlug": "electrical-services",
+    "featured": true,
+    "verified": true,
+    "status": "open",
+    "rating": 5,
+    "reviewCount": 1,
+    "coordinates": {
+      "lat": 26.9249722,
+      "lng": 81.2620556
+    },
+    "reviews": [
+      {
+        "id": "review-1",
+        "author": "Admin",
+        "role": "LocalFind Team",
+        "rating": 5,
+        "date": "2026-02-27",
+        "text": "Best Electrician in the Entire Rasauli. Professional service with excellent workmanship. Behaviour is also very good and always ready to help. Highly recommended for all electrical needs!",
+        "verified": true
+      }
+    ],
+    "address": "Village & Post Rasauli, District Barabanki, Rasauli Bazar, Near Hind Pharmacy Shop, Uttar Pradesh 225203",
+    "mapLink": "https://maps.app.goo.gl/RzzAqLBvtXKWQY419",
+    "phone": "+91 72751 13274",
+    "phoneName": "Shariq Hashmi",
+    "email": "",
+    "website": "",
+    "whatsapp": "+91 72751 13274",
+    "whatsappName": "Shariq Hashmi",
+    "hours": {
+      "mon": {
+        "open": "10:00",
+        "close": "18:00"
+      },
+      "tue": {
+        "open": "10:00",
+        "close": "18:00"
+      },
+      "wed": {
+        "open": "10:00",
+        "close": "18:00"
+      },
+      "thu": {
+        "open": "10:00",
+        "close": "18:00"
+      },
+      "fri": {
+        "open": "10:00",
+        "close": "18:00"
+      },
+      "sat": {
+        "open": "10:00",
+        "close": "18:00"
+      },
+      "sun": {
+        "open": "10:00",
+        "close": "18:00"
+      }
+    },
+    "description": "Shariq Hashmi Electric Shop is your trusted electrical service provider in Rasauli, offering comprehensive solutions for residential and commercial properties. We specialize in house wiring, electrical installations, earthing systems, circuit repairs, and maintenance. Our expert team handles new setups, troubleshooting, switchboard installations, lighting fixtures, fan installations, and emergency repairs. With years of experience, we ensure safe and reliable electrical solutions using quality materials and following all safety standards. Whether you need complete rewiring or a simple repair, we deliver efficient and affordable services with excellent customer care.",
+    "tags": [
+      "electrician",
+      "electrical-services",
+      "house-wiring",
+      "earthing",
+      "electrical-repair",
+      "circuit-repair",
+      "electrical-installation",
+      "maintenance",
+      "emergency-service"
+    ],
+    "addedDate": "2026-03-15"
+  },
+  {
+    "id": "hind-pharmacy",
+    "name": "Hind Pharmacy",
+    "category": "Healthcare & Pharmacy",
+    "categorySlug": "healthcare",
+    "featured": false,
+    "verified": false,
+    "status": "open",
+    "rating": 0,
+    "reviewCount": 0,
+    "coordinates": {
+      "lat": 26.9248889,
+      "lng": 81.2620556
+    },
+    "reviews": [],
+    "address": "Village & Post Rasauli, District Barabanki, Near Galla Bazar, Uttar Pradesh 225203",
+    "mapLink": "https://maps.google.com/?q=26.9248848,81.2620547",
+    "phone": "+91 80815 88195",
+    "phoneName": "Anas",
+    "email": "",
+    "website": "",
+    "bloodDonor": "https://www.friends2support.org/",
+    "whatsapp": "+91 80815 88195",
+    "whatsappName": "Anas",
+    "hours": {
+      "mon": {
+        "open": "10:00",
+        "close": "19:00"
+      },
+      "tue": {
+        "open": "10:00",
+        "close": "19:00"
+      },
+      "wed": {
+        "open": "10:00",
+        "close": "19:00"
+      },
+      "thu": {
+        "open": "10:00",
+        "close": "19:00"
+      },
+      "fri": {
+        "open": "10:00",
+        "close": "19:00"
+      },
+      "sat": {
+        "open": "10:00",
+        "close": "19:00"
+      },
+      "sun": {
+        "open": "10:00",
+        "close": "19:00"
+      }
+    },
+    "description": "Hind Pharmacy is your trusted healthcare partner in Rasauli, managed by Anas. We stock prescription medications, over-the-counter medicines, health supplements, vitamins, and wellness products. Our experienced pharmacists provide expert consultation on medication usage, dosage, and drug interactions. We offer prescription filling, medicine home delivery, health check-ups, and medical equipment sales. All medicines are sourced from authorized distributors with strict quality standards. We also provide first-aid supplies, baby care, personal care, and diabetic care products. Contact Anas for accurate dispensing, competitive pricing, and friendly service for all your healthcare needs.",
+    "tags": [
+      "pharmacy",
+      "medicines",
+      "healthcare",
+      "prescription",
+      "medical-store",
+      "health-supplements",
+      "wellness",
+      "first-aid",
+      "medical-equipment"
+    ],
+    "addedDate": "2026-03-15"
+  },
+  {
+    "id": "abdul-hospital",
+    "name": "Abdul Hospital",
+    "category": "Healthcare & Medical Services",
+    "categorySlug": "healthcare",
+    "featured": true,
+    "verified": true,
+    "status": "open",
+    "rating": 5,
+    "reviewCount": 1,
+    "coordinates": {
+      "lat": 26.9246097,
+      "lng": 81.2619726
+    },
+    "reviews": [
+      {
+        "id": "review-1",
+        "author": "Admin",
+        "role": "LocalFind Team",
+        "rating": 5,
+        "date": "2026-02-28",
+        "text": "Excellent medical care for common health issues and emergencies with professional, caring staff. For very serious conditions, consult larger multi-specialty hospitals. Reliable choice for routine healthcare and minor emergencies in Rasauli.",
+        "verified": true
+      }
+    ],
+    "address": "Village & Post Rasauli, District Barabanki, W7F6+RQX, Rasauli Bazar, Near Hind Pharmacy, Uttar Pradesh 225203",
+    "mapLink": "https://maps.app.goo.gl/Ga6CQSChfh1UZK1w8",
+    "phone": "+91 96215 27752",
+    "phoneName": "Doctor Meraz/Chand Babu",
+    "email": "abdulhospital786@gmail.com",
+    "website": "https://abdulhospitalwebsite.blogspot.com/",
+    "bloodDonor": "https://www.friends2support.org/",
+    "whatsapp": "+91 96215 27752",
+    "whatsappName": "Doctor Meraz/Chand Babu",
+    "whatsappSecondary": "+91 6391923121",
+    "whatsappSecondaryName": "Amir",
+    "hours": {
+      "mon": {
+        "open": "00:00",
+        "close": "23:59"
+      },
+      "tue": {
+        "open": "00:00",
+        "close": "23:59"
+      },
+      "wed": {
+        "open": "00:00",
+        "close": "23:59"
+      },
+      "thu": {
+        "open": "00:00",
+        "close": "23:59"
+      },
+      "fri": {
+        "open": "00:00",
+        "close": "23:59"
+      },
+      "sat": {
+        "open": "00:00",
+        "close": "23:59"
+      },
+      "sun": {
+        "open": "00:00",
+        "close": "23:59"
+      }
+    },
+    "description": "Abdul Hospital is a trusted 24/7 healthcare facility in Rasauli. We provide emergency care, general medicine, diagnostic services, and treatment for various conditions. Our experienced doctors, nurses, and staff offer emergency treatment, outpatient consultations, minor surgeries, lab tests, X-ray, pharmacy, and patient admission. We treat common illnesses, injuries, fever, infections, and provide maternal and child healthcare. Available round the clock for all your healthcare needs.",
+    "tags": [
+      "hospital",
+      "emergency-care",
+      "24x7",
+      "medical-services",
+      "healthcare",
+      "doctor",
+      "clinic",
+      "diagnostic",
+      "laboratory",
+      "patient-care"
+    ],
+    "addedDate": "2026-03-15"
+  },
+  {
+    "id": "rajju-pankaj-sweets",
+    "name": "Rajju/Pankaj Sweets",
+    "category": "Food & Beverages",
+    "categorySlug": "food-beverages",
+    "featured": true,
+    "verified": true,
+    "status": "open",
+    "rating": 5,
+    "reviewCount": 1,
+    "coordinates": {
+      "lat": 26.924135,
+      "lng": 81.2614237
+    },
+    "reviews": [
+      {
+        "id": "review-1",
+        "author": "Admin",
+        "role": "LocalFind Team",
+        "rating": 5,
+        "date": "2026-02-28",
+        "text": "Best sweet shop in Rasauli! Sweets are delicious and authentic with premium ingredients. Ice cream is fantastic with rich flavors. Namkeen is fresh and crispy. Custom cakes are beautifully crafted. Excellent hygiene, friendly staff, reasonable prices. Everything made fresh daily. A must-visit!",
+        "verified": true
+      }
+    ],
+    "address": "Village & Post Rasauli, District Barabanki, near Rasauli bazar, W7F6+MH Rasauli, Uttar Pradesh 225203",
+    "mapLink": "https://maps.app.goo.gl/MqywkZjACsXtBGdT9",
+    "phone": "+91 99356 86532",
+    "phoneName": "Pankaj/Rajju",
+    "email": "",
+    "website": "",
+    "whatsapp": "+91 99356 86532",
+    "whatsappName": "Pankaj/Rajju",
+    "hours": {
+      "mon": {
+        "open": "08:00",
+        "close": "21:00"
+      },
+      "tue": {
+        "open": "08:00",
+        "close": "21:00"
+      },
+      "wed": {
+        "open": "08:00",
+        "close": "21:00"
+      },
+      "thu": {
+        "open": "08:00",
+        "close": "21:00"
+      },
+      "fri": {
+        "open": "08:00",
+        "close": "21:00"
+      },
+      "sat": {
+        "open": "08:00",
+        "close": "21:00"
+      },
+      "sun": {
+        "open": "08:00",
+        "close": "21:00"
+      }
+    },
+    "description": "Rajju/Pankaj Sweets is the premier destination for authentic Indian sweets in Rasauli. We specialize in traditional sweets, premium ice creams, savory namkeen, custom cakes, and beverages. Each item is crafted with care for authentic flavors and freshness. Known throughout Rasauli for delicious taste and quality. Perfect for celebrations, gifts, or treating yourself. Visit us for the best sweets, ice cream, namkeen, and cakes in Rasauli.",
+    "tags": [
+      "sweets",
+      "ice-cream",
+      "namkeen",
+      "cakes",
+      "desserts",
+      "beverages",
+      "indian-sweets",
+      "confectionery",
+      "snacks",
+      "celebration-cakes"
+    ],
+    "addedDate": "2026-03-15"
+  },
+  {
+    "id": "friend-fitness-gym",
+    "name": "Friends Fitness GYM",
+    "category": "Fitness & Wellness",
+    "categorySlug": "fitness-wellness",
+    "featured": true,
+    "verified": true,
+    "status": "open",
+    "rating": 4,
+    "reviewCount": 1,
+    "coordinates": {
+      "lat": 26.9236389,
+      "lng": 81.2541389
+    },
+    "reviews": [
+      {
+        "id": "review-1",
+        "author": "Admin",
+        "role": "LocalFind Team",
+        "rating": 4,
+        "date": "2026-02-28",
+        "text": "Best and only gym in Rasauli! Well-equipped with quality equipment. Owner Dileep Rawat provides good guidance. Visit early morning (4-7 AM) or after 8 PM to avoid crowds. Clean facilities, reasonable rates. Solid choice for fitness!",
+        "verified": true
+      }
+    ],
+    "address": "Village & Post Rasauli, District Barabanki, near Family Dhaba, Uttar Pradesh 225001",
+    "mapLink": "https://maps.app.goo.gl/SFhAjQaC6vBy29rp6",
+    "phone": "+91 88407 04318",
+    "phoneName": "Dileep Rawat",
+    "email": "rawatdilip516@gmail.com",
+    "website": "",
+    "whatsapp": "+91 88407 04318",
+    "whatsappName": "Dileep Rawat",
+    "hours": {
+      "mon": {
+        "open": "04:00",
+        "close": "07:00",
+        "open2": "18:00",
+        "close2": "22:00"
+      },
+      "tue": {
+        "open": "04:00",
+        "close": "07:00",
+        "open2": "18:00",
+        "close2": "22:00"
+      },
+      "wed": {
+        "open": "04:00",
+        "close": "07:00",
+        "open2": "18:00",
+        "close2": "22:00"
+      },
+      "thu": {
+        "open": "04:00",
+        "close": "07:00",
+        "open2": "18:00",
+        "close2": "22:00"
+      },
+      "fri": {
+        "open": "04:00",
+        "close": "07:00",
+        "open2": "18:00",
+        "close2": "22:00"
+      },
+      "sat": {
+        "open": "04:00",
+        "close": "07:00",
+        "open2": "18:00",
+        "close2": "22:00"
+      },
+      "sun": {
+        "open": "00:00",
+        "close": "00:00"
+      }
+    },
+    "description": "Friends Fitness GYM is Rasauli's premier fitness center managed by Dileep Rawat. We offer modern strength training equipment, cardio machines, functional training areas, and stretching spaces. Services include personalized workout plans, professional guidance, weight loss programs, and muscle building training. Two shifts: early morning (4-7 AM) and evening (6-10 PM). Closed Sundays. Join us today!",
+    "tags": [
+      "gym",
+      "fitness",
+      "workout",
+      "weight-training",
+      "cardio",
+      "health",
+      "bodybuilding",
+      "exercise",
+      "fitness-center",
+      "personal-training"
+    ],
+    "addedDate": "2026-03-15"
+  },
+  {
+    "id": "golden-csc",
+    "name": "Golden CSC",
+    "category": "Government Services & CSC",
+    "categorySlug": "government-services",
+    "featured": false,
+    "verified": false,
+    "status": "open",
+    "rating": 3,
+    "reviewCount": 1,
+    "coordinates": {
+      "lat": 26.9234167,
+      "lng": 81.2610556
+    },
+    "reviews": [
+      {
+        "id": "review-1",
+        "author": "Admin",
+        "role": "LocalFind Team",
+        "rating": 3,
+        "date": "2026-02-28",
+        "text": "Can handle basic services but quality is inconsistent. Expect delays. We recommend <a href='business-detail.html?id=raheem-common-service-center'>Raheem CSC</a> for reliable service. Golden CSC might help with tricky work requiring connections. Use as last resort.",
+        "verified": true
+      }
+    ],
+    "address": "Village & Post Rasauli, District Barabanki, Rasauli Bazar, Uttar Pradesh 225001",
+    "mapLink": "https://maps.app.goo.gl/Q85NLAatyrDAdiLs8",
+    "phone": "+91 82991 33983",
+    "email": "",
+    "website": "",
+    "whatsapp": "+91 82991 33983",
+    "hours": {
+      "mon": {
+        "open": "10:00",
+        "close": "19:00"
+      },
+      "tue": {
+        "open": "10:00",
+        "close": "19:00"
+      },
+      "wed": {
+        "open": "10:00",
+        "close": "19:00"
+      },
+      "thu": {
+        "open": "10:00",
+        "close": "19:00"
+      },
+      "fri": {
+        "open": "10:00",
+        "close": "19:00"
+      },
+      "sat": {
+        "open": "10:00",
+        "close": "19:00"
+      },
+      "sun": {
+        "open": "10:00",
+        "close": "19:00"
+      }
+    },
+    "description": "Golden CSC (Common Service Center) provides government and digital services in Rasauli including Aadhaar card services, PAN card applications, government certificates (income, caste, domicile), birth and death certificates, and documentation services. We handle bill payments, digital transactions, online form submissions, banking services, insurance applications, and e-governance services. We serve the community with both routine and complex cases that may require additional coordination. Visit us for your government documentation needs.",
+    "tags": [
+      "csc",
+      "common-service-center",
+      "aadhaar",
+      "pan-card",
+      "government-services",
+      "certificates",
+      "digital-services",
+      "e-governance",
+      "documentation",
+      "bill-payment"
+    ],
+    "addedDate": "2026-03-15"
+  },
+  {
+    "id": "om-dhaba",
+    "name": "Om Dhaba",
+    "category": "Restaurants & Food",
+    "categorySlug": "restaurants",
+    "featured": false,
+    "verified": false,
+    "status": "open",
+    "rating": 0,
+    "reviewCount": 0,
+    "coordinates": {
+      "lat": 26.9239213,
+      "lng": 81.2535
+    },
+    "reviews": [],
+    "address": "Barabanki, W7F3+F9P, Uttar Pradesh 225001",
+    "mapLink": "https://maps.app.goo.gl/uQGpSd1gGLf17zzo9",
+    "phone": "+91 94534 97384",
+    "phoneName": "Ram Kishor",
+    "email": "",
+    "website": "",
+    "whatsapp": "+91 94534 97384",
+    "whatsappName": "Ram Kishor",
+    "hours": {
+      "mon": {
+        "open": "00:00",
+        "close": "23:59"
+      },
+      "tue": {
+        "open": "00:00",
+        "close": "23:59"
+      },
+      "wed": {
+        "open": "00:00",
+        "close": "23:59"
+      },
+      "thu": {
+        "open": "00:00",
+        "close": "23:59"
+      },
+      "fri": {
+        "open": "00:00",
+        "close": "23:59"
+      },
+      "sat": {
+        "open": "00:00",
+        "close": "23:59"
+      },
+      "sun": {
+        "open": "00:00",
+        "close": "23:59"
+      }
+    },
+    "description": "Om Dhaba serves delicious home-style food 24/7. We specialize in traditional North Indian cuisine with genuine 'ghar jaisa swaad'. Menu features fresh rotis, parathas, dal, sabzi, rice, and dhaba favorites. Known for generous portions, affordable prices, and authentic flavors. High hygiene standards with fresh ingredients. Perfect for travelers and anyone seeking authentic dhaba food anytime!",
+    "tags": [
+      "dhaba",
+      "restaurant",
+      "food",
+      "north-indian",
+      "24x7",
+      "roadside-food",
+      "home-style",
+      "traditional-food",
+      "roti",
+      "paratha",
+      "dal",
+      "sabzi"
+    ],
+    "addedDate": "2026-03-15"
+  },
+  {
+    "id": "hala-motors",
+    "name": "Hala Motors",
+    "category": "Vehicle Repair & Service",
+    "categorySlug": "vehicle-repair",
+    "featured": true,
+    "verified": true,
+    "status": "open",
+    "rating": 5,
+    "reviewCount": 1,
+    "coordinates": {
+      "lat": 26.9226786,
+      "lng": 81.2559463
+    },
+    "reviews": [
+      {
+        "id": "review-1",
+        "author": "Admin",
+        "role": "LocalFind Team",
+        "rating": 5,
+        "date": "2026-02-28",
+        "text": "Best vehicle repair shop in Rasauli! Exceptional professionalism and quality. Skilled mechanics diagnose accurately and fix right the first time. Transparent pricing, no hidden charges. Modern tools, genuine parts, timely completion. Highly recommended!",
+        "verified": true
+      }
+    ],
+    "address": "Village & Post Rasauli District Barabanki, W7F4+39 Rasauli, Uttar Pradesh 225001",
+    "mapLink": "https://maps.app.goo.gl/dbciZvSQfX2kakkY7",
+    "phone": "+91 99186 56350",
+    "phoneName": "Anas Quraishi",
+    "email": "",
+    "website": "https://jsdl.in/DT-99NR3WOMHC7",
+    "whatsapp": "+91 99186 56350",
+    "whatsappName": "Anas Quraishi",
+    "instagram": "https://www.instagram.com/anas_farooqui_0/",
+    "hours": {
+      "mon": {
+        "open": "09:00",
+        "close": "17:00"
+      },
+      "tue": {
+        "open": "09:00",
+        "close": "17:00"
+      },
+      "wed": {
+        "open": "09:00",
+        "close": "17:00"
+      },
+      "thu": {
+        "open": "09:00",
+        "close": "17:00"
+      },
+      "fri": {
+        "open": "09:00",
+        "close": "17:00"
+      },
+      "sat": {
+        "open": "09:00",
+        "close": "17:00"
+      },
+      "sun": {
+        "open": "00:00",
+        "close": "00:00"
+      }
+    },
+    "description": "Hala Motors is Rasauli's premier vehicle repair center with skilled mechanics. We specialize in comprehensive repairs, maintenance, engine diagnostics, brake services, suspension, electrical work, and servicing for two-wheelers and four-wheelers. Services include oil changes, tire services, battery replacement, AC repair, denting and painting. We use genuine parts with transparent pricing and timely completion. Open Monday to Saturday, 9 AM to 5 PM.",
+    "tags": [
+      "vehicle-repair",
+      "car-service",
+      "bike-service",
+      "mechanic",
+      "auto-repair",
+      "garage",
+      "maintenance",
+      "two-wheeler",
+      "four-wheeler",
+      "engine-repair",
+      "brake-service"
+    ],
+    "addedDate": "2026-03-15"
+  },
+  {
+    "id": "chandra-shekhar-azad-inter-college",
+    "name": "Chandra Shekhar Azad Inter College",
+    "category": "Education & Schools",
+    "categorySlug": "education",
+    "featured": true,
+    "verified": true,
+    "status": "open",
+    "rating": 3,
+    "reviewCount": 1,
+    "coordinates": {
+      "lat": 26.9203899,
+      "lng": 81.2609952
+    },
+    "reviews": [
+      {
+        "id": "review-1",
+        "author": "Admin",
+        "role": "LocalFind Team",
+        "rating": 3,
+        "date": "2026-02-28",
+        "text": "Best UP Board school in Rasauli for Hindi and English Medium. Management is unprofessional, but some teachers are exceptional like Vikas Jaiswal sir (Math genius) and Abhey Verma sir (excellent Maths and Physics). Offers Nursery to 10th. Associated with Jay Hind Inter College for 11th-12th.",
+        "verified": true
+      }
+    ],
+    "address": "Village & Post Rasauli District Barabanki, W7C6+595, Barabanki, Uttar Pradesh 225203",
+    "mapLink": "https://maps.app.goo.gl/wEbhax3hJeygYXTq5",
+    "phone": "+91 99357 67561",
+    "phoneName": "Madhhu Bala (Principal - Below Class 9th)",
+    "phoneSecondary": "+91 94529 29640",
+    "phoneSecondaryName": "Anjali Verma (Principal - Above Class 9th)",
+    "phoneThird": "+91 90442 97030",
+    "phoneThirdName": "Lalit Kumar Verma (Manager)",
+    "phoneFourth": "+91 97932 92246",
+    "phoneFourthName": "Ravindra Kumar Babu Ji (Document Work)",
+    "email": "",
+    "website": "",
+    "instagram": "https://www.instagram.com/official_csaic_bbk/",
+    "whatsapp": "+91 99357 67561",
+    "whatsappName": "Madhhu Bala",
+    "whatsappSecondary": "+91 94529 29640",
+    "whatsappSecondaryName": "Anjali Verma",
+    "whatsappThird": "+91 90442 97030",
+    "whatsappThirdName": "Lalit Kumar Verma",
+    "whatsappFourth": "+91 97932 92246",
+    "whatsappFourthName": "Ravindra Kumar Babu Ji",
+    "hours": {
+      "mon": {
+        "open": "09:00",
+        "close": "17:00"
+      },
+      "tue": {
+        "open": "09:00",
+        "close": "17:00"
+      },
+      "wed": {
+        "open": "09:00",
+        "close": "17:00"
+      },
+      "thu": {
+        "open": "09:00",
+        "close": "17:00"
+      },
+      "fri": {
+        "open": "09:00",
+        "close": "17:00"
+      },
+      "sat": {
+        "open": "09:00",
+        "close": "17:00"
+      },
+      "sun": {
+        "open": "00:00",
+        "close": "00:00"
+      }
+    },
+    "description": "Chandra Shekhar Azad Inter College is a recognized UP Board institution offering Hindi and English Medium education from Nursery to Class 10th. For 11th-12th, we're associated with Jay Hind Inter College Barabanki. Curriculum follows UP Board syllabus with dedicated faculty. Facilities include classrooms, library, and basic infrastructure. Admissions open for Nursery to 10th. Open Monday to Saturday, 9 AM to 5 PM.",
+    "tags": [
+      "school",
+      "education",
+      "up-board",
+      "hindi-medium",
+      "english-medium",
+      "nursery",
+      "primary-school",
+      "high-school",
+      "inter-college",
+      "coaching",
+      "classes"
+    ],
+    "addedDate": "2026-03-15"
+  },
+  {
+    "id": "shri-shyam-medicals",
+    "name": "Shri Shyam Medicals",
+    "category": "Healthcare & Pharmacy",
+    "categorySlug": "healthcare",
+    "featured": false,
+    "verified": false,
+    "status": "open",
+    "rating": 0,
+    "reviewCount": 0,
+    "coordinates": {
+      "lat": 26.9242222,
+      "lng": 81.2614444
+    },
+    "reviews": [],
+    "address": "Village & Post Rasauli District, Rasauli Bazar Near Pankaj Sweets, Uttar Pradesh 225203",
+    "mapLink": "https://maps.app.goo.gl/ntCuyZaRHJ7idkMX7",
+    "phone": "+91 92609 49998",
+    "phoneName": "Aditya",
+    "phoneSecondary": "+91 88878 55405",
+    "phoneSecondaryName": "Puneet Kumar",
+    "email": "",
+    "website": "",
+    "bloodDonor": "https://www.friends2support.org/",
+    "whatsapp": "+91 92609 49998",
+    "whatsappName": "Aditya",
+    "whatsappSecondary": "+91 88878 55405",
+    "whatsappSecondaryName": "Puneet Kumar",
+    "hours": {
+      "mon": {
+        "open": "09:00",
+        "close": "21:00"
+      },
+      "tue": {
+        "open": "09:00",
+        "close": "21:00"
+      },
+      "wed": {
+        "open": "09:00",
+        "close": "21:00"
+      },
+      "thu": {
+        "open": "09:00",
+        "close": "21:00"
+      },
+      "fri": {
+        "open": "09:00",
+        "close": "21:00"
+      },
+      "sat": {
+        "open": "09:00",
+        "close": "21:00"
+      },
+      "sun": {
+        "open": "09:00",
+        "close": "21:00"
+      }
+    },
+    "description": "Shri Shyam Medicals is your trusted pharmacy near Pankaj Sweets. We stock prescription medications, OTC medicines, health supplements, vitamins, and wellness products from reputed brands. Services include prescription filling, home delivery, health monitoring devices, first-aid supplies, baby care, and diabetic care products. Open daily 9 AM to 9 PM.",
+    "tags": [
+      "pharmacy",
+      "medical-store",
+      "medicines",
+      "healthcare",
+      "prescription",
+      "health-supplements",
+      "wellness",
+      "first-aid",
+      "baby-care",
+      "diabetic-care"
+    ],
+    "addedDate": "2026-03-15"
+  },
+  {
+    "id": "satyam-footwear",
+    "name": "Satyam Footwear",
+    "category": "Fashion & Apparel",
+    "categorySlug": "fashion",
+    "featured": false,
+    "verified": false,
+    "status": "open",
+    "rating": 0,
+    "reviewCount": 0,
+    "coordinates": {
+      "lat": 26.9241667,
+      "lng": 81.2613333
+    },
+    "reviews": [],
+    "address": "Village & Post Rasauli District, Rasauli Bazar Near Pankaj Sweets, Uttar Pradesh 225203",
+    "mapLink": "https://maps.app.goo.gl/zePwKwQZytsyY6hGA",
+    "phone": "+91 63072 58274",
+    "phoneName": "Satyam Prajapati",
+    "email": "",
+    "website": "",
+    "whatsapp": "+91 63072 58274",
+    "whatsappName": "Satyam Prajapati",
+    "hours": {
+      "mon": {
+        "open": "09:00",
+        "close": "20:00"
+      },
+      "tue": {
+        "open": "09:00",
+        "close": "20:00"
+      },
+      "wed": {
+        "open": "09:00",
+        "close": "20:00"
+      },
+      "thu": {
+        "open": "09:00",
+        "close": "20:00"
+      },
+      "fri": {
+        "open": "09:00",
+        "close": "20:00"
+      },
+      "sat": {
+        "open": "09:00",
+        "close": "20:00"
+      },
+      "sun": {
+        "open": "09:00",
+        "close": "20:00"
+      }
+    },
+    "description": "Satyam Footwear offers quality footwear near Pankaj Sweets. Managed by Satyam Prajapati, we have a wide variety for men, women, and children including formal shoes, casual footwear, sports shoes, sandals, slippers, and traditional footwear. We stock trusted brands and affordable options with competitive pricing. Open daily 9 AM to 8 PM.",
+    "tags": [
+      "footwear",
+      "shoes",
+      "sandals",
+      "slippers",
+      "sports-shoes",
+      "formal-shoes",
+      "casual-footwear",
+      "fashion",
+      "men-shoes",
+      "women-shoes",
+      "kids-shoes"
+    ],
+    "addedDate": "2026-03-15"
+  },
+  {
+    "id": "khidmat-enterprises",
+    "name": "Khidmat Enterprises",
+    "category": "Furniture & Home Decor",
+    "categorySlug": "furniture",
+    "featured": true,
+    "verified": true,
+    "status": "open",
+    "rating": 5,
+    "reviewCount": 1,
+    "coordinates": {
+      "lat": 26.9231944,
+      "lng": 81.2561667
+    },
+    "reviews": [
+      {
+        "id": "review-1",
+        "author": "Admin",
+        "role": "LocalFind Team",
+        "rating": 5,
+        "date": "2026-03-02",
+        "text": "Best furniture brand in Rasauli! Top-notch A1 grade craftsmanship. Team (Faizal, Asjad, Akhlad) genuinely cares about customers. They bring any design vision to life with precision. Very reasonable pricing for premium quality. Smooth experience from consultation to delivery. Highly recommended!",
+        "verified": true
+      }
+    ],
+    "address": "Village & Post Rasauli District, Near Starting of the Over-Bridge, Uttar Pradesh 225001",
+    "mapLink": "https://maps.app.goo.gl/1ARtbuJGEiKLcnQq5",
+    "phone": "+91 82997 24104",
+    "phoneName": "Faizal",
+    "phoneSecondary": "+91 87075 15099",
+    "phoneSecondaryName": "Asjad",
+    "phoneThird": "+91 83760 50734",
+    "phoneThirdName": "Faizal (2nd number)",
+    "phoneFourth": "+91 93350 70055",
+    "phoneFourthName": "Akhlad",
+    "email": "",
+    "website": "",
+    "instagram": "https://www.instagram.com/khid.matenterprises/",
+    "youtube": "https://www.youtube.com/@k.furniturekhidmatenterpri8856/videos",
+    "whatsapp": "+91 82997 24104",
+    "whatsappName": "Faizal",
+    "whatsappSecondary": "+91 87075 15099",
+    "whatsappSecondaryName": "Asjad",
+    "whatsappThird": "+91 83760 50734",
+    "whatsappThirdName": "Faizal (2nd number)",
+    "whatsappFourth": "+91 93350 70055",
+    "whatsappFourthName": "Akhlad",
+    "hours": {
+      "mon": {
+        "open": "09:00",
+        "close": "18:00"
+      },
+      "tue": {
+        "open": "09:00",
+        "close": "18:00"
+      },
+      "wed": {
+        "open": "09:00",
+        "close": "18:00"
+      },
+      "thu": {
+        "open": "09:00",
+        "close": "18:00"
+      },
+      "fri": {
+        "open": "09:00",
+        "close": "18:00"
+      },
+      "sat": {
+        "open": "09:00",
+        "close": "18:00"
+      },
+      "sun": {
+        "open": "09:00",
+        "close": "18:00"
+      }
+    },
+    "description": "Khidmat Enterprises is Rasauli's premier custom furniture manufacturer. Led by Faizal, Asjad, and Akhlad, we create high-quality, handcrafted furniture tailored to your specifications including beds, sofas, wardrobes, dining tables, and more. We specialize in custom projects from scratch based on your vision and budget. Services include design consultation, 3D visualization, manufacturing, finishing, and installation. We work with solid wood, plywood, MDF, and engineered wood. Timely delivery and transparent pricing. Open daily 9 AM to 6 PM.",
+    "tags": [
+      "furniture",
+      "custom-furniture",
+      "beds",
+      "sofas",
+      "dressing-tables",
+      "wardrobes",
+      "home-decor",
+      "interior-design",
+      "woodwork",
+      "carpentry",
+      "custom-design"
+    ],
+    "addedDate": "2026-03-15"
+  },
+  {
+    "id": "rasauli-hardware",
+    "name": "Rasauli Hardware",
+    "category": "Hardware & Building Materials",
+    "categorySlug": "hardware",
+    "featured": true,
+    "verified": true,
+    "status": "open",
+    "rating": 5,
+    "reviewCount": 1,
+    "coordinates": {
+      "lat": 26.9230833,
+      "lng": 81.2564167
+    },
+    "reviews": [
+      {
+        "id": "review-1",
+        "author": "Admin",
+        "role": "LocalFind Team",
+        "rating": 5,
+        "date": "2026-03-02",
+        "text": "Best hardware shop in Rasauli! Only A1 grade materials. Owner Noor Alam provides exceptional service. Extensive range of wooden doors, plywood, building materials, tools, and fittings. Excellent product knowledge and honest recommendations. Highly recommended!",
+        "verified": true
+      }
+    ],
+    "address": "Village & Post Rasauli District, Near Starting of the Over-Bridge, Uttar Pradesh 225001",
+    "mapLink": "https://maps.app.goo.gl/5egeeT3KtujfWEnNA",
+    "phone": "+91 83037 39404",
+    "phoneName": "Noor Alam",
+    "email": "",
+    "website": "",
+    "whatsapp": "+91 83037 39404",
+    "whatsappName": "Noor Alam",
+    "hours": {
+      "mon": {
+        "open": "09:30",
+        "close": "18:00"
+      },
+      "tue": {
+        "open": "09:30",
+        "close": "18:00"
+      },
+      "wed": {
+        "open": "09:30",
+        "close": "18:00"
+      },
+      "thu": {
+        "open": "09:30",
+        "close": "18:00"
+      },
+      "fri": {
+        "open": "09:30",
+        "close": "18:00"
+      },
+      "sat": {
+        "open": "09:30",
+        "close": "18:00"
+      },
+      "sun": {
+        "open": "09:30",
+        "close": "18:00"
+      }
+    },
+    "description": "Rasauli Hardware is your trusted shop for hardware and building materials near the Over-Bridge. Managed by Noor Alam, we provide premium quality products including wooden doors, plywood, building hardware, sanitary fixtures, kitchen fittings, electrical items, plumbing materials, paints, tools, locks, and door fittings. We stock only A1 grade materials from reputed manufacturers. Expert consultation, competitive pricing, and reliable delivery. Open daily 9:30 AM to 6 PM.",
+    "tags": [
+      "hardware",
+      "building-materials",
+      "wooden-doors",
+      "plywood",
+      "construction",
+      "tools",
+      "paints",
+      "plumbing",
+      "electrical",
+      "home-improvement",
+      "renovation"
+    ],
+    "addedDate": "2026-03-15"
+  },
+  {
+    "id": "kartik-medical-store",
+    "name": "Kartik Medical Store",
+    "category": "Healthcare & Pharmacy",
+    "categorySlug": "healthcare",
+    "featured": false,
+    "verified": false,
+    "status": "open",
+    "rating": 0,
+    "reviewCount": 0,
+    "coordinates": {
+      "lat": 26.9231907,
+      "lng": 81.2608735
+    },
+    "reviews": [],
+    "address": "Village & Post Rasauli District, Shop No 02, Bazzar Road, Barabanki, Rasauli, Uttar Pradesh 225203",
+    "mapLink": "https://maps.app.goo.gl/yJkBVrBr9XtyGv2T6",
+    "phone": "+91 90266 16696",
+    "phoneName": "Shivam Yadav",
+    "email": "",
+    "website": "",
+    "bloodDonor": "https://www.friends2support.org/",
+    "whatsapp": "+91 90266 16696",
+    "whatsappName": "Shivam Yadav",
+    "hours": {
+      "mon": {
+        "open": "09:30",
+        "close": "22:00"
+      },
+      "tue": {
+        "open": "09:30",
+        "close": "22:00"
+      },
+      "wed": {
+        "open": "09:30",
+        "close": "22:00"
+      },
+      "thu": {
+        "open": "09:30",
+        "close": "22:00"
+      },
+      "fri": {
+        "open": "09:30",
+        "close": "22:00"
+      },
+      "sat": {
+        "open": "09:30",
+        "close": "22:00"
+      },
+      "sun": {
+        "open": "09:30",
+        "close": "22:00"
+      }
+    },
+    "description": "Kartik Medical Store is your reliable pharmacy at Shop No 02, Bazzar Road. We stock prescription medications, OTC medicines, health supplements, vitamins, and wellness products from trusted brands. Services include prescription filling, home delivery, health monitoring devices, first-aid supplies, baby care, diabetic care, and medical equipment. Open 9:30 AM to 10 PM daily. Strict quality standards and competitive pricing.",
+    "tags": [
+      "pharmacy",
+      "medical-store",
+      "medicines",
+      "healthcare",
+      "prescription",
+      "health-supplements",
+      "wellness",
+      "first-aid",
+      "baby-care",
+      "diabetic-care"
+    ],
+    "addedDate": "2026-03-15"
+  },
+  {
+    "id": "suraj-kumar-clothing-store",
+    "name": "Suraj Kumar Clothing Store",
+    "category": "Fashion & Apparel",
+    "categorySlug": "fashion",
+    "featured": false,
+    "verified": false,
+    "status": "open",
+    "rating": 0,
+    "reviewCount": 0,
+    "coordinates": {
+      "lat": 26.9246194,
+      "lng": 81.2612665
+    },
+    "reviews": [],
+    "address": "Village & Post Rasauli District, In Rasauli Bazar, Suraj Kumar Clothing Shop, Rasauli, Barabanki, Uttar Pradesh 225203",
+    "mapLink": "https://maps.app.goo.gl/aehRADgJmPL452tr5",
+    "phone": "+91 89579 61893",
+    "phoneName": "Suraj Kumar",
+    "email": "",
+    "website": "",
+    "whatsapp": "+91 89579 61893",
+    "whatsappName": "Suraj Kumar",
+    "hours": {
+      "mon": {
+        "open": "09:00",
+        "close": "20:00"
+      },
+      "tue": {
+        "open": "09:00",
+        "close": "20:00"
+      },
+      "wed": {
+        "open": "09:00",
+        "close": "20:00"
+      },
+      "thu": {
+        "open": "09:00",
+        "close": "20:00"
+      },
+      "fri": {
+        "open": "09:00",
+        "close": "20:00"
+      },
+      "sat": {
+        "open": "09:00",
+        "close": "20:00"
+      },
+      "sun": {
+        "open": "09:00",
+        "close": "20:00"
+      }
+    },
+    "description": "Suraj Kumar Clothing Store offers fashionable and affordable clothing in Rasauli Bazar for men, women, and children. Our range includes ethnic wear, casual wear, formal wear, seasonal collections, kids' clothing, fusion wear, and party wear. Quality fabrics, good stitching, and stylish designs at competitive prices. Friendly staff helps you find the perfect outfit. Open daily 9 AM to 8 PM.",
+    "tags": [
+      "clothing",
+      "fashion",
+      "garments",
+      "ethnic-wear",
+      "casual-wear",
+      "formal-wear",
+      "kids-clothing",
+      "traditional-wear",
+      "party-wear",
+      "apparel"
+    ],
+    "addedDate": "2026-03-15"
+  },
+  {
+    "id": "janta-clinic",
+    "name": "Janta Clinic",
+    "category": "Healthcare & Medical Services",
+    "categorySlug": "healthcare",
+    "featured": false,
+    "verified": false,
+    "status": "open",
+    "rating": 0,
+    "reviewCount": 0,
+    "coordinates": {
+      "lat": 26.9252745,
+      "lng": 81.2622634
+    },
+    "reviews": [],
+    "address": "Village & Post Rasauli District, In Rasauli Bazar, W7G6+4VH, Uttar Pradesh 225203",
+    "mapLink": "https://maps.app.goo.gl/qCXk6fHbr8Cei5tM7",
+    "phone": "+91 89539 85147",
+    "phoneName": "Dharmendra",
+    "email": "",
+    "website": "",
+    "bloodDonor": "https://www.friends2support.org/",
+    "whatsapp": "+91 89539 85147",
+    "whatsappName": "Dharmendra",
+    "hours": {
+      "mon": {
+        "open": "09:00",
+        "close": "20:00"
+      },
+      "tue": {
+        "open": "09:00",
+        "close": "20:00"
+      },
+      "wed": {
+        "open": "09:00",
+        "close": "20:00"
+      },
+      "thu": {
+        "open": "09:00",
+        "close": "20:00"
+      },
+      "fri": {
+        "open": "09:00",
+        "close": "20:00"
+      },
+      "sat": {
+        "open": "09:00",
+        "close": "20:00"
+      },
+      "sun": {
+        "open": "09:00",
+        "close": "20:00"
+      }
+    },
+    "description": "Janta Clinic is a trusted healthcare facility led by Dr. Dharmendra. We provide accessible and affordable healthcare including general medicine, preventive care, treatment for common illnesses, minor injury care, BP and diabetes management, respiratory treatment, pediatric care, women's health, vaccination, and specialist referrals. Basic diagnostic facilities in a clean environment. Affordable consultation fees. Open daily 9 AM to 8 PM.",
+    "tags": [
+      "clinic",
+      "healthcare",
+      "doctor",
+      "medical-services",
+      "general-medicine",
+      "consultation",
+      "health-checkup",
+      "treatment",
+      "patient-care",
+      "family-doctor"
+    ],
+    "addedDate": "2026-03-15"
+  },
+  {
+    "id": "sk-tent-light-house",
+    "name": "SK Tent & Light House",
+    "category": "Event Services & Rentals",
+    "categorySlug": "event-services",
+    "featured": true,
+    "verified": true,
+    "status": "open",
+    "rating": 5,
+    "reviewCount": 1,
+    "coordinates": {
+      "lat": 26.9257475,
+      "lng": 81.2612005
+    },
+    "reviews": [
+      {
+        "id": "review-1",
+        "author": "LocalFind Admin",
+        "role": "LocalFind Team",
+        "rating": 5,
+        "text": "Highly recommended! Exceptional professionalism and service. Comprehensive event solutions create memorable experiences. Well-maintained inventory, transparent pricing, personalized approach. Expertise in stage decoration, mandap setups, and event coordination. Trusted partner!",
+        "date": "2026-03-08",
+        "verified": true
+      }
+    ],
+    "address": "Village & Post Rasauli District, Near Primary Govt School, KATRA MOHALLA, W7G6+FF, Rasauli, Barabanki, Uttar Pradesh 225203",
+    "mapLink": "https://maps.app.goo.gl/Y3B8Q6WUctiXWezE6",
+    "phone": "+91 70071 26025",
+    "phoneName": "Mohammad Shahnawaz",
+    "phoneSecondary": "+91 72758 59970",
+    "phoneSecondaryName": "Mohammad Shahnawaz",
+    "phoneThird": "+91 96952 69513",
+    "phoneThirdName": "Chand Babu",
+    "email": "",
+    "website": "",
+    "whatsapp": "+91 70071 26025",
+    "whatsappName": "Mohammad Shahnawaz",
+    "whatsappSecondary": "+91 72758 59970",
+    "whatsappSecondaryName": "Mohammad Shahnawaz",
+    "whatsappThird": "+91 96952 69513",
+    "whatsappThirdName": "Chand Babu",
+    "instagram": "https://www.instagram.com/shahnawaz007__",
+    "hours": {
+      "mon": {
+        "open": "09:00",
+        "close": "20:00"
+      },
+      "tue": {
+        "open": "09:00",
+        "close": "20:00"
+      },
+      "wed": {
+        "open": "09:00",
+        "close": "20:00"
+      },
+      "thu": {
+        "open": "09:00",
+        "close": "20:00"
+      },
+      "fri": {
+        "open": "09:00",
+        "close": "20:00"
+      },
+      "sat": {
+        "open": "09:00",
+        "close": "20:00"
+      },
+      "sun": {
+        "open": "09:00",
+        "close": "20:00"
+      }
+    },
+    "description": "SK Tent & Light House is Rasauli's premier event decoration and rental service. We offer comprehensive tent and lighting solutions for weddings, birthdays, corporate events, and celebrations. Our inventory includes wedding tents, shamianas, decorative lighting, stage decoration, mandap decoration, seating arrangements, sound systems, catering equipment, and floral arrangements. Our experienced team works with clients to understand their vision and budget. We handle events of any scale with timely setup and high-quality materials. Located near Primary Govt School in Katra Mohalla. Open daily 9 AM to 8 PM.",
+    "tags": [
+      "tent-house",
+      "event-services",
+      "wedding-decoration",
+      "lighting",
+      "party-rentals",
+      "event-planning",
+      "shamianas",
+      "stage-decoration",
+      "catering-equipment",
+      "celebration"
+    ],
+    "upiId": "7007126025@naviaxis",
+    "upiName": "SK Tent & Light House",
+    "addedDate": "2026-03-15"
+  },
+  {
+    "id": "kfc-barabanki",
+    "name": "KFC",
+    "category": "Restaurants & Fast Food",
+    "categorySlug": "restaurants",
+    "featured": true,
+    "verified": true,
+    "status": "open",
+    "rating": 4.7,
+    "reviewCount": 0,
+    "coordinates": {
+      "lat": 26.9237173,
+      "lng": 81.2504984
+    },
+    "reviews": [],
+    "address": "Box Park International, NH 27, Ayodhya - Lucknow Rd, adjacent to Seth Mr Jaipuria School, Barabanki, Sursanda, Uttar Pradesh 225001",
+    "mapLink": "https://maps.app.goo.gl/BPzGsEjv6nz8MM6H8",
+    "phone": "+91 80427 54444",
+    "email": "",
+    "website": "https://restaurants.kfc.co.in/kfc-kfc-barabanki-restaurants-lucknow-ayodhya-road-barabanki-489849/Home?utm_source=locator&utm_medium=googleplaces",
+    "onlineOrder": "https://www.swiggy.com/menu/7012?source=sharing",
+    "whatsapp": "",
+    "disableAppointment": true,
+    "hours": {
+      "mon": {
+        "open": "11:00",
+        "close": "23:00"
+      },
+      "tue": {
+        "open": "11:00",
+        "close": "23:00"
+      },
+      "wed": {
+        "open": "11:00",
+        "close": "23:00"
+      },
+      "thu": {
+        "open": "11:00",
+        "close": "23:00"
+      },
+      "fri": {
+        "open": "11:00",
+        "close": "23:00"
+      },
+      "sat": {
+        "open": "11:00",
+        "close": "23:00"
+      },
+      "sun": {
+        "open": "11:00",
+        "close": "23:00"
+      }
+    },
+    "description": "KFC brings world-famous fried chicken to Barabanki at Box Park International on NH 27. Our menu features Original Recipe Chicken, Hot & Crispy Chicken, Zinger Burgers, Chicken Buckets, Popcorn Chicken, Wings, Rice Bowls, Wraps, and sides including Fries, Coleslaw, and Mashed Potatoes. Dine in, take away, or order online through Swiggy. Comfortable seating and family-friendly atmosphere. Open daily 11 AM to 11 PM.",
+    "tags": [
+      "kfc",
+      "fast-food",
+      "fried-chicken",
+      "burgers",
+      "restaurant",
+      "chicken",
+      "zinger",
+      "delivery",
+      "takeaway",
+      "family-dining"
+    ],
+    "addedDate": "2026-03-15",
+    "locatedInMall": "box-park-international"
+  },
+  {
+    "id": "the-hazelnut-factory-box-park",
+    "name": "The Hazelnut Factory",
+    "category": "Restaurants & Food",
+    "categorySlug": "restaurants",
+    "featured": true,
+    "verified": true,
+    "status": "open",
+    "rating": 4,
+    "reviewCount": 0,
+    "coordinates": {
+      "lat": 26.9245383,
+      "lng": 81.2490502
+    },
+    "reviews": [],
+    "address": "Box Park International, NH 27, Ayodhya - Lucknow Rd, adjacent to Seth MR Jaipuria School, Barabanki, Sursanda, Uttar Pradesh 225203",
+    "mapLink": "https://maps.app.goo.gl/qMYou36nxSVkr3wg7",
+    "phone": "+91 75184 00400",
+    "phoneName": "The Hazelnut Factory",
+    "email": "info@thehazelnutfactory.com",
+    "website": "https://thehazelnutfactory.com/",
+    "zomato": "https://www.zomato.com/barabanki/the-hazelnut-factory-barabanki-locality/order",
+    "whatsapp": "+91 75184 00400",
+    "whatsappName": "The Hazelnut Factory",
+    "disableAppointment": true,
+    "hours": {
+      "mon": {
+        "open": "08:30",
+        "close": "23:30"
+      },
+      "tue": {
+        "open": "08:30",
+        "close": "23:30"
+      },
+      "wed": {
+        "open": "08:30",
+        "close": "23:30"
+      },
+      "thu": {
+        "open": "08:30",
+        "close": "23:30"
+      },
+      "fri": {
+        "open": "08:30",
+        "close": "23:30"
+      },
+      "sat": {
+        "open": "08:30",
+        "close": "23:30"
+      },
+      "sun": {
+        "open": "08:30",
+        "close": "23:30"
+      }
+    },
+    "description": "The Hazelnut Factory is a one-stop food dreamland at Box Park International offering mouthwatering desserts, innovative sweets, specialty coffee, and a delectable food menu. Opened in 2019 in Lucknow, THF is loved by all age groups and has become the fastest growing F&B brand in Uttar Pradesh. Our state-of-the-art kitchen combines skilled artisans, modern machinery, and premium ingredients to craft exceptional baked goods, fusion mithai, namkeens, and savory items. From flaky croissants to luscious cakes, artisanal desserts to traditional sweets, we offer something for every craving. Experience our warm European interiors, spectacular packaging, and superior customer service. Order online via Zomato or visit us daily from 8:30 AM to 11:30 PM.",
+    "tags": [
+      "bakery",
+      "desserts",
+      "cafe",
+      "sweets",
+      "coffee",
+      "pastries",
+      "cakes",
+      "mithai",
+      "namkeen",
+      "restaurant",
+      "food",
+      "delivery",
+      "takeaway",
+      "european-cafe"
+    ],
+    "addedDate": "2026-04-14",
+    "locatedInMall": "box-park-international"
+  },
+  {
+    "id": "box-park-international",
+    "name": "Box Park International",
+    "category": "Shopping Mall & Entertainment",
+    "categorySlug": "shopping-mall",
+    "featured": true,
+    "verified": true,
+    "status": "open",
+    "rating": 4.7,
+    "reviewCount": 0,
+    "coordinates": {
+      "lat": 26.9247718,
+      "lng": 81.24984
+    },
+    "reviews": [],
+    "address": "Khasra No, 203 & 204, Ayodhya - Lucknow Rd, Pargana, Pratap Ganj, Barabanki, Uttar Pradesh 225203",
+    "mapLink": "https://maps.app.goo.gl/FjNzddaGYa29m9g29",
+    "phone": "",
+    "email": "care@boxpark.net.in",
+    "website": "https://boxpark.net.in/",
+    "whatsapp": "",
+    "hours": {
+      "mon": {
+        "open": "00:00",
+        "close": "23:59"
+      },
+      "tue": {
+        "open": "00:00",
+        "close": "23:59"
+      },
+      "wed": {
+        "open": "00:00",
+        "close": "23:59"
+      },
+      "thu": {
+        "open": "00:00",
+        "close": "23:59"
+      },
+      "fri": {
+        "open": "00:00",
+        "close": "23:59"
+      },
+      "sat": {
+        "open": "00:00",
+        "close": "23:59"
+      },
+      "sun": {
+        "open": "00:00",
+        "close": "23:59"
+      }
+    },
+    "description": "Box Park International is a unique shopping and entertainment destination on NH 27 Ayodhya Highway, built entirely from repurposed shipping containers. Each container is painted in bright colors with creative designs. Inside you'll find places to eat (including KFC), shop, and hang out. The open-air design gives it a relaxed vibe perfect for families. Great for meals, shopping, or Instagram photos. Open 24/7. A popular highway landmark combining sustainable design and vibrant atmosphere!",
+    "tags": [
+      "mall",
+      "shopping",
+      "entertainment",
+      "food-court",
+      "instagram",
+      "container-mall",
+      "sustainable",
+      "family-destination",
+      "highway-stop",
+      "lifestyle"
+    ],
+    "addedDate": "2026-03-15",
+    "tenants": [
+      "kfc-barabanki",
+      "the-hazelnut-factory-box-park"
+    ]
+  },
+  {
+    "id": "pps-college-of-nursing",
+    "name": "PPS College of Nursing",
+    "category": "Education & Schools",
+    "categorySlug": "education",
+    "featured": true,
+    "verified": true,
+    "status": "open",
+    "rating": 4.3,
+    "reviewCount": 0,
+    "coordinates": {
+      "lat": 26.9257332,
+      "lng": 81.2481373
+    },
+    "reviews": [],
+    "address": "W6GX+3FV, NH 27, Sursanda, Uttar Pradesh 225203",
+    "mapLink": "https://maps.app.goo.gl/5M2QxgKZQugKDdZJ7",
+    "phone": "+91 97930 55014",
+    "phoneName": "Amit Singh",
+    "email": "p.p.s.nursingcollege@gmail.com",
+    "website": "https://ppscollegeofnursing.com/",
+    "whatsapp": "+91 97930 55014",
+    "whatsappName": "Amit Singh",
+    "hours": {
+      "mon": {
+        "open": "09:00",
+        "close": "16:00"
+      },
+      "tue": {
+        "open": "09:00",
+        "close": "16:00"
+      },
+      "wed": {
+        "open": "09:00",
+        "close": "16:00"
+      },
+      "thu": {
+        "open": "09:00",
+        "close": "16:00"
+      },
+      "fri": {
+        "open": "09:00",
+        "close": "16:00"
+      },
+      "sat": {
+        "open": "09:00",
+        "close": "16:00"
+      },
+      "sun": {
+        "open": "09:00",
+        "close": "16:00"
+      }
+    },
+    "description": "PPS College of Nursing is a premier nursing education institution on NH 27 in Sursanda, Barabanki. We offer GNM, ANM, and B.Sc. Nursing programs with practical clinical experience. Campus features modern classrooms, laboratories, simulation labs, and library. Affiliations with reputed hospitals for clinical rotations. Experienced faculty of qualified nursing professionals. Curriculum meets national standards. Holistic development with academic excellence and career guidance. Placement assistance available. Contact Amit Singh for admissions. Open Monday to Sunday, 9 AM to 4 PM.",
+    "tags": [
+      "nursing-college",
+      "education",
+      "healthcare-education",
+      "gnm",
+      "anm",
+      "bsc-nursing",
+      "medical-education",
+      "nursing-course",
+      "career",
+      "healthcare"
+    ],
+    "addedDate": "2026-03-15"
+  },
+  {
+    "id": "maxwell-hospital",
+    "name": "Maxwell Hospital",
+    "category": "Healthcare & Medical Services",
+    "categorySlug": "healthcare",
+    "featured": true,
+    "verified": true,
+    "status": "open",
+    "rating": 4.7,
+    "reviewCount": 0,
+    "coordinates": {
+      "lat": 26.9254186,
+      "lng": 81.2414883
+    },
+    "reviews": [],
+    "address": "W6GR+4HQ, Barabanki, Sursanda, Uttar Pradesh 225203",
+    "mapLink": "https://maps.app.goo.gl/6pqEGygAYb9ShF1T7",
+    "phone": "+91 90449 35596",
+    "phoneName": "Amit Singh",
+    "email": "beenugupta53@gmail.com",
+    "website": "",
+    "bloodDonor": "https://www.friends2support.org/",
+    "whatsapp": "+91 90449 35596",
+    "whatsappName": "Amit Singh",
+    "hours": {
+      "mon": {
+        "open": "00:00",
+        "close": "23:59"
+      },
+      "tue": {
+        "open": "00:00",
+        "close": "23:59"
+      },
+      "wed": {
+        "open": "00:00",
+        "close": "23:59"
+      },
+      "thu": {
+        "open": "00:00",
+        "close": "23:59"
+      },
+      "fri": {
+        "open": "00:00",
+        "close": "23:59"
+      },
+      "sat": {
+        "open": "00:00",
+        "close": "23:59"
+      },
+      "sun": {
+        "open": "00:00",
+        "close": "23:59"
+      }
+    },
+    "description": "Maxwell Hospital is a trusted private healthcare facility in Sursanda, Barabanki, operating 24/7. Services include emergency care, general medicine, surgical procedures, diagnostic services, lab tests, X-ray, pharmacy, and patient admission. Experienced doctors, nurses, and staff work round the clock. We treat common illnesses, chronic diseases, injuries, infections, and provide maternal and child healthcare. Modern medical equipment with high hygiene standards. Outpatient consultations, hospitalization, complete lab tests, and in-house pharmacy. Affordable healthcare with transparent pricing. Contact Amit Singh. Available 24/7.",
+    "tags": [
+      "hospital",
+      "healthcare",
+      "emergency-care",
+      "24x7",
+      "medical-services",
+      "doctor",
+      "clinic",
+      "diagnostic",
+      "laboratory",
+      "patient-care",
+      "surgery"
+    ],
+    "addedDate": "2026-03-15"
+  },
+  {
+    "id": "saraswati-studio-makole",
+    "name": "Saraswati Studio",
+    "category": "Photography & Video Services",
+    "categorySlug": "photography",
+    "featured": true,
+    "verified": true,
+    "status": "open",
+    "rating": 4.7,
+    "reviewCount": 1,
+    "coordinates": {
+      "lat": 26.9228271,
+      "lng": 81.2605057
+    },
+    "reviews": [
+      {
+        "id": "review-1",
+        "author": "Admin",
+        "role": "LocalFind Team",
+        "rating": 4.7,
+        "date": "2026-03-06",
+        "text": "Best Studio in Rasauli! Exceptional photography and videography with professional quality. Outstanding wedding video coverage. Creative photo shoots. Also provide cup printing services. Good behavior, impressive work quality, and on-time delivery. Highly recommended!",
+        "verified": true
+      }
+    ],
+    "address": "W7F6+46J, Rasauli, Uttar Pradesh 225203",
+    "mapLink": "https://maps.app.goo.gl/2SMVb3x4BBwGb5yY7",
+    "phone": "+91 91989 12002",
+    "phoneName": "Makole",
+    "email": "",
+    "website": "",
+    "whatsapp": "+91 91989 12002",
+    "whatsappName": "Makole",
+    "hours": {
+      "mon": {
+        "open": "10:00",
+        "close": "20:00"
+      },
+      "tue": {
+        "open": "10:00",
+        "close": "20:00"
+      },
+      "wed": {
+        "open": "10:00",
+        "close": "20:00"
+      },
+      "thu": {
+        "open": "10:00",
+        "close": "20:00"
+      },
+      "fri": {
+        "open": "10:00",
+        "close": "20:00"
+      },
+      "sat": {
+        "open": "10:00",
+        "close": "20:00"
+      },
+      "sun": {
+        "open": "10:00",
+        "close": "20:00"
+      }
+    },
+    "description": "Saraswati Studio is your premier destination for professional photography and videography in Rasauli. We specialize in capturing precious moments with creativity and expertise. Services include wedding photography and videography, event photography, professional photo shoots, video production, and cup printing services for personalized mugs. Equipped with modern cameras, lighting, and editing software. We work closely with you to understand your vision and deliver exceptional results. Professional behavior, punctuality, and flexible packages. Open daily 10 AM to 8 PM.",
+    "tags": [
+      "photography",
+      "videography",
+      "studio",
+      "wedding-photography",
+      "photo-shoot",
+      "video-production",
+      "event-photography",
+      "cup-printing",
+      "printing",
+      "portraits",
+      "commercial-photography"
+    ],
+    "addedDate": "2026-03-15"
+  },
+  {
+    "id": "jamwant-mobile-shop",
+    "name": "Jamwant Mobile Shop",
+    "category": "Mobile & Electronics",
+    "categorySlug": "mobile-electronics",
+    "featured": true,
+    "verified": true,
+    "status": "open",
+    "rating": 3.8,
+    "reviewCount": 0,
+    "coordinates": {
+      "lat": 26.9226667,
+      "lng": 81.2604167
+    },
+    "reviews": [],
+    "address": "Village & Post Rasauli District Barabanki, Rasauli Bazar Road, Uttar Pradesh 225203",
+    "mapLink": "https://maps.app.goo.gl/cG5dYAkjyFKb6qTz8",
+    "phone": "+91 80906 28512",
+    "phoneName": "Jamwant Singh",
+    "email": "",
+    "website": "",
+    "whatsapp": "+91 80906 28512",
+    "whatsappName": "Jamwant Singh",
+    "hours": {
+      "mon": {
+        "open": "10:00",
+        "close": "20:00"
+      },
+      "tue": {
+        "open": "10:00",
+        "close": "20:00"
+      },
+      "wed": {
+        "open": "10:00",
+        "close": "20:00"
+      },
+      "thu": {
+        "open": "10:00",
+        "close": "20:00"
+      },
+      "fri": {
+        "open": "10:00",
+        "close": "20:00"
+      },
+      "sat": {
+        "open": "10:00",
+        "close": "20:00"
+      },
+      "sun": {
+        "open": "10:00",
+        "close": "20:00"
+      }
+    },
+    "description": "Jamwant Mobile Shop is your trusted destination for mobile phone needs in Rasauli on Rasauli Bazar Road. Managed by Jamwant Singh, we offer professional mobile repair for all brands including screen replacement, battery replacement, charging port repair, software issues, and water damage repair. We sell mobile phones from budget to premium smartphones. Extensive accessories include phone cases, tempered glass, charging cables, power banks, earphones, TWS earbuds, neckband headphones, Bluetooth speakers, mobile holders, memory cards, and more. Expert advice, warranty support, genuine products, and fair pricing. Open daily 10 AM to 8 PM.",
+    "tags": [
+      "mobile-shop",
+      "phone-repair",
+      "mobile-accessories",
+      "smartphones",
+      "earphones",
+      "tws",
+      "neckband",
+      "headphones",
+      "phone-cases",
+      "screen-protector",
+      "chargers",
+      "electronics"
+    ],
+    "addedDate": "2026-03-15"
+  },
+  {
+    "id": "sanskar-medical-store",
+    "name": "Sanskar Medical Store",
+    "category": "Healthcare & Pharmacy",
+    "categorySlug": "healthcare",
+    "featured": true,
+    "verified": true,
+    "status": "open",
+    "rating": 5,
+    "reviewCount": 1,
+    "coordinates": {
+      "lat": 26.9241131,
+      "lng": 81.2614297
+    },
+    "reviews": [
+      {
+        "id": "review-1",
+        "author": "Admin",
+        "role": "LocalFind Team",
+        "rating": 5,
+        "date": "2026-03-17",
+        "text": "Best Medical Store in the entire Rasauli. Good behaviour, professional staff, premium medicines at reasonable prices. Highly recommended!",
+        "verified": true
+      }
+    ],
+    "address": "W7F6+MH7, Rasauli, Uttar Pradesh 225203",
+    "mapLink": "https://maps.app.goo.gl/1nrKMS9NMqv9Czvj8",
+    "phone": "+91 97938 08077",
+    "phoneName": "Arjun Gupta (Bablu)",
+    "email": "",
+    "website": "",
+    "bloodDonor": "https://www.friends2support.org/",
+    "whatsapp": "+91 97938 08077",
+    "whatsappName": "Arjun Gupta (Bablu)",
+    "hours": {
+      "mon": {
+        "open": "09:00",
+        "close": "23:00"
+      },
+      "tue": {
+        "open": "09:00",
+        "close": "23:00"
+      },
+      "wed": {
+        "open": "09:00",
+        "close": "23:00"
+      },
+      "thu": {
+        "open": "09:00",
+        "close": "23:00"
+      },
+      "fri": {
+        "open": "09:00",
+        "close": "23:00"
+      },
+      "sat": {
+        "open": "09:00",
+        "close": "23:00"
+      },
+      "sun": {
+        "open": "09:00",
+        "close": "23:00"
+      }
+    },
+    "description": "Sanskar Medical Store is your trusted pharmacy in Rasauli, offering premium medicines at reasonable prices. Managed by Arjun Gupta (Bablu), we provide professional service with a knowledgeable staff. We stock prescription medications, over-the-counter medicines, health supplements, vitamins, and wellness products. Services include prescription filling, home delivery, health monitoring devices, first-aid supplies, baby care, diabetic care, and medical equipment. Open daily 9 AM to 11 PM.",
+    "tags": [
+      "pharmacy",
+      "medical-store",
+      "medicines",
+      "healthcare",
+      "prescription",
+      "health-supplements",
+      "wellness",
+      "first-aid",
+      "baby-care",
+      "diabetic-care",
+      "premium-medicines"
+    ],
+    "upiId": "Q106573417@ybl",
+    "upiName": "Arjun Gupta",
+    "addedDate": "2026-03-15"
+  },
+  {
+    "id": "shri-shyam-fast-foods",
+    "name": "Shri Shyam Fast Foods",
+    "category": "Restaurants & Food",
+    "categorySlug": "restaurants",
+    "featured": true,
+    "verified": true,
+    "status": "open",
+    "rating": 5,
+    "reviewCount": 1,
+    "coordinates": {
+      "lat": 26.923867,
+      "lng": 81.26135
+    },
+    "reviews": [
+      {
+        "id": "review-1",
+        "author": "Admin",
+        "role": "LocalFind Team",
+        "rating": 5,
+        "date": "2026-03-25",
+        "text": "Excellent fast food spot in Rasauli! The momos are absolutely delicious, and the spring rolls are crispy and fresh. Great taste, good service, and very reasonable prices. Highly recommended for quick bites and snacks!",
+        "verified": true
+      }
+    ],
+    "address": "Village & Post Rasauli, District Barabanki, Rasauli Bazar, Near Sanskar Medical Store, Uttar Pradesh 225203",
+    "mapLink": "https://maps.app.goo.gl/1TARkmnyzJ38G36TA",
+    "phone": "+91 63920 03127",
+    "phoneName": "Jatin Gupta",
+    "phoneSecondary": "+91 92353 54143",
+    "phoneSecondaryName": "Jatin Gupta",
+    "email": "",
+    "website": "",
+    "whatsapp": "+91 63920 03127",
+    "whatsappName": "Jatin Gupta",
+    "whatsappSecondary": "+91 92353 54143",
+    "whatsappSecondaryName": "Jatin Gupta",
+    "hours": {
+      "mon": {
+        "open": "10:00",
+        "close": "20:00"
+      },
+      "tue": {
+        "open": "10:00",
+        "close": "20:00"
+      },
+      "wed": {
+        "open": "10:00",
+        "close": "20:00"
+      },
+      "thu": {
+        "open": "10:00",
+        "close": "20:00"
+      },
+      "fri": {
+        "open": "10:00",
+        "close": "20:00"
+      },
+      "sat": {
+        "open": "10:00",
+        "close": "20:00"
+      },
+      "sun": {
+        "open": "10:00",
+        "close": "20:00"
+      }
+    },
+    "description": "Shri Shyam Fast Foods is the best fast food destination in Rasauli, located near Sanskar Medical Store on Rasauli Bazar. Managed by Jatin Gupta, we specialize in delicious and affordable fast food favorites. Our menu features mouth-watering momos (steamed and fried), crispy spring rolls, flavorful fried rice, juicy burgers, golden finger chips, tasty chowmein, aloo patties, and creamy macaroni. We use fresh ingredients and maintain high hygiene standards. Perfect for quick bites, snacks, or takeaway meals. Popular among students, families, and food lovers. Open daily from 10 AM to 8 PM. Visit us for great taste and excellent service!",
+    "tags": [
+      "fast-food",
+      "momos",
+      "spring-roll",
+      "fried-rice",
+      "burger",
+      "chowmein",
+      "snacks",
+      "street-food",
+      "takeaway",
+      "finger-chips",
+      "aloo-patty",
+      "macaroni"
+    ],
+    "addedDate": "2026-03-15"
+  },
+  {
+    "id": "awadh-avenue-mall",
+    "name": "Awadh Avenue Mall",
+    "category": "Shopping Mall & Entertainment",
+    "categorySlug": "shopping-mall",
+    "featured": true,
+    "verified": true,
+    "status": "open",
+    "rating": 5,
+    "reviewCount": 0,
+    "coordinates": {
+      "lat": 26.9215276,
+      "lng": 81.1742593
+    },
+    "reviews": [],
+    "address": "W5CF+QRQ, Awas Vikas Colony, Barabanki, Uttar Pradesh 225001",
+    "mapLink": "https://maps.app.goo.gl/NZwU3Lk9eNZ41u9G9",
+    "phone": "+91 93358 01239",
+    "phoneName": "Nitin Agarwal",
+    "email": "",
+    "website": "",
+    "whatsapp": "+91 93358 01239",
+    "whatsappName": "Nitin Agarwal",
+    "bookMyShow": "https://in.bookmyshow.com/cinemas/lucknow/dd-cinemas-awadh-avenue-mall-barabanki/buytickets/DCAA/20260331",
+    "districtIn": "https://www.district.in/movies/dd-cinemas-avadh-avenue-mall-barabanki-in-barabanki-CD1102283",
+    "hours": {
+      "mon": {
+        "open": "00:00",
+        "close": "23:59"
+      },
+      "tue": {
+        "open": "00:00",
+        "close": "23:59"
+      },
+      "wed": {
+        "open": "00:00",
+        "close": "23:59"
+      },
+      "thu": {
+        "open": "00:00",
+        "close": "23:59"
+      },
+      "fri": {
+        "open": "00:00",
+        "close": "23:59"
+      },
+      "sat": {
+        "open": "00:00",
+        "close": "23:59"
+      },
+      "sun": {
+        "open": "00:00",
+        "close": "23:59"
+      }
+    },
+    "description": "Awadh Avenue Mall is the best shopping and entertainment destination in Barabanki, located in Awas Vikas Colony. This premier mall offers a complete shopping experience with a wide variety of retail stores, fashion outlets, electronics, lifestyle brands, and dining options. The mall features DD Cinemas for the latest movies and blockbusters - book your movie tickets online through BookMyShow or District. Perfect for families, shoppers, and entertainment seekers. The mall features modern architecture, spacious interiors, and a vibrant atmosphere. Open 24 hours for your convenience. Whether you're looking for shopping, dining, movies, or entertainment, Awadh Avenue Mall is your ultimate destination in Barabanki!",
+    "tags": [
+      "mall",
+      "shopping",
+      "entertainment",
+      "retail",
+      "fashion",
+      "lifestyle",
+      "family-destination",
+      "dining",
+      "brands",
+      "barabanki",
+      "cinema",
+      "movies",
+      "dd-cinemas",
+      "multiplex"
+    ],
+    "addedDate": "2026-03-15",
+    "tenants": [
+      "burger-king-awadh",
+      "v-mart-awadh-avenue"
+    ]
+  },
+  {
+    "id": "burger-king-awadh",
+    "name": "Burger King",
+    "category": "Restaurants & Fast Food",
+    "categorySlug": "restaurants",
+    "featured": true,
+    "verified": true,
+    "status": "open",
+    "rating": 5,
+    "reviewCount": 0,
+    "coordinates": {
+      "lat": 26.9217703,
+      "lng": 81.174058
+    },
+    "reviews": [],
+    "address": "Awadh Avenue Mall, near RTO Office, Awas Vikas Colony, Barabanki, Uttar Pradesh 225001",
+    "mapLink": "https://maps.app.goo.gl/Ru5uKYd6KLQkShbe8",
+    "phone": "+91 86579 68544",
+    "phoneName": "Burger King",
+    "email": "",
+    "website": "https://stores.burgerking.in/burger-king-fast-food-restaurant-awas-vikas-colony-barabanki-516878/Home",
+    "onlineOrder": "https://www.swiggy.com/city/bharabanki/burger-king-barabanki-near-rto-office-awadh-avenue-mall-rest1256368",
+    "zomato": "https://www.zomato.com/barabanki/burger-king-barabanki-locality/order",
+    "whatsapp": "",
+    "instagram": "https://www.instagram.com/burgerkingindia/",
+    "disableAppointment": true,
+    "hours": {
+      "mon": {
+        "open": "11:00",
+        "close": "23:00"
+      },
+      "tue": {
+        "open": "11:00",
+        "close": "23:00"
+      },
+      "wed": {
+        "open": "11:00",
+        "close": "23:00"
+      },
+      "thu": {
+        "open": "11:00",
+        "close": "23:00"
+      },
+      "fri": {
+        "open": "11:00",
+        "close": "23:00"
+      },
+      "sat": {
+        "open": "11:00",
+        "close": "23:00"
+      },
+      "sun": {
+        "open": "11:00",
+        "close": "23:00"
+      }
+    },
+    "description": "Burger King brings flame-grilled perfection to Awadh Avenue Mall in Barabanki. Famous for our signature Whopper, we serve delicious burgers, crispy fries, chicken items, and refreshing beverages. Every burger is flame-grilled to perfection, giving you that authentic taste you love. Located near RTO Office in Awadh Avenue Mall, we offer dine-in, takeaway, and home delivery through Swiggy and Zomato. Whether you're craving a classic Whopper, crispy chicken burger, or our famous fries, Burger King has something for everyone. Perfect for families, friends, and burger lovers. Order online or visit us at the mall. Open daily from 11 AM to 11 PM.",
+    "tags": [
+      "burger-king",
+      "burgers",
+      "fast-food",
+      "whopper",
+      "restaurant",
+      "flame-grilled",
+      "delivery",
+      "takeaway",
+      "family-dining",
+      "mall"
+    ],
+    "addedDate": "2026-03-15",
+    "locatedInMall": "awadh-avenue-mall"
+  },
+  {
+    "id": "v-mart-awadh-avenue",
+    "name": "V-Mart",
+    "category": "Fashion & Retail",
+    "categorySlug": "fashion",
+    "featured": true,
+    "verified": true,
+    "status": "open",
+    "rating": 5,
+    "reviewCount": 0,
+    "coordinates": {
+      "lat": 26.921628,
+      "lng": 81.1741961
+    },
+    "reviews": [],
+    "address": "Ground Floor, First Floor, Awadh Avenue Mall, Awas Vikas Colony, Barabanki, Uttar Pradesh 225001",
+    "mapLink": "https://maps.app.goo.gl/R59VpRSfnprCTnqBA",
+    "phone": "+91 74281 88433",
+    "phoneName": "V-Mart",
+    "email": "",
+    "website": "https://stores.vmartretail.com/clothing-mart-awas-vikas-colony-barabanki-47253/home",
+    "whatsapp": "",
+    "disableAppointment": true,
+    "hours": {
+      "mon": {
+        "open": "10:00",
+        "close": "22:00"
+      },
+      "tue": {
+        "open": "10:00",
+        "close": "22:00"
+      },
+      "wed": {
+        "open": "10:00",
+        "close": "22:00"
+      },
+      "thu": {
+        "open": "10:00",
+        "close": "22:00"
+      },
+      "fri": {
+        "open": "10:00",
+        "close": "22:00"
+      },
+      "sat": {
+        "open": "10:00",
+        "close": "22:00"
+      },
+      "sun": {
+        "open": "10:00",
+        "close": "22:00"
+      }
+    },
+    "description": "V-Mart is a complete family fashion store that provides its customers true value for their money. We offer our customers a great shopping experience each time they visit V-Mart store by offering a vast range of products under one roof. Maintaining high standards in quality and design, V-Mart offers fashion garments at down-to-earth prices and over a period of time has emerged as the destination of choice for bargain hunters and the fashionable alike. Located on the Ground Floor and First Floor of Awadh Avenue Mall, we provide a wide selection of clothing, accessories, and lifestyle products for the entire family.",
+    "tags": [
+      "v-mart",
+      "fashion",
+      "retail",
+      "clothing",
+      "family-store",
+      "apparel",
+      "shopping",
+      "mall",
+      "value-fashion",
+      "lifestyle"
+    ],
+    "lgbtqFriendly": true,
+    "womenOwned": true,
+    "addedDate": "2026-03-31",
+    "locatedInMall": "awadh-avenue-mall"
+  },
+  {
+    "id": "rainbow-hospital-trauma-centre",
+    "name": "Rainbow Hospital & Trauma Centre",
+    "category": "Healthcare & Medical Services",
+    "categorySlug": "healthcare",
+    "featured": true,
+    "verified": true,
+    "status": "open",
+    "rating": 4.6,
+    "reviewCount": 0,
+    "coordinates": {
+      "lat": 26.9225804,
+      "lng": 81.1749074
+    },
+    "reviews": [],
+    "address": "near GAYATRI MANDIR, opposite OASIS LAWN, Preet Vihar Colony, Civil Lines, Barabanki, Uttar Pradesh 225001",
+    "mapLink": "https://maps.app.goo.gl/6br2pUed34HQNENq8",
+    "phone": "+91 63885 18560",
+    "phoneName": "Rainbow Hospital",
+    "email": "",
+    "website": "",
+    "bloodDonor": "https://www.friends2support.org/",
+    "whatsapp": "+91 63885 18560",
+    "whatsappName": "Rainbow Hospital",
+    "hours": {
+      "mon": {
+        "open": "00:00",
+        "close": "23:59"
+      },
+      "tue": {
+        "open": "00:00",
+        "close": "23:59"
+      },
+      "wed": {
+        "open": "00:00",
+        "close": "23:59"
+      },
+      "thu": {
+        "open": "00:00",
+        "close": "23:59"
+      },
+      "fri": {
+        "open": "00:00",
+        "close": "23:59"
+      },
+      "sat": {
+        "open": "00:00",
+        "close": "23:59"
+      },
+      "sun": {
+        "open": "00:00",
+        "close": "23:59"
+      }
+    },
+    "description": "Rainbow Hospital & Trauma Centre is a trusted healthcare facility providing comprehensive medical services 24/7 in Barabanki. Located near Gayatri Mandir, opposite Oasis Lawn in Preet Vihar Colony, Civil Lines, we offer emergency care, trauma services, general medicine, surgical procedures, diagnostic services, and patient care. Our experienced medical team of doctors, nurses, and healthcare professionals work round the clock to provide quality healthcare. We specialize in emergency treatment, accident care, trauma management, outpatient consultations, inpatient services, laboratory tests, imaging services, and pharmacy. With modern medical equipment and a commitment to patient safety, Rainbow Hospital & Trauma Centre is your reliable healthcare partner available 24 hours a day, 7 days a week.",
+    "tags": [
+      "hospital",
+      "trauma-centre",
+      "emergency-care",
+      "24x7",
+      "medical-services",
+      "healthcare",
+      "doctor",
+      "clinic",
+      "diagnostic",
+      "laboratory",
+      "patient-care",
+      "surgery",
+      "accident-care"
+    ],
+    "lgbtqFriendly": true,
+    "addedDate": "2026-03-31"
+  },
+  {
+    "id": "sagar-institute-technology",
+    "name": "Sagar Institute of Technology",
+    "category": "Education & Schools",
+    "categorySlug": "education",
+    "featured": true,
+    "verified": true,
+    "status": "open",
+    "rating": 3,
+    "reviewCount": 0,
+    "coordinates": {
+      "lat": 26.9267927,
+      "lng": 81.2405581
+    },
+    "reviews": [],
+    "address": "Sagar Institute of Technology & Management, Barabanki, Uttar Pradesh, India",
+    "mapLink": "https://maps.app.goo.gl/8HagrxZ2jagQtsaw7",
+    "phone": "+91 98380 76745",
+    "phoneName": "Sagar College",
+    "email": "",
+    "website": "https://www.sagar.ac.in/",
+    "whatsapp": "+91 98380 76745",
+    "whatsappName": "Sagar College",
+    "hours": {
+      "mon": {
+        "open": "09:00",
+        "close": "16:00"
+      },
+      "tue": {
+        "open": "09:00",
+        "close": "16:00"
+      },
+      "wed": {
+        "open": "09:00",
+        "close": "16:00"
+      },
+      "thu": {
+        "open": "09:00",
+        "close": "16:00"
+      },
+      "fri": {
+        "open": "09:00",
+        "close": "16:00"
+      },
+      "sat": {
+        "open": "09:00",
+        "close": "16:00"
+      },
+      "sun": {
+        "open": "00:00",
+        "close": "00:00"
+      }
+    },
+    "description": "Sagar Institute of Technology (SITM) is a leading educational institution in Barabanki shaping world-class technocrats with strong moral values. Our leadership team upholds academic excellence, discipline, and innovation. We provide a strong learning environment where students grow into skilled, responsible professionals through discipline, dedication, and determination. With parental support, we help learners realize their potential and excel in a competitive world. The Sagar Educational Society empowers students to serve society with competence, compassion, and responsibility, opening doors to endless possibilities for a successful future.",
+    "tags": [
+      "college",
+      "education",
+      "technology",
+      "management",
+      "engineering",
+      "professional-education",
+      "higher-education",
+      "sitm",
+      "sagar-institute",
+      "technical-education",
+      "degree-college"
+    ],
+    "addedDate": "2026-03-31"
+  },
+  {
+    "id": "pizza-hut-barabanki",
+    "name": "Pizza Hut",
+    "category": "Restaurants & Fast Food",
+    "categorySlug": "restaurants",
+    "featured": true,
+    "verified": true,
+    "status": "open",
+    "rating": 5,
+    "reviewCount": 0,
+    "coordinates": {
+      "lat": 26.9230168,
+      "lng": 81.1764041
+    },
+    "reviews": [],
+    "address": "Lucknow Faizabad Road Civil Line, Awas Vikas Colony, Barabanki, Uttar Pradesh 225001",
+    "mapLink": "https://maps.app.goo.gl/BRQoFcEgevrZvU5n8",
+    "phone": "+91 89291 17011",
+    "phoneName": "Pizza Hut",
+    "email": "",
+    "website": "https://restaurants.pizzahut.co.in/pizza-hut-ph-faizabad-road-barabanki-pizza-restaurant-awas-vikas-colony-barabanki-305355/Home",
+    "menu": "https://restaurants.pizzahut.co.in/pizza-hut-ph-faizabad-road-barabanki-pizza-restaurant-awas-vikas-colony-barabanki-305355/Menu",
+    "orderOnline": "https://www.pizzahut.co.in/?utm_source=restaurant-pizzahut&utm_medium=featured-products-buy-now",
+    "onlineOrder": "https://www.swiggy.com/city/bharabanki/pizza-hut-obaree-rest804074",
+    "zomato": "https://www.zomato.com/barabanki/pizza-hut-barabanki-locality/order",
+    "magicpin": "https://magicpin.in/barabanki/restaurant/pizza-hut-awas-vikas-colony/store/501776",
+    "whatsapp": "",
+    "disableAppointment": true,
+    "hours": {
+      "mon": {
+        "open": "11:00",
+        "close": "23:00"
+      },
+      "tue": {
+        "open": "11:00",
+        "close": "23:00"
+      },
+      "wed": {
+        "open": "11:00",
+        "close": "23:00"
+      },
+      "thu": {
+        "open": "11:00",
+        "close": "23:00"
+      },
+      "fri": {
+        "open": "11:00",
+        "close": "23:00"
+      },
+      "sat": {
+        "open": "11:00",
+        "close": "23:00"
+      },
+      "sun": {
+        "open": "11:00",
+        "close": "23:00"
+      }
+    },
+    "description": "Pizza Hut brings world-famous pizzas to Barabanki on Lucknow Faizabad Road. We serve delicious hand-tossed pizzas, pan pizzas, thin crust pizzas, pasta, garlic bread, chicken wings, and desserts. Our menu features classic favorites like Margherita, Pepperoni, Veggie Supreme, Chicken Supreme, and specialty pizzas. Enjoy dine-in with comfortable seating, takeaway, or home delivery through Swiggy, Zomato, and Magicpin. Fresh ingredients, quality toppings, and signature Pizza Hut taste in every bite. Perfect for families, friends, parties, and pizza lovers. Order online or visit us at Awas Vikas Colony. Open daily from 11 AM to 11 PM.",
+    "tags": [
+      "pizza-hut",
+      "pizza",
+      "fast-food",
+      "italian",
+      "restaurant",
+      "pasta",
+      "delivery",
+      "takeaway",
+      "family-dining",
+      "chicken-wings"
+    ],
+    "lgbtqFriendly": true,
+    "addedDate": "2026-04-15"
+  },
+  {
+    "id": "la-pinoz-pizza-barabanki",
+    "name": "La Pinoz Pizza",
+    "category": "Restaurants & Fast Food",
+    "categorySlug": "restaurants",
+    "featured": true,
+    "verified": true,
+    "status": "open",
+    "rating": 5,
+    "reviewCount": 0,
+    "coordinates": {
+      "lat": 26.9234278,
+      "lng": 81.1772439
+    },
+    "reviews": [],
+    "address": "W5FG+8RX, Faizabad - Lucknow Hwy, near Dewa Hospital, Awas Vikas Colony, Barabanki, Uttar Pradesh 225001",
+    "mapLink": "https://maps.app.goo.gl/Uc9Uk7Y9SxUJiT1k9",
+    "phone": "+91 89601 67000",
+    "phoneName": "La Pinoz Pizza (Outlet)",
+    "phoneSecondary": "01762 509231",
+    "phoneSecondaryName": "La Pinoz Pizza (Company)",
+    "email": "",
+    "website": "https://lapinozpizza.in/order/avas-vikas-colony-barabanki",
+    "onlineOrder": "https://www.swiggy.com/city/bharabanki/la-pinoz-pizza-awas-vikash-colony-faizabad-road-rest854177",
+    "zomato": "https://www.zomato.com/barabanki/la-pinoz-pizza-barabanki-locality/order",
+    "whatsapp": "+91 89601 67000",
+    "whatsappName": "La Pinoz Pizza",
+    "disableAppointment": true,
+    "hours": {
+      "mon": {
+        "open": "09:00",
+        "close": "23:59"
+      },
+      "tue": {
+        "open": "09:00",
+        "close": "23:59"
+      },
+      "wed": {
+        "open": "09:00",
+        "close": "23:59"
+      },
+      "thu": {
+        "open": "09:00",
+        "close": "23:59"
+      },
+      "fri": {
+        "open": "09:00",
+        "close": "23:59"
+      },
+      "sat": {
+        "open": "09:00",
+        "close": "23:59"
+      },
+      "sun": {
+        "open": "09:00",
+        "close": "23:59"
+      }
+    },
+    "description": "La Pinoz Pizza brings delicious pizzas and Italian cuisine to Barabanki on Faizabad-Lucknow Highway near Dewa Hospital. We specialize in gourmet pizzas with unique toppings, fresh ingredients, and authentic Italian flavors. Our menu features signature pizzas, pasta, garlic bread, sides, and desserts. Choose from thin crust, thick crust, or stuffed crust options. Popular favorites include Mexican Fiesta, Chicken Tikka, Paneer Makhani Pizza, and more. Enjoy dine-in, takeaway, or home delivery through Swiggy and Zomato. Fresh dough made daily, quality cheese, and flavorful sauces in every bite. Perfect for families, parties, and pizza lovers. Order online or visit us at Awas Vikas Colony. Open daily from 9 AM to midnight.",
+    "tags": [
+      "la-pinoz",
+      "pizza",
+      "fast-food",
+      "italian",
+      "restaurant",
+      "pasta",
+      "delivery",
+      "takeaway",
+      "family-dining",
+      "gourmet-pizza"
+    ],
+    "addedDate": "2026-04-15"
+  },
+  {
+    "id": "dominos-pizza-barabanki",
+    "name": "Domino's Pizza",
+    "category": "Restaurants & Fast Food",
+    "categorySlug": "restaurants",
+    "featured": true,
+    "verified": true,
+    "status": "open",
+    "rating": 5,
+    "reviewCount": 0,
+    "coordinates": {
+      "lat": 26.9238689,
+      "lng": 81.1779151
+    },
+    "reviews": [],
+    "address": "UPPER GROUND FLOOR KHASRA NO. 507 & 508 (KHASRA NO. 506, 507 & 508 AS PER SANCTIONED BUILDING PLAN) OBRI, BARABANKI, UTTAR PRADESH, BARABANKI, Uttar Pradesh - 225001",
+    "mapLink": "https://maps.app.goo.gl/rSuqx4Y278aPjWyu7",
+    "phone": "1800 208 1234",
+    "phoneName": "Domino's Pizza (Company)",
+    "email": "",
+    "website": "https://www.dominos.co.in/store-locations/barabanki/obri-barabanki-uttar-pradesh",
+    "menu": "https://www.dominos.co.in/store-locations/barabanki/obri-barabanki-uttar-pradesh/menu",
+    "orderOnline": "https://m.dominos.co.in/menu?src=local_gmb",
+    "bookTable": "https://m.dominos.co.in/postorder-ui/login?&src=local_gmb&utm_source=Google_GMB&utm_medium=GMB_SEO_urls_reservation",
+    "disableAppointment": true,
+    "hours": {
+      "mon": {
+        "open": "11:00",
+        "close": "23:00"
+      },
+      "tue": {
+        "open": "11:00",
+        "close": "23:00"
+      },
+      "wed": {
+        "open": "11:00",
+        "close": "23:00"
+      },
+      "thu": {
+        "open": "11:00",
+        "close": "23:00"
+      },
+      "fri": {
+        "open": "11:00",
+        "close": "23:00"
+      },
+      "sat": {
+        "open": "11:00",
+        "close": "23:00"
+      },
+      "sun": {
+        "open": "11:00",
+        "close": "23:00"
+      }
+    },
+    "description": "Domino's Pizza is India's leading pizza delivery chain, now serving Barabanki at Obaree on Lucknow-Faizabad Road. We're famous for our 30-minute delivery guarantee and hot, fresh pizzas made with quality ingredients. Our menu features a wide variety of pizzas including Margherita, Farmhouse, Peppy Paneer, Mexican Green Wave, Chicken Dominator, and more. Choose from hand-tossed, thin crust, fresh pan, or cheese burst options. We also serve pasta, garlic bread, chicken wings, desserts, and beverages. Order online for home delivery or dine-in at our restaurant. Open daily from 11 AM to 11 PM. Book a table, browse our menu, or order online through our website. Perfect for families, parties, and pizza lovers. Experience the taste of authentic Domino's Pizza in Barabanki.",
+    "tags": [
+      "dominos",
+      "pizza",
+      "fast-food",
+      "italian",
+      "restaurant",
+      "delivery",
+      "takeaway",
+      "family-dining",
+      "cheese-burst"
+    ],
+    "addedDate": "2026-04-15"
+  },
+  {
+    "id": "jiffy-by-spencers-barabanki",
+    "name": "Jiffy By Spencers",
+    "category": "Shopping Mall & Entertainment",
+    "categorySlug": "shopping-mall",
+    "featured": true,
+    "verified": true,
+    "status": "open",
+    "rating": 3.8,
+    "reviewCount": 1,
+    "coordinates": {
+      "lat": 26.9230886,
+      "lng": 81.1756794
+    },
+    "reviews": [
+      {
+        "id": "review-1",
+        "author": "Admin",
+        "role": "LocalFind Team",
+        "rating": 3.8,
+        "date": "2026-04-15",
+        "text": "Based on customer feedback: Jiffy By Spencers has a convenient roadside location with good accessibility. However, several areas need improvement. The store offers limited grocery and product variety compared to other retail chains, and prices tend to be higher than competitors. Parking space is quite limited. Staff behavior and management have received mixed reviews - some customers reported unprofessional conduct, locked trial rooms, and billing discrepancies (items billed at MRP instead of displayed prices). The store exit can be slippery, posing a safety concern. Management responsiveness needs improvement. We recommend customers verify prices before payment and be cautious during checkout. The store has potential but needs better staff training, competitive pricing, and improved customer service to match other retail chains.",
+        "verified": true
+      }
+    ],
+    "address": "Khasara No 521, 519, 520/2 And 520/1, Upper Ground Floor And First Floor, Tandon Complex, Nawabgar, Civil Line, Lucknow-Ayodhya Highway, Opposite Swastik Petrol Pump, Awas Vikas Colony, Barabanki, Uttar Pradesh - 225001",
+    "mapLink": "https://maps.app.goo.gl/h1BVWJJSJ81eWXVF6",
+    "phone": "1800 123 6868",
+    "phoneName": "Spencers Customer Care",
+    "phoneSecondary": "+91 76040 64680",
+    "phoneSecondaryName": "Spencers Barabanki",
+    "email": "",
+    "website": "https://stores.spencers.in/spencers/barabanki/Awas-Vikas-Colony/spencers-in-Awas-Vikas-Colony-barabanki--4ROgcV/home",
+    "orderOnline": "https://www.spencers.in/",
+    "whatsapp": "+91 76040 64680",
+    "whatsappName": "Spencers Barabanki",
+    "instagram": "https://www.instagram.com/spencersretail/",
+    "youtube": "https://www.youtube.com/@spencersretail814",
+    "linkedin": "https://www.linkedin.com/company/spencersretail/",
+    "facebook": "https://www.facebook.com/spencersindia/",
+    "hours": {
+      "mon": {
+        "open": "10:00",
+        "close": "22:00"
+      },
+      "tue": {
+        "open": "10:00",
+        "close": "22:00"
+      },
+      "wed": {
+        "open": "10:00",
+        "close": "22:00"
+      },
+      "thu": {
+        "open": "10:00",
+        "close": "22:00"
+      },
+      "fri": {
+        "open": "10:00",
+        "close": "22:00"
+      },
+      "sat": {
+        "open": "10:00",
+        "close": "22:00"
+      },
+      "sun": {
+        "open": "10:00",
+        "close": "22:00"
+      }
+    },
+    "description": "Jiffy By Spencers is a retail grocery store and shopping mall located on Lucknow-Ayodhya Highway in Awas Vikas Colony, Barabanki. Part of the Spencers retail chain, we offer groceries, household items, personal care products, and daily essentials. Conveniently located opposite Swastik Petrol Pump on the main highway with roadside access. Open daily from 10 AM to 10 PM. For customer service, call our toll-free number 18001236868 or contact the store directly.",
+    "tags": [
+      "grocery",
+      "retail",
+      "shopping",
+      "supermarket",
+      "spencers",
+      "jiffy",
+      "household",
+      "daily-essentials",
+      "convenience-store",
+      "mall",
+      "shopping-mall"
+    ],
+    "addedDate": "2026-04-15"
+  },
+  {
+    "id": "seven-eleven-mart",
+    "name": "Seven Eleven Mart",
+    "category": "Food & Beverages",
+    "categorySlug": "food-beverages",
+    "featured": true,
+    "verified": true,
+    "status": "open",
+    "rating": 4,
+    "reviewCount": 0,
+    "coordinates": {
+      "lat": 26.9177053,
+      "lng": 81.1968426
+    },
+    "reviews": [],
+    "address": "W59W+3PP, Gayas Nagar, Ganga Vihar Colny, Lakhpedabagh, Barel, Uttar Pradesh 225001",
+    "mapLink": "https://maps.app.goo.gl/4vqmGeh5LMXwQPYo9",
+    "phone": "",
+    "email": "",
+    "website": "",
+    "whatsapp": "",
+    "hours": {
+      "mon": {
+        "open": "09:00",
+        "close": "21:30"
+      },
+      "tue": {
+        "open": "09:00",
+        "close": "21:30"
+      },
+      "wed": {
+        "open": "09:00",
+        "close": "21:30"
+      },
+      "thu": {
+        "open": "09:00",
+        "close": "21:30"
+      },
+      "fri": {
+        "open": "09:00",
+        "close": "21:30"
+      },
+      "sat": {
+        "open": "09:00",
+        "close": "21:30"
+      },
+      "sun": {
+        "open": "09:00",
+        "close": "21:30"
+      }
+    },
+    "description": "Seven Eleven Mart is your neighborhood convenience store in Gayas Nagar, Bareilly, offering a wide range of daily essentials, packaged groceries, cold drinks, snacks, personal care items, and household products. We serve the local community with fresh stock, competitive pricing, and friendly service. Whether you need quick grocery refills, beverages, school supplies, or everyday necessities, we've got you covered. Conveniently located in Ganga Vihar Colony with easy roadside access. Open daily from 9 AM to 9:30 PM.",
+    "tags": [
+      "convenience-store",
+      "grocery",
+      "snacks",
+      "beverages",
+      "household-items",
+      "daily-essentials",
+      "general-store",
+      "kirana"
+    ],
+    "addedDate": "2026-06-09"
+  },
+  {
+    "id": "vineet-jan-seva-kendra",
+    "name": "Vineet Jan Seva Kendra",
+    "category": "Government Services & CSC",
+    "categorySlug": "government-services",
+    "featured": true,
+    "verified": true,
+    "status": "open",
+    "rating": 3,
+    "reviewCount": 1,
+    "coordinates": {
+      "lat": 26.9225042,
+      "lng": 81.259864
+    },
+    "reviews": [
+      {
+        "id": "review-1",
+        "author": "Admin",
+        "role": "LocalFind Team",
+        "rating": 3,
+        "date": "2026-06-12",
+        "text": "Vineet Jan Seva Kendra provides basic CSC services but staff professionalism is inconsistent; only some staff members are cooperative. Service charges are notably higher compared to other centers in Rasauli. For reliable and fairly-priced services, we recommend <a href='business-detail.html?id=raheem-common-service-center'>Raheem CSC</a>. Consider Vineet Jan Seva Kendra only as a last resort when other centers are unavailable.",
+        "verified": true
+      }
+    ],
+    "address": "Rasauli Road, Near OverBridge Pull, Rasauli, Uttar Pradesh",
+    "mapLink": "https://maps.app.goo.gl/uRJtyndhy9BmV5jUA",
+    "phone": "+91 7985868864",
+    "phoneName": "Vishal Kumar",
+    "email": "",
+    "website": "",
+    "whatsapp": "+91 7985868864",
+    "whatsappName": "Vishal Kumar",
+    "hours": {
+      "mon": {
+        "open": "09:00",
+        "close": "20:00"
+      },
+      "tue": {
+        "open": "09:00",
+        "close": "20:00"
+      },
+      "wed": {
+        "open": "09:00",
+        "close": "20:00"
+      },
+      "thu": {
+        "open": "09:00",
+        "close": "20:00"
+      },
+      "fri": {
+        "open": "09:00",
+        "close": "20:00"
+      },
+      "sat": {
+        "open": "09:00",
+        "close": "20:00"
+      },
+      "sun": {
+        "open": "09:00",
+        "close": "20:00"
+      }
+    },
+    "description": "Vineet Jan Seva Kendra is a Common Service Center located on Rasauli Road near OverBridge Pull, providing government and digital services to the local community. Services include Aadhaar card enrollment and updates, PAN card applications, income and caste certificates, domicile and birth/death certificates, document printing and photocopying, and online form submissions. The center also facilitates bill payments, mobile recharges, banking services, and digital transactions. Open daily from 9 AM to 8 PM.",
+    "tags": [
+      "csc",
+      "common-service-center",
+      "aadhaar",
+      "pan-card",
+      "government-services",
+      "certificates",
+      "digital-services",
+      "bill-payment"
+    ],
+    "upiName": "Vineet Jan Seva Kendra",
+    "upiIds": [
+      "merchantqr.iprgs5yn@digikhata",
+      "merchantqr.isu6t0qb@digikhata",
+      "750888640147@boi"
+    ],
+    "addedDate": "2026-06-12"
+  }
+]
