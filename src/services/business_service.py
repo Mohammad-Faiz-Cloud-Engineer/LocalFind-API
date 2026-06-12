@@ -32,7 +32,7 @@ def get_listings(
     per_page = min(per_page, settings.items_per_page * settings.max_pages)
     listings = get_all_listings()
     if category:
-        listings = [b for b in listings if b.get("categorySlug") == category]
+        listings = [b for b in listings if b.get("categorySlug") == category.lower()]
     if featured is not None:
         listings = [b for b in listings if b.get("featured") == featured]
     if verified is not None:
@@ -64,6 +64,12 @@ def get_listings(
                     score = calculate_relevance(biz, search_terms, search_for)
                     if score > 0:
                         scored.append((score, biz))
+                mall_tenants = find_malls_with_matching_tenants(search_terms)
+                existing_ids = {b.get("id") for _, b in scored}
+                for mall in mall_tenants:
+                    if mall.get("id") and mall["id"] not in existing_ids:
+                        scored.append((50, mall))
+                        existing_ids.add(mall["id"])
                 scored.sort(key=lambda x: (-x[0], x[1].get("name", "")))
                 listings = [b for _, b in scored]
         else:

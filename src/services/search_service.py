@@ -123,7 +123,6 @@ def calculate_relevance(
     if not original_query:
         return 0
     name = (business.get("name") or "").lower()
-    name_norm = normalize_text(name)
     description = (business.get("description") or "").lower()
     category = (business.get("category") or "").lower()
     category_slug = (business.get("categorySlug") or "").lower()
