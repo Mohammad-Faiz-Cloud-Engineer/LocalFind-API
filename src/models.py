@@ -1,6 +1,6 @@
 from typing import Any, Optional
 
-from pydantic import BaseModel, Field
+from pydantic import BaseModel
 
 
 class Coordinates(BaseModel):
@@ -148,19 +148,6 @@ class ErrorResponse(BaseModel):
     error: str
     message: str
     statusCode: int
-
-
-class ContactSubmission(BaseModel):
-    name: str = Field(..., min_length=2, max_length=100)
-    email: str = Field(..., pattern=r"^[^\s@]+@[^\s@]+\.[^\s@]+$")
-    phone: str = ""
-    businessId: Optional[str] = None
-    message: str = Field(..., min_length=10, max_length=2000)
-
-
-class ContactResponse(BaseModel):
-    success: bool
-    message: str
 
 
 class MapBoundsResponse(BaseModel):

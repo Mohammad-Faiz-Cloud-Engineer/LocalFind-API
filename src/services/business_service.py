@@ -8,7 +8,7 @@ from src.data.loader import (
     get_listing_by_id,
 )
 from src.models import business_to_summary, normalize_business
-from src.services.search_service import calculate_relevance, expand_search_query, parse_special_command, apply_special_command_filter, is_business_new, find_malls_with_matching_tenants
+from src.services.search_service import expand_search_query, parse_special_command, apply_special_command_filter, is_business_new, score_and_rank_listings
 from src.utils.time_utils import get_business_status, IST_OFFSET
 
 
@@ -59,35 +59,11 @@ def get_listings(
             if search_for:
                 expanded, _ = expand_search_query(search_for)
                 search_terms = expanded.lower().split()
-                scored = []
-                for biz in listings:
-                    score = calculate_relevance(biz, search_terms, search_for)
-                    if score > 0:
-                        scored.append((score, biz))
-                mall_tenants = find_malls_with_matching_tenants(search_terms)
-                existing_ids = {b.get("id") for _, b in scored}
-                for mall in mall_tenants:
-                    if mall.get("id") and mall["id"] not in existing_ids:
-                        scored.append((50, mall))
-                        existing_ids.add(mall["id"])
-                scored.sort(key=lambda x: (-x[0], x[1].get("name", "")))
-                listings = [b for _, b in scored]
+                listings = score_and_rank_listings(listings, search_terms, search_for)
         else:
             expanded, _ = expand_search_query(search)
             search_terms = expanded.lower().split()
-            scored = []
-            for biz in listings:
-                score = calculate_relevance(biz, search_terms, search)
-                if score > 0:
-                    scored.append((score, biz))
-            mall_tenants = find_malls_with_matching_tenants(search_terms)
-            existing_ids = {b.get("id") for _, b in scored}
-            for mall in mall_tenants:
-                if mall.get("id") and mall["id"] not in existing_ids:
-                    scored.append((50, mall))
-                    existing_ids.add(mall["id"])
-            scored.sort(key=lambda x: (-x[0], x[1].get("name", "")))
-            listings = [b for _, b in scored]
+            listings = score_and_rank_listings(listings, search_terms, search)
     if sort_by:
         reverse = sort_order.lower() == "desc"
         if sort_by == "name":

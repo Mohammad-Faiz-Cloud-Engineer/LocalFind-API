@@ -3,6 +3,7 @@ import os
 import sys
 
 from contextlib import asynccontextmanager
+from datetime import datetime, timezone
 from pathlib import Path
 
 from dotenv import load_dotenv
@@ -127,7 +128,7 @@ async def health():
     return {
         "status": "healthy",
         "version": settings.app_version,
-        "timestamp": __import__("datetime").datetime.now().isoformat(),
+        "timestamp": datetime.now(timezone.utc).isoformat(),
         "businesses": len(get_all_listings()),
     }
 

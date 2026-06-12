@@ -43,11 +43,3 @@ async def submit_contact(form: ContactForm, request: Request):
         "message": "Thank you for your message. We will get back to you shortly.",
         "submissionId": len(_contact_submissions),
     }
-
-
-@router.get("/submissions")
-async def list_submissions():
-    return {
-        "total": len(_contact_submissions),
-        "submissions": _contact_submissions[-50:],
-    }

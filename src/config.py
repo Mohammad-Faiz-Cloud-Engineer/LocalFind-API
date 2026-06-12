@@ -1,3 +1,8 @@
+import os
+from dataclasses import dataclass, field
+
+
+@dataclass
 class Settings:
     app_name: str = "LocalFind API"
     app_version: str = "4.3.7"
@@ -8,15 +13,17 @@ class Settings:
     map_lat: float = 26.9135
     map_lng: float = 81.2328
     map_zoom: int = 14
-    cors_origins: list[str] = ["*"]
+    cors_origins: list[str] = field(default_factory=lambda: ["*"])
     items_per_page: int = 6
     max_pages: int = 50
     founded_year: int = 2026
     site_name: str = "LocalFind"
     area_name: str = "Rasauli, Barabanki, Uttar Pradesh"
     tagline: str = "Discover Everything Around You"
+    rate_limit_requests: int = 100
+    rate_limit_window: int = 60
 
-    search_aliases: dict[str, list[str]] = {
+    search_aliases: dict[str, list[str]] = field(default_factory=lambda: {
         "csc": [
             "common service center", "common service centre",
             "csc center", "raheem csc", "golden csc", "vineet csc",
@@ -134,7 +141,21 @@ class Settings:
             "vineet", "jan seva kendra", "csc",
             "common service center", "vineet csc",
         ],
-    }
+    })
+
+    def __post_init__(self) -> None:
+        if v := os.environ.get("APP_NAME"):
+            self.app_name = v
+        if v := os.environ.get("APP_VERSION"):
+            self.app_version = v
+        if v := os.environ.get("CORS_ORIGINS"):
+            self.cors_origins = [o.strip() for o in v.split(",") if o.strip()]
+        if v := os.environ.get("CONTACT_PHONE"):
+            self.contact_phone = v
+        if v := os.environ.get("RATE_LIMIT_REQUESTS"):
+            self.rate_limit_requests = int(v)
+        if v := os.environ.get("RATE_LIMIT_WINDOW"):
+            self.rate_limit_window = int(v)
 
     @property
     def alias_to_terms(self) -> dict[str, str]:

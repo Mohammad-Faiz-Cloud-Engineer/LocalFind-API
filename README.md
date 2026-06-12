@@ -5,7 +5,7 @@ colorFrom: blue
 colorTo: green
 sdk: docker
 pinned: false
-license: mit
+license: bsd-2-clause
 app_port: 7860
 ---
 
@@ -509,10 +509,6 @@ curl -X POST https://localfind-localfind.hf.space/api/v1/contact/submit \
   -H "Content-Type: application/json" \
   -d '{"name":"John","email":"john@example.com","message":"I have a question"}'
 ```
-
-#### `GET /api/v1/contact/submissions`
-
-List recent contact submissions (admin use, last 50).
 
 ---
 

@@ -202,6 +202,36 @@ def calculate_relevance(
     return score
 
 
+def score_and_rank_listings(
+    listings: list[dict],
+    search_terms: list[str],
+    original_query: str,
+) -> list[dict]:
+    """Score, filter, add mall tenants, and sort listings by relevance."""
+    scored: list[tuple[int, dict]] = []
+    if search_terms:
+        for biz in listings:
+            score = calculate_relevance(biz, search_terms, original_query)
+            if score > 0:
+                scored.append((score, biz))
+    else:
+        for biz in listings:
+            score = 0
+            if biz.get("featured"):
+                score += 1
+            if biz.get("verified"):
+                score += 1
+            scored.append((score, biz))
+    mall_tenants = find_malls_with_matching_tenants(search_terms) if search_terms else []
+    existing_ids = {b.get("id") for _, b in scored}
+    for mall in mall_tenants:
+        if mall.get("id") and mall["id"] not in existing_ids:
+            scored.append((50, mall))
+            existing_ids.add(mall["id"])
+    scored.sort(key=lambda x: (-x[0], x[1].get("name", "")))
+    return [b for _, b in scored]
+
+
 def search_businesses(
     query: str,
     page: int = 1,
@@ -233,28 +263,8 @@ def search_businesses(
         listings = [b for b in listings if b.get("lgbtqFriendly") == lgbtq_friendly]
     if women_owned is not None:
         listings = [b for b in listings if b.get("womenOwned") == women_owned]
-    scored = []
-    if search_terms:
-        for biz in listings:
-            score = calculate_relevance(biz, search_terms, query)
-            if score > 0:
-                scored.append((score, biz))
-    else:
-        for biz in listings:
-            score = 0
-            if biz.get("featured"):
-                score += 1
-            if biz.get("verified"):
-                score += 1
-            scored.append((score, biz))
-    mall_tenants = find_malls_with_matching_tenants(search_terms) if search_terms else []
-    existing_ids = {b.get("id") for _, b in scored}
-    for mall in mall_tenants:
-        if mall.get("id") and mall["id"] not in existing_ids:
-            scored.append((50, mall))
-            existing_ids.add(mall["id"])
-    scored.sort(key=lambda x: (-x[0], x[1].get("name", "")))
-    results = [business_to_summary(b) for _, b in scored]
+    ranked = score_and_rank_listings(listings, search_terms, query)
+    results = [business_to_summary(b) for b in ranked]
     total = len(results)
     start = (page - 1) * per_page
     end = start + per_page
